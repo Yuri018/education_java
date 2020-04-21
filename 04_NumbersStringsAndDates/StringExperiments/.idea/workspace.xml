@@ -25,7 +25,13 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74551ef3-e027-45c0-ba92-5e70ee5f73c4" name="Default" comment="" />
+    <list default="true" id="74551ef3-e027-45c0-ba92-5e70ee5f73c4" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/CountProfitRegex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/RegexDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Words100.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Loader.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,9 +39,6 @@
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="StringExperiments" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -63,7 +66,7 @@
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.CountProfitRegex">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="ACTIVITY_CLASS" value="" />
@@ -111,8 +114,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CountProfit" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CountProfit" />
+      <module name="StringExperiments" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CountProfitRegex" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CountProfitRegex" />
+      <module name="StringExperiments" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Loader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Loader" />
+      <module name="StringExperiments" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegexDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="RegexDemo" />
       <module name="StringExperiments" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -152,7 +179,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CountProfitRegex" />
         <item itemvalue="Application.Loader" />
+        <item itemvalue="Application.CountProfit" />
+        <item itemvalue="Application.RegexDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -210,6 +240,65 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1586334336736" />
+    <state width="1545" height="154" key="GridCell.Tab.0.bottom" timestamp="1587488647421">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1865" height="264" key="GridCell.Tab.0.bottom/0.0.1600.860/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1587446516509" />
+    <state width="1545" height="154" key="GridCell.Tab.0.bottom/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1587488647421" />
+    <state width="1545" height="259" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1587390550941" />
+    <state width="1545" height="154" key="GridCell.Tab.0.center" timestamp="1587488647421">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1865" height="264" key="GridCell.Tab.0.center/0.0.1600.860/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1587446516509" />
+    <state width="1545" height="154" key="GridCell.Tab.0.center/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1587488647421" />
+    <state width="1545" height="259" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1587390550941" />
+    <state width="1545" height="154" key="GridCell.Tab.0.left" timestamp="1587488647421">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1865" height="264" key="GridCell.Tab.0.left/0.0.1600.860/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1587446516508" />
+    <state width="1545" height="154" key="GridCell.Tab.0.left/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1587488647421" />
+    <state width="1545" height="259" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1587390550941" />
+    <state width="1545" height="154" key="GridCell.Tab.0.right" timestamp="1587488647421">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1865" height="264" key="GridCell.Tab.0.right/0.0.1600.860/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1587446516509" />
+    <state width="1545" height="154" key="GridCell.Tab.0.right/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1587488647421" />
+    <state width="1545" height="259" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1587390550941" />
+    <state width="1545" height="228" key="GridCell.Tab.1.bottom" timestamp="1587473138221">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1545" height="228" key="GridCell.Tab.1.bottom/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1587473138221" />
+    <state width="1545" height="259" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1587390550941" />
+    <state width="1545" height="228" key="GridCell.Tab.1.center" timestamp="1587473138221">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1545" height="228" key="GridCell.Tab.1.center/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1587473138221" />
+    <state width="1545" height="259" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1587390550941" />
+    <state width="1545" height="228" key="GridCell.Tab.1.left" timestamp="1587473138221">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1545" height="228" key="GridCell.Tab.1.left/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1587473138221" />
+    <state width="1545" height="259" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1587390550941" />
+    <state width="1545" height="228" key="GridCell.Tab.1.right" timestamp="1587473138221">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1545" height="228" key="GridCell.Tab.1.right/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1587473138221" />
+    <state width="1545" height="259" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1587390550941" />
+    <state x="372" y="192" key="run.anything.popup" timestamp="1587319754738">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="372" y="192" key="run.anything.popup/0.0.1600.860@0.0.1600.860" timestamp="1587319754738" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Loader.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
