@@ -19,16 +19,19 @@
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74551ef3-e027-45c0-ba92-5e70ee5f73c4" name="Default" comment="added solution CountProfitRegex">
-      <change afterPath="$PROJECT_DIR$/src/WordsRegexOut.java" afterDir="false" />
+    <list default="true" id="74551ef3-e027-45c0-ba92-5e70ee5f73c4" name="Default" comment="added solution WordsRegexOut.java">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FullNameRegex2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Words100.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FullNameRegex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FullNameRegex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Loader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,17 +60,18 @@
     <property name="FullScreen" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last.edited.regexp" value="123" />
+    <property name="last.edited.regexp" value="111 111 111" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="recentsLimit" value="5" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Application.WordsRegexOut">
+  <component name="RunManager" selected="Application.FullNameRegex">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="ACTIVITY_CLASS" value="" />
@@ -115,14 +119,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CountProfit" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CountProfit" />
-      <module name="StringExperiments" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="CountProfitRegex" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CountProfitRegex" />
       <module name="StringExperiments" />
@@ -131,24 +127,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FullName" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FullName" />
+      <module name="StringExperiments" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FullNameRegex" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FullNameRegex" />
+      <module name="StringExperiments" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FullNameRegex2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FullNameRegex2" />
+      <module name="StringExperiments" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Loader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Loader" />
-      <module name="StringExperiments" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RegexDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="RegexDemo" />
-      <module name="StringExperiments" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WordsRegexOut" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="WordsRegexOut" />
       <module name="StringExperiments" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -188,11 +192,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.WordsRegexOut" />
-        <item itemvalue="Application.CountProfitRegex" />
+        <item itemvalue="Application.FullNameRegex" />
+        <item itemvalue="Application.FullNameRegex2" />
+        <item itemvalue="Application.FullName" />
         <item itemvalue="Application.Loader" />
-        <item itemvalue="Application.CountProfit" />
-        <item itemvalue="Application.RegexDemo" />
+        <item itemvalue="Application.CountProfitRegex" />
       </list>
     </recent_temporary>
   </component>
@@ -214,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587489090273</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added solution WordsRegexOut.java">
+      <created>1587561741814</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1587561741814</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -228,7 +239,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="origin/master" />
                       </list>
                     </value>
                   </entry>
@@ -251,9 +262,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added solution CountProfitRegex" />
-    <option name="LAST_COMMIT_MESSAGE" value="added solution CountProfitRegex" />
+    <MESSAGE value="added solution WordsRegexOut.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="added solution WordsRegexOut.java" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="152" y="0" key="#Project_Structure" timestamp="1587970314862">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="152" y="0" key="#Project_Structure/0.0.1600.860@0.0.1600.860" timestamp="1587970314862" />
     <state x="618" y="301" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1586334289570">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -262,54 +278,54 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1586334336736" />
-    <state width="1545" height="154" key="GridCell.Tab.0.bottom" timestamp="1587561392469">
+    <state width="1545" height="228" key="GridCell.Tab.0.bottom" timestamp="1588084504063">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="1865" height="264" key="GridCell.Tab.0.bottom/0.0.1600.860/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1587446516509" />
-    <state width="1545" height="154" key="GridCell.Tab.0.bottom/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1587561392469" />
-    <state width="1545" height="259" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1587390550941" />
-    <state width="1545" height="154" key="GridCell.Tab.0.center" timestamp="1587561392468">
+    <state width="1545" height="228" key="GridCell.Tab.0.bottom/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1588084504063" />
+    <state width="1545" height="228" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1587990396237" />
+    <state width="1545" height="228" key="GridCell.Tab.0.center" timestamp="1588084504063">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="1865" height="264" key="GridCell.Tab.0.center/0.0.1600.860/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1587446516509" />
-    <state width="1545" height="154" key="GridCell.Tab.0.center/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1587561392468" />
-    <state width="1545" height="259" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1587390550941" />
-    <state width="1545" height="154" key="GridCell.Tab.0.left" timestamp="1587561392468">
+    <state width="1545" height="228" key="GridCell.Tab.0.center/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1588084504063" />
+    <state width="1545" height="228" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1587990396237" />
+    <state width="1545" height="228" key="GridCell.Tab.0.left" timestamp="1588084504063">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="1865" height="264" key="GridCell.Tab.0.left/0.0.1600.860/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1587446516508" />
-    <state width="1545" height="154" key="GridCell.Tab.0.left/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1587561392468" />
-    <state width="1545" height="259" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1587390550941" />
-    <state width="1545" height="154" key="GridCell.Tab.0.right" timestamp="1587561392468">
+    <state width="1545" height="228" key="GridCell.Tab.0.left/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1588084504063" />
+    <state width="1545" height="228" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1587990396237" />
+    <state width="1545" height="228" key="GridCell.Tab.0.right" timestamp="1588084504063">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="1865" height="264" key="GridCell.Tab.0.right/0.0.1600.860/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1587446516509" />
-    <state width="1545" height="154" key="GridCell.Tab.0.right/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1587561392468" />
-    <state width="1545" height="259" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1587390550941" />
-    <state width="1545" height="228" key="GridCell.Tab.1.bottom" timestamp="1587489157058">
+    <state width="1545" height="228" key="GridCell.Tab.0.right/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1588084504063" />
+    <state width="1545" height="228" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1587990396237" />
+    <state width="1545" height="228" key="GridCell.Tab.1.bottom" timestamp="1588084504064">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1545" height="228" key="GridCell.Tab.1.bottom/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1587489157058" />
-    <state width="1545" height="259" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1587390550941" />
-    <state width="1545" height="228" key="GridCell.Tab.1.center" timestamp="1587489157058">
+    <state width="1545" height="228" key="GridCell.Tab.1.bottom/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1588084504064" />
+    <state width="1545" height="228" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1587990396237" />
+    <state width="1545" height="228" key="GridCell.Tab.1.center" timestamp="1588084504064">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1545" height="228" key="GridCell.Tab.1.center/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1587489157058" />
-    <state width="1545" height="259" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1587390550941" />
-    <state width="1545" height="228" key="GridCell.Tab.1.left" timestamp="1587489157057">
+    <state width="1545" height="228" key="GridCell.Tab.1.center/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1588084504064" />
+    <state width="1545" height="228" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1587990396237" />
+    <state width="1545" height="228" key="GridCell.Tab.1.left" timestamp="1588084504063">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1545" height="228" key="GridCell.Tab.1.left/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1587489157057" />
-    <state width="1545" height="259" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1587390550941" />
-    <state width="1545" height="228" key="GridCell.Tab.1.right" timestamp="1587489157058">
+    <state width="1545" height="228" key="GridCell.Tab.1.left/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1588084504063" />
+    <state width="1545" height="228" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1587990396237" />
+    <state width="1545" height="228" key="GridCell.Tab.1.right" timestamp="1588084504064">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1545" height="228" key="GridCell.Tab.1.right/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1587489157058" />
-    <state width="1545" height="259" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1587390550941" />
-    <state x="292" y="98" key="Vcs.Push.Dialog.v2" timestamp="1587489096575">
+    <state width="1545" height="228" key="GridCell.Tab.1.right/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1588084504064" />
+    <state width="1545" height="228" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1587990396237" />
+    <state x="292" y="98" key="Vcs.Push.Dialog.v2" timestamp="1587561759322">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="292" y="98" key="Vcs.Push.Dialog.v2/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1587489096574" />
+    <state x="292" y="98" key="Vcs.Push.Dialog.v2/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1587561759322" />
     <state x="372" y="192" key="run.anything.popup" timestamp="1587319754738">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -322,6 +338,21 @@
           <url>file://$PROJECT_DIR$/src/Loader.java</url>
           <line>15</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/CountProfitRegex.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/FullNameRegex.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/FullNameRegex2.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -7,18 +7,17 @@ public class FullNameRegex {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите фамилию, имя и отчество: ");
         String text = scanner.nextLine();
-        String word;
 
-        String regex = "([a-zA-Z])";
+        String[] wordArray = text.split("\\s*(\\s|,|!|\\.|[0-9])\\s*");
 
-        Pattern pattern = Pattern.compile(regex);
-        Matcher matcher = pattern.matcher(text);
-        while (matcher.find()){
-            System.out.println();
+        if (wordArray.length != 3){
+            System.out.println("Данные введены неверно");
+            return;
         }
 
-
-
+        System.out.println("Фамилия: " + wordArray[0]);
+        System.out.println("Имя: " + wordArray[1]);
+        System.out.println("Отчество: " + wordArray[2]);
 
     }
 }

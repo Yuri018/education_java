@@ -13,7 +13,7 @@ public class Loader
         int count = 0;
         int result = 0;
 
-        Pattern pattern = Pattern.compile("(\\d+)");
+        Pattern pattern = Pattern.compile("z");
         Matcher matcher = pattern.matcher(text);
         while (matcher.find()){
             intArray[count] = Integer.parseInt(matcher.group());
