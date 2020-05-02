@@ -19,19 +19,16 @@
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74551ef3-e027-45c0-ba92-5e70ee5f73c4" name="Default" comment="added solution WordsRegexOut.java">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FullNameRegex2.java" afterDir="false" />
+    <list default="true" id="74551ef3-e027-45c0-ba92-5e70ee5f73c4" name="Default" comment="added solution FullNameRegex.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FullNameRegex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FullNameRegex.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Loader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NumberPhoneRegex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NumberPhoneRegex.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,8 +59,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last.edited.regexp" value="111 111 111" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last.edited.regexp" value="sss ddd fff " />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Java materials/Skillbox_test/04_Числа_строки_и_даты" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -71,7 +68,7 @@
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Application.FullNameRegex">
+  <component name="RunManager" selected="Application.NumberPhoneRegex">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="ACTIVITY_CLASS" value="" />
@@ -119,14 +116,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CountProfitRegex" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CountProfitRegex" />
-      <module name="StringExperiments" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="FullName" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="FullName" />
       <module name="StringExperiments" />
@@ -153,6 +142,14 @@
     </configuration>
     <configuration name="Loader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Loader" />
+      <module name="StringExperiments" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NumberPhoneRegex" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="NumberPhoneRegex" />
       <module name="StringExperiments" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -192,11 +189,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.FullNameRegex" />
+        <item itemvalue="Application.NumberPhoneRegex" />
         <item itemvalue="Application.FullNameRegex2" />
+        <item itemvalue="Application.FullNameRegex" />
         <item itemvalue="Application.FullName" />
         <item itemvalue="Application.Loader" />
-        <item itemvalue="Application.CountProfitRegex" />
       </list>
     </recent_temporary>
   </component>
@@ -225,7 +222,21 @@
       <option name="project" value="LOCAL" />
       <updated>1587561741814</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added solution FullNameRegex.java">
+      <created>1588085989488</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1588085989488</updated>
+    </task>
+    <task id="LOCAL-00004" summary="arbeiten an aufgaben NumberPhoneRegex">
+      <created>1588178511551</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1588178511551</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -239,7 +250,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/master" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>
@@ -263,7 +274,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added solution CountProfitRegex" />
     <MESSAGE value="added solution WordsRegexOut.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="added solution WordsRegexOut.java" />
+    <MESSAGE value="added solution FullNameRegex.java" />
+    <MESSAGE value="arbeiten an aufgaben NumberPhoneRegex" />
+    <option name="LAST_COMMIT_MESSAGE" value="arbeiten an aufgaben NumberPhoneRegex" />
   </component>
   <component name="WindowStateProjectService">
     <state x="152" y="0" key="#Project_Structure" timestamp="1587970314862">
@@ -274,58 +287,64 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="618" y="301" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.824@0.0.1536.824" timestamp="1586334289570" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1586334336736">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="572" y="174" key="FileChooserDialogImpl" timestamp="1588310647343">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1586334336736" />
-    <state width="1545" height="228" key="GridCell.Tab.0.bottom" timestamp="1588084504063">
+    <state x="572" y="174" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1588310647343" />
+    <state width="1545" height="153" key="GridCell.Tab.0.bottom" timestamp="1588427457055">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1865" height="264" key="GridCell.Tab.0.bottom/0.0.1600.860/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1587446516509" />
-    <state width="1545" height="228" key="GridCell.Tab.0.bottom/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1588084504063" />
-    <state width="1545" height="228" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1587990396237" />
-    <state width="1545" height="228" key="GridCell.Tab.0.center" timestamp="1588084504063">
+    <state width="1865" height="292" key="GridCell.Tab.0.bottom/0.0.1600.860/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588254687453" />
+    <state width="1545" height="228" key="GridCell.Tab.0.bottom/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1588086026782" />
+    <state width="1545" height="153" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1588427457055" />
+    <state width="1545" height="153" key="GridCell.Tab.0.center" timestamp="1588427457055">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1865" height="264" key="GridCell.Tab.0.center/0.0.1600.860/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1587446516509" />
-    <state width="1545" height="228" key="GridCell.Tab.0.center/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1588084504063" />
-    <state width="1545" height="228" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1587990396237" />
-    <state width="1545" height="228" key="GridCell.Tab.0.left" timestamp="1588084504063">
+    <state width="1865" height="292" key="GridCell.Tab.0.center/0.0.1600.860/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588254687452" />
+    <state width="1545" height="228" key="GridCell.Tab.0.center/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1588086026782" />
+    <state width="1545" height="153" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1588427457055" />
+    <state width="1545" height="153" key="GridCell.Tab.0.left" timestamp="1588427457055">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1865" height="264" key="GridCell.Tab.0.left/0.0.1600.860/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1587446516508" />
-    <state width="1545" height="228" key="GridCell.Tab.0.left/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1588084504063" />
-    <state width="1545" height="228" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1587990396237" />
-    <state width="1545" height="228" key="GridCell.Tab.0.right" timestamp="1588084504063">
+    <state width="1865" height="292" key="GridCell.Tab.0.left/0.0.1600.860/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588254687452" />
+    <state width="1545" height="228" key="GridCell.Tab.0.left/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1588086026782" />
+    <state width="1545" height="153" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1588427457055" />
+    <state width="1545" height="153" key="GridCell.Tab.0.right" timestamp="1588427457055">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1865" height="264" key="GridCell.Tab.0.right/0.0.1600.860/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1587446516509" />
-    <state width="1545" height="228" key="GridCell.Tab.0.right/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1588084504063" />
-    <state width="1545" height="228" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1587990396237" />
-    <state width="1545" height="228" key="GridCell.Tab.1.bottom" timestamp="1588084504064">
+    <state width="1865" height="292" key="GridCell.Tab.0.right/0.0.1600.860/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588254687453" />
+    <state width="1545" height="228" key="GridCell.Tab.0.right/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1588086026782" />
+    <state width="1545" height="153" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1588427457055" />
+    <state width="1545" height="227" key="GridCell.Tab.1.bottom" timestamp="1588405040471">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1545" height="228" key="GridCell.Tab.1.bottom/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1588084504064" />
-    <state width="1545" height="228" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1587990396237" />
-    <state width="1545" height="228" key="GridCell.Tab.1.center" timestamp="1588084504064">
+    <state width="1865" height="292" key="GridCell.Tab.1.bottom/0.0.1600.860/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588254687453" />
+    <state width="1545" height="228" key="GridCell.Tab.1.bottom/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1588086026783" />
+    <state width="1545" height="227" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1588405040471" />
+    <state width="1545" height="227" key="GridCell.Tab.1.center" timestamp="1588405040471">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1545" height="228" key="GridCell.Tab.1.center/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1588084504064" />
-    <state width="1545" height="228" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1587990396237" />
-    <state width="1545" height="228" key="GridCell.Tab.1.left" timestamp="1588084504063">
+    <state width="1865" height="292" key="GridCell.Tab.1.center/0.0.1600.860/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588254687453" />
+    <state width="1545" height="228" key="GridCell.Tab.1.center/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1588086026782" />
+    <state width="1545" height="227" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1588405040471" />
+    <state width="1545" height="227" key="GridCell.Tab.1.left" timestamp="1588405040471">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1545" height="228" key="GridCell.Tab.1.left/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1588084504063" />
-    <state width="1545" height="228" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1587990396237" />
-    <state width="1545" height="228" key="GridCell.Tab.1.right" timestamp="1588084504064">
+    <state width="1865" height="292" key="GridCell.Tab.1.left/0.0.1600.860/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588254687453" />
+    <state width="1545" height="228" key="GridCell.Tab.1.left/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1588086026782" />
+    <state width="1545" height="227" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1588405040471" />
+    <state width="1545" height="227" key="GridCell.Tab.1.right" timestamp="1588405040471">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1545" height="228" key="GridCell.Tab.1.right/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1588084504064" />
-    <state width="1545" height="228" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1587990396237" />
-    <state x="292" y="98" key="Vcs.Push.Dialog.v2" timestamp="1587561759322">
-      <screen x="0" y="0" width="1600" height="860" />
+    <state width="1865" height="292" key="GridCell.Tab.1.right/0.0.1600.860/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588254687453" />
+    <state width="1545" height="228" key="GridCell.Tab.1.right/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1588086026782" />
+    <state width="1545" height="227" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1588405040471" />
+    <state x="-1570" y="119" key="Vcs.Push.Dialog.v2" timestamp="1588178515549">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="292" y="98" key="Vcs.Push.Dialog.v2/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1587561759322" />
+    <state x="-1570" y="119" key="Vcs.Push.Dialog.v2/0.0.1600.860/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588178515549" />
+    <state x="292" y="98" key="Vcs.Push.Dialog.v2/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1588085993669" />
     <state x="372" y="192" key="run.anything.popup" timestamp="1587319754738">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -335,24 +354,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Loader.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/CountProfitRegex.java</url>
           <line>11</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/FullNameRegex.java</url>
-          <line>10</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/FullNameRegex2.java</url>
-          <line>10</line>
-          <option name="timeStamp" value="9" />
+          <url>file://$PROJECT_DIR$/src/NumberPhoneRegex.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -9,13 +9,18 @@ public class NumberPhoneRegex {
         Scanner scanner = new Scanner(System.in);
         String number = scanner.nextLine();
 
-        String regex = "^((8|\\+7)[\\- ]?)?(\\(?\\d{3,4}\\)?[\\- ]?)?[\\d\\- ]{5,10}$";
-//        String regex =   "^((8|\\+7)[\\- ]?)?(\\(?\\d{3}\\)?[\\- ]?)?[\\d\\- ]{7,10}$";
-        Pattern pattern = Pattern.compile(regex);
-        Matcher matcher = pattern.matcher(number);
-        if (matcher.find()){
-            System.out.println(matcher.group(0));
-        }
 
+
+        number = number.replaceAll("[^\\d]", "");
+        if (number.length() != 11) {
+            if (number.length() < 11) {
+                System.out.println("Мало цифр" + " " + number.length());
+            }else
+                System.out.println("Много цифр" + " " + number.length());
+        }
+        String formatNumber = number.replaceAll("(\\d)(\\d{3})(\\d{3})(\\d{2})(\\d{2})",
+                "+7 ($2) $3-$4-$5");
+        System.out.println(formatNumber);
     }
-}
+ }
+
