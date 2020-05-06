@@ -8,13 +8,15 @@ public class FullNameRegex2 {
         System.out.println("Введите фамилию, имя и отчество: ");
         final String text = scanner.nextLine();
 
-        final String regex = "^([0-9]+) ([0-9]+) ([0-9]+)$";
+        final String regex = "([а-яА-ЯёЁ[-]?]+[\\s*]?) ([а-яА-ЯёЁ\\s*]+) ([а-яА-ЯёЁ\\s*]+)";
         final Pattern pattern = Pattern.compile(regex);
         final Matcher matcher = pattern.matcher(text);
         if (matcher.find()){
-            System.out.println(matcher.group(1));
-            System.out.println(matcher.group(2));
-            System.out.println(matcher.group(3));
-        }
+//            System.out.println(matcher.groupCount());// проверка количества групп
+            System.out.println("Фамилия: " + matcher.group(1));
+            System.out.println("Имя: " + matcher.group(2));
+            System.out.println("Отчество: " + matcher.group(3));
+        }else
+            System.out.println("Данные введены неверно");
     }
 }
