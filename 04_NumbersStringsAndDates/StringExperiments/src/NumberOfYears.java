@@ -10,17 +10,13 @@ public class NumberOfYears {
         SimpleDateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy - день недели - EEEE");
         Calendar birthday = new GregorianCalendar(1968, Calendar.OCTOBER, 23);
         Calendar currentDay = new GregorianCalendar();
+        int year = birthday.get(Calendar.YEAR);
+        int age = 0;
 
-        int a = birthday.get(Calendar.YEAR);
-        int b = currentDay.get(Calendar.YEAR);
-        int c = b - a;
-
-        System.out.println("День рождения: " + dateFormat.format(birthday.getTime()));
-        System.out.println("Сегодня: " + dateFormat.format(currentDay.getTime()));
-
-        for (int i = 0; i < (c); i++){
-            birthday.set(Calendar.YEAR, (a + i));
-            System.out.println("Возраст: " + i + ". Дата: " + dateFormat.format(birthday.getTime()));
+        while (birthday.before(currentDay)){
+            birthday.set(Calendar.YEAR, year++);
+            System.out.println(age + " " + dateFormat.format(birthday.getTime()));
+            age++;
         }
     }
 }
