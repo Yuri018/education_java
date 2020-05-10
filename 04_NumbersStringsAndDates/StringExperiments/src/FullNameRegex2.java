@@ -8,7 +8,7 @@ public class FullNameRegex2 {
         System.out.println("Введите фамилию, имя и отчество: ");
         final String text = scanner.nextLine();
 
-        final String regex = "([а-яА-ЯёЁ[-]?]+[\\s*]?) ([а-яА-ЯёЁ\\s*]+) ([а-яА-ЯёЁ\\s*]+)";
+        final String regex = "([а-яА-ЯёЁ[-]?]+)\\s*([а-яА-ЯёЁ]+)\\s*([а-яА-ЯёЁ]+)";
         final Pattern pattern = Pattern.compile(regex);
         final Matcher matcher = pattern.matcher(text);
         if (matcher.find()){
