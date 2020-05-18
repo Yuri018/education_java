@@ -11,8 +11,8 @@ public class TemperatureArray {
             average = sum / temperatureArray.length;
         }
         for (int i = 0; i < temperatureArray.length; i++) {
-            System.out.printf("Температура пациента %d: %.1f %n",(i + 1) , temperatureArray[i]);
+            System.out.printf("Пациент %d: %.1f\u00B0C; %n",(i + 1) , temperatureArray[i]);
         }
-        System.out.printf("Средняя температура: %.1f", average);
+        System.out.printf("Средняя температура: %.1f\u00B0C", average);
     }
 }
