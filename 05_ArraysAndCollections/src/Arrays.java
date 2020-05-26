@@ -2,6 +2,9 @@ import java.util.Scanner;
 
 public class Arrays {
     public static void main(String[] args) {
+
+        int x = 1;
+
         Scanner scanner = new Scanner(System.in);
         int a = scanner.nextInt();
         int b = scanner.nextInt();
@@ -10,14 +13,14 @@ public class Arrays {
         //инициялизация (заполнение) массива
         for (int i = 0; i < array2.length; i++) {
             for (int j = 0; j < array2.length; j++) {
-                array2[i][j] = i * j + 1;
+                array2[i][j] = x;
             }
         }
         for (int i = 0; i < a; i++) {
             for (int j = 0; j < b; j++) {
                 System.out.print(" " + array2 [i][j]);
             }
-            System.out.println("\n");
+            System.out.println();
         }
     }
 }
