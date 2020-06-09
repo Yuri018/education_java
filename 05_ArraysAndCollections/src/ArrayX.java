@@ -1,6 +1,6 @@
 public class ArrayX {
     public static void main(String[] args) {
-        int n = 7;
+        int n = 5;
         String[][] letterX = new String[n][n];
         for (int i = 0; i < letterX.length; i++) {
             for (int j = 0; j < letterX.length; j++) {
@@ -13,7 +13,7 @@ public class ArrayX {
             }
         }
         for (int i = 0; i < letterX.length; i++) {
-            for (int j = 0; j < letterX.length; j++) {
+            for (int j = 0; j < letterX[i].length; j++) {
                 System.out.print(letterX[i][j] + " ");
             }
             System.out.println();
