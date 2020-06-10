@@ -8,20 +8,23 @@ public class Temperature {
     public static void main(String[] args) {
         float[] temperatureArray = new float[PATIENT_COUNT];
         float tempAverage = 0;
-        float tempHealthy = 0;
-        float value = 0;
+        int tempHealthy = 0;
+        float sum = 0;
 
         for (int i = 0; i < temperatureArray.length; i++) {
-
-            value = (float) (Math.random() * (TEMP_MAX - TEMP_MIN) + TEMP_MIN);
-            temperatureArray[i] = value;
-//            System.out.printf("Пациент %d: %.1f\u00B0C; %n", (i + 1), value);
-
+            temperatureArray[i] = (float) (Math.random() * (TEMP_MAX - TEMP_MIN) + TEMP_MIN);
+            if (temperatureArray[i] >= HEALTHY_TEMP_MIN & temperatureArray[i] <= HEALTHY_TEMP_MAX){
+                tempHealthy++;
+            }
+            sum += temperatureArray[i];
+            tempAverage = sum / temperatureArray.length;
         }
-        System.out.println("Температура каждого пациента: ");
+        System.out.println("Температуры пациентов: ");
         for (int i = 0; i < temperatureArray.length; i++) {
-            System.out.printf("Пациент %d: %.1f\u00B0C; %n",(i + 1), temperatureArray[i]);
+            System.out.printf("Пациент %d: %.1f\u00B0C; ",(i + 1), temperatureArray[i]);
         }
+        System.out.printf("\n" + "Средняя температура: %.1f\u00B0C %n", tempAverage);
+        System.out.println("Количество здоровых пациентов: " + tempHealthy);
     }
 
 

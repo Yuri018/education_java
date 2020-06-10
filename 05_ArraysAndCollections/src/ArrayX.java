@@ -4,17 +4,18 @@ public class ArrayX {
         String[][] letterX = new String[n][n];
         for (int i = 0; i < letterX.length; i++) {
             for (int j = 0; j < letterX.length; j++) {
-                letterX[i][i] = "x";
-                letterX[i][(n - 1) - j] = " ";
+//                    letterX[i][(n - 1) - i] = "x";
                 if (i == j){
-                    letterX[i][j] = "x";
-                    letterX[i][n - 1 - j] = "x";
+                    letterX[i][i] = "x";
+                    letterX[i][(n - 1) - i] = "x";
+
                 }
+                else letterX[i][j] = " ";
             }
         }
-        for (int i = 0; i < letterX.length; i++) {
-            for (int j = 0; j < letterX[i].length; j++) {
-                System.out.print(letterX[i][j] + " ");
+        for (String[] x : letterX) {
+            for (String s : x) {
+                System.out.print(s);
             }
             System.out.println();
         }
