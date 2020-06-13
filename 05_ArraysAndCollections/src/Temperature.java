@@ -7,25 +7,35 @@ public class Temperature {
 
     public static void main(String[] args) {
         float[] temperatureArray = new float[PATIENT_COUNT];
-        float tempAverage = 0;
-        int tempHealthy = 0;
-        float sum = 0;
 
         for (int i = 0; i < temperatureArray.length; i++) {
             temperatureArray[i] = (float) (Math.random() * (TEMP_MAX - TEMP_MIN) + TEMP_MIN);
-            if (temperatureArray[i] >= HEALTHY_TEMP_MIN & temperatureArray[i] <= HEALTHY_TEMP_MAX){
-                tempHealthy++;
-            }
-            sum += temperatureArray[i];
-            tempAverage = sum / temperatureArray.length;
         }
         System.out.println("Температуры пациентов: ");
         for (int i = 0; i < temperatureArray.length; i++) {
             System.out.printf("Пациент %d: %.1f\u00B0C; ",(i + 1), temperatureArray[i]);
         }
-        System.out.printf("\n" + "Средняя температура: %.1f\u00B0C %n", tempAverage);
-        System.out.println("Количество здоровых пациентов: " + tempHealthy);
+        System.out.printf("\n" + "Средняя температура: %.1f\u00B0C %n",
+                averageTemperature(temperatureArray));
+        System.out.println("Количество здоровых пациентов: " + getHealthyPatientsCount(temperatureArray));
+
     }
-
-
+    public static float averageTemperature(float[] temperature) {
+        float sum = 0f;
+        float averageTemp = 0f;
+        for (int i = 0; i < temperature.length; i++) {
+            sum += temperature.length;
+            averageTemp = sum / temperature.length;
+        }
+        return averageTemp;
+    }
+    public static int getHealthyPatientsCount(float[] temperature){
+        int healthyCount = 0;
+        for (int i = 0; i < temperature.length; i++) {
+            if (temperature[i] >= HEALTHY_TEMP_MIN & temperature[i] <= HEALTHY_TEMP_MAX){
+                healthyCount++;
+            }
+        }
+        return healthyCount;
+    }
 }
