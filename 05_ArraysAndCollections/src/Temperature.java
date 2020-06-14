@@ -23,16 +23,16 @@ public class Temperature {
     public static float averageTemperature(float[] temperature) {
         float sum = 0f;
         float averageTemp = 0f;
-        for (int i = 0; i < temperature.length; i++) {
-            sum += temperature.length;
+        for (float v : temperature) {
+            sum += v;
             averageTemp = sum / temperature.length;
         }
         return averageTemp;
     }
     public static int getHealthyPatientsCount(float[] temperature){
         int healthyCount = 0;
-        for (int i = 0; i < temperature.length; i++) {
-            if (temperature[i] >= HEALTHY_TEMP_MIN & temperature[i] <= HEALTHY_TEMP_MAX){
+        for (float v : temperature) {
+            if (v >= HEALTHY_TEMP_MIN & v <= HEALTHY_TEMP_MAX) {
                 healthyCount++;
             }
         }
