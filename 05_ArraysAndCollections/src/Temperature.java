@@ -20,6 +20,7 @@ public class Temperature {
         System.out.println("Количество здоровых пациентов: " + getHealthyPatientsCount(temperatureArray));
 
     }
+//Erstellen Sie eine Methode zum Ermitteln des Durchschnittswerts eines Arrays
     public static float averageTemperature(float[] temperature) {
         float sum = 0f;
         float averageTemp = 0f;
@@ -29,6 +30,8 @@ public class Temperature {
         }
         return averageTemp;
     }
+//Erstellen Sie eine Methode zum Bestimmen der angegebenen
+// Werte im Array und fassen Sie die Werte zusammen
     public static int getHealthyPatientsCount(float[] temperature){
         int healthyCount = 0;
         for (float v : temperature) {
