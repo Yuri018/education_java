@@ -10,9 +10,12 @@ public class Main {
       list.add("Zwei");
       list.add("Drei");
       list.add(3, "Vier");
+//заменим элемент "Funf" т.е. метод set удаляет элемент под индексом 0
       list.set(0, "Zehn");
-        for (int i = 0; i < list.size(); i++) {
-            System.out.println(list.get(i));
-        }
+//        for (int i = 0; i < list.size(); i++) {
+//            //размер списка size вместо length и круглые скобки вместо квадратных
+//            System.out.println(list.get(i));
+//        }
+        System.out.println((list.get(1)) + ", " + (list.get(3)));
     }
 }
