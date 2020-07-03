@@ -7,11 +7,9 @@ public class TodoList {
         todoList.add("Встреча в офисе в 10.00");
         todoList.add("Передать данные");
 
+        TodoListManager.printArrayList(todoList);
+//        TodoList mainClass = new TodoList();
+//        mainClass.printArrayList(todoList);
+    }
 
-    }
-    public void printArrayList(ArrayList<String> todoList){
-        for (String list: todoList) {
-            System.out.println(list);
-        }
-    }
 }
