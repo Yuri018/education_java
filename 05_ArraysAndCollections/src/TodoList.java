@@ -7,9 +7,17 @@ public class TodoList {
         todoList.add("Встреча в офисе в 10.00");
         todoList.add("Передать данные");
 
-        TodoListManager.printArrayList(todoList);
-//        TodoList mainClass = new TodoList();
-//        mainClass.printArrayList(todoList);
+        ScannerForTodoList.scan(todoList);
+
+//        while (true){
+//
+//
+//        }
+
+//        TodoListManager.addToArrayList(todoList);
+//        TodoListManager.printArrayList(todoList);
+
+
     }
 
 }
