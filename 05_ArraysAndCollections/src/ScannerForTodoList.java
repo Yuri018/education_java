@@ -1,30 +1,23 @@
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class ScannerForTodoList {
     public static void scan(ArrayList<String> todoList) {
 
+        System.out.println("ввод LIST, ADD");
 
-        while (true){
             Scanner scanner = new Scanner(System.in);
-            System.out.println("ввод LIST, ADD");
+       // regex (add\s*[\d?]*)|(edit\s*[\d?]*)
+            String string = scanner.nextLine();
 
-            switch (scanner.nextLine()){
-                case "LIST":
-                    TodoListManager.printArrayList(todoList);
-                    continue;
+            final Pattern pattern = Pattern.compile("(\\s*add\\s*)([\\d?]*)(\\s*edit\\s*)([\\d?]*)");
+            final Matcher matcher = pattern.matcher(string);
 
-                case "ADD":
-                    TodoListManager.addToArrayList(todoList);
-                    continue;
-
-                    default:
-                    System.out.println("exit");
-                    break;
+            while (matcher.find()){
+                TodoListManager.printArrayList(todoList);
             }
-            scanner.close();
-            break;
-        }
 
     }
 }
