@@ -16,46 +16,31 @@ public class Test {
             add(4, "Отправиться на работу");
         }};
 
-        Iterator<String> iterator = todoList.iterator();
-        while (iterator.hasNext()){
-            String string = iterator.next();
-            System.out.println(string);
+        while (true) {
+            Scanner sc = new Scanner(System.in);
+            switch (sc.nextLine()) {
+                case "LIST":
+                    System.out.println("Ваш список дел: " + todoList);
+                    continue;
+
+                case "ADD":
+                    System.out.println("Добавить дело в список: ");
+                    todoList.add(sc.nextLine());
+                    System.out.println("Дело добавленно!" + " номер в списке: " + todoList.size());
+                    continue;
+
+                case "DELETE":
+                    System.out.println("Удалить дело из списка: ");
+                    todoList.remove(sc.nextInt() - 1);
+                    System.out.println("Дело удалено! " + todoList.size());
+                    continue;
+
+                default:
+                    System.out.println("Давайте выберем действие!");
+                    break;
+            }
+            sc.close();
         }
-        System.out.println("_____________________");
-
-        for (int i = 0; i < todoList.size(); i++) {
-            System.out.println(todoList.get(i));
-        }
-        System.out.println("_____________________");
-
-        System.out.println(todoList);
-
-
-//        while (true) {
-//            Scanner sc = new Scanner(System.in);
-//            switch (sc.nextLine()) {
-//                case "LIST":
-//                    System.out.println("Ваш список дел: " + todoList);
-//                    continue;
-//
-//                case "ADD":
-//                    System.out.println("Добавить дело в список: ");
-//                    todoList.add(sc.nextLine());
-//                    System.out.println("Дело добавленно!" + " номер в списке: " + todoList.size());
-//                    continue;
-//
-//                case "DELETE":
-//                    System.out.println("Удалить дело из списка: ");
-//                    todoList.remove(sc.nextInt() - 1);
-//                    System.out.println("Дело удалено! " + todoList.size());
-//                    continue;
-//
-//                default:
-//                    System.out.println("Давайте выберем действие!");
-//                    break;
-//            }
-//            sc.close();
-//        }
 
     }
 }

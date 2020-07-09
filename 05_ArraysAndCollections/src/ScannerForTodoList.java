@@ -6,17 +6,28 @@ import java.util.regex.Pattern;
 public class ScannerForTodoList {
     public static void scan(ArrayList<String> todoList) {
 
-        System.out.println("ввод LIST, ADD");
+        System.out.println("ввод команды LIST, ADD");
 
             Scanner scanner = new Scanner(System.in);
        // regex (add\s*[\d?]*)|(edit\s*[\d?]*)
             String string = scanner.nextLine();
 
-            final Pattern pattern = Pattern.compile("(\\s*add\\s*)([\\d?]*)(\\s*edit\\s*)([\\d?]*)");
+            final Pattern pattern = Pattern.compile("(\\s*list\\s*)|(\\s*add\\s*)");
             final Matcher matcher = pattern.matcher(string);
 
             while (matcher.find()){
-                TodoListManager.printArrayList(todoList);
+                switch (matcher.group()){
+                    case "add":
+                        TodoListManager.addToArrayList(todoList);
+                        continue;
+                    case "list":
+                        TodoListManager.printArrayList(todoList);
+                        continue;
+                    default:
+                        ScannerForTodoList.scan(todoList);
+                        break;
+                }
+                scanner.close();
             }
 
     }

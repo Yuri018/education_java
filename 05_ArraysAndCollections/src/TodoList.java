@@ -9,13 +9,8 @@ public class TodoList {
 
         ScannerForTodoList.scan(todoList);
 
-//        while (true){
-//
-//
-//        }
-
 //        TodoListManager.addToArrayList(todoList);
-//        TodoListManager.printArrayList(todoList);
+        TodoListManager.printArrayList(todoList);
 
 
     }
