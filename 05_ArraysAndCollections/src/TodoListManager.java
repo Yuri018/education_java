@@ -9,10 +9,12 @@ public class TodoListManager {
         }
     }
 
-    public static void addToArrayList(ArrayList<String> todoList){
-        System.out.println("ввод дела");
-        Scanner scanner = new Scanner(System.in);
-        todoList.add(scanner.nextLine());
+    public static void addToArrayList(ArrayList<String> todoList, String todoText){
+        todoList.add(todoText);
+    }
+    public static void addToArrayList(ArrayList<String> todoList, Integer number, String todoText){
+
+        todoList.add(number, todoText);
     }
 
 }
