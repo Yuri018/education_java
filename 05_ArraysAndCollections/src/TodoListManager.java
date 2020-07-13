@@ -13,8 +13,10 @@ public class TodoListManager {
         todoList.add(todoText);
     }
     public static void addToArrayList(ArrayList<String> todoList, Integer number, String todoText){
-
-        todoList.add(number, todoText);
+        if (number <= todoList.size()){
+            todoList.add(number - 1, todoText);
+        }if (number > todoList.size()){
+            todoList.add(todoText);
+        }
     }
-
 }
