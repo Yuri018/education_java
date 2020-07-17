@@ -9,7 +9,10 @@ public class TodoList {
         todoList.add("Встреча в офисе в 10.00");
         todoList.add("Передать данные");
 
-        System.out.println("ввод команды LIST, ADD, EDIT, DELETE");
+        System.out.println("Инструкция:\nкоманда LIST - просмотр событий \n" +
+                "команда ADD - добавление события \n" +
+                "команда EDIT - редактирование события \n" +
+                "команда DELETE удаление события");
         ScannerForTodoList.scan(todoList);
 
     }

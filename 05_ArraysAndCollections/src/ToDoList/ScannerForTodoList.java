@@ -12,7 +12,7 @@ public class ScannerForTodoList {
             String string = scanner.nextLine();
 
             final Pattern pattern = Pattern.compile
-                    ("^(add|list|edit|delete|exit)(?:[ \\t]+(\\d+))?(?:[ \\t]+(.+))?$");
+                    ("^(\\s*add|list|edit|delete|exit)(?:[ \\t]*(\\d+))?(?:[ \\t]*(.+))?$");
             final Matcher matcher = pattern.matcher(string);
 
             while (matcher.find()){
@@ -24,11 +24,14 @@ public class ScannerForTodoList {
                 }
                 switch (matcher.group(1)){
                     case "add":
-                        if (eventNumber != null){
+                        if (eventNumber != null && userText != null){
                             TodoListManager.addToArrayList(todoList, eventNumber, userText);
-                        }
-                        else {
-                            TodoListManager.addToArrayList(todoList, userText);
+                            break;
+                        }if (eventNumber == null && userText != null) {
+                        TodoListManager.addToArrayList(todoList, userText);
+                    } else {
+                            System.out.println("плохо");
+                            ScannerForTodoList.scan(todoList);
                         }
                         break;
 
@@ -37,26 +40,31 @@ public class ScannerForTodoList {
                         break;
 
                     case "edit":
-                        if (eventNumber != null){
+                        if (eventNumber != null && userText != null){
                             TodoListManager.editArrayList(todoList, eventNumber, userText);
                         }else {
-                            System.out.println("Введите номер и новое событие");
+                            System.out.println("Для редактирования события введите" +
+                                    " 1. EDIT 2. номер события 3. Новое событие");
                             ScannerForTodoList.scan(todoList);
                         }
                         break;
+
                     case "delete":
                         if (eventNumber != null && eventNumber <= todoList.size()){
                             TodoListManager.delEvent(todoList, eventNumber);
                         }else {
-                            System.out.println("Нужен номер события для удаления");
+                            System.out.println("Для удаления события введите" +
+                                    " 1. DELETE 2. номер события");
                             ScannerForTodoList.scan(todoList);
                         }
                         break;
                     case "exit":
                         TodoListManager.exitTodoList(todoList);
-                        break;
-                }scanner.close();
+                        return;
+                }
+                System.out.println("Чтобы продолжить введите команду");
+                ScannerForTodoList.scan(todoList);
 
-            }
+            }scanner.close();
     }
 }
