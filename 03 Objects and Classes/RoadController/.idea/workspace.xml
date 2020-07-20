@@ -2,23 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c231ce39-21c2-4bee-9a12-9fac9e2dfe2c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/../../01 Introductory module/MyProject/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../01 Introductory module/RoadCamera/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/03 Objects and Classes.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01 Introductory module/MyProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../01 Introductory module/MyProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01 Introductory module/MyProject/MyProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../01 Introductory module/MyProject/MyProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01 Introductory module/MyProject/out/production/MyProject/META-INF/MyProject.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01 Introductory module/MyProject/src/main/java/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../01 Introductory module/MyProject/src/main/java/Loader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01 Introductory module/RoadCamera/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../01 Introductory module/RoadCamera/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01 Introductory module/RoadCamera/RoadCamera.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../01 Introductory module/RoadCamera/RoadCamera.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01 Introductory module/RoadCamera/out/production/RoadCamera/META-INF/RoadCamera.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01 Introductory module/RoadCamera/src/main/java/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../01 Introductory module/RoadCamera/src/main/java/Loader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../02 Language Syntax/Booleans/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../02 Language Syntax/Booleans/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../02 Language Syntax/Booleans/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../02 Language Syntax/Booleans/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../02 Language Syntax/CoffeeMachine/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../02 Language Syntax/CoffeeMachine/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../02 Language Syntax/WhileCycle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../02 Language Syntax/WhileCycle/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cat/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Cat/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Cat/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Cat/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_ArraysAndCollections/src/ToDoList/ScannerForTodoList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../05_ArraysAndCollections/src/ToDoList/ScannerForTodoList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_ArraysAndCollections/src/ToDoList/TodoListManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../05_ArraysAndCollections/src/ToDoList/TodoListManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,13 +19,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="Bundled (Maven 3)" />
-      </MavenGeneralSettings>
-    </option>
   </component>
   <component name="ProjectId" id="1ZAVhCNMPKu8i62WVPk1c2zn18y" />
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -73,14 +52,15 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="FullScreen" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549966201469" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../M2/Booleans" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
