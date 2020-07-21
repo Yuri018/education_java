@@ -1,12 +1,12 @@
 package ToDoList;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class ToDoList {
 
+    //создаем экземпляр класса ToDoListManager
     private static final ToDoListManager tdlManager = new ToDoListManager();
 
     public static void main(String[] args) {
@@ -19,10 +19,10 @@ public class ToDoList {
                 "команда DELETE - удаление события \nкоманда EXIT - выход из программы \n" +
                 "_________________________________\nВведите команду");
 
-        scan(tdlManager.getToDoList());// обращение к методу scan
+        scan();// обращение к методу scan
     }
 
-    public static void scan(ArrayList<String> toDoList) {
+    public static void scan() {
         Scanner scanner = new Scanner(System.in);
         String string = scanner.nextLine();
         final Pattern pattern = Pattern.compile
@@ -38,11 +38,11 @@ public class ToDoList {
 
             switch (matcher.group(1)) {
                 case "list"://вызов метода печати списка событий
-                    tdlManager.printArrayList(toDoList);
+                    tdlManager.printArrayList();
                     break;
                 case "add"://проверяем корректность и варианты ввода команды
                     if (eventNumber != null && userText != null) {
-                        tdlManager.addToArrayList(toDoList, eventNumber, userText);
+                        tdlManager.addToArrayList(eventNumber, userText);
                         break;
                     }
                     if (eventNumber == null && userText != null) {
@@ -50,27 +50,21 @@ public class ToDoList {
                     } else {
                         System.out.println("Для добавления события введите" +
                                 " 1. ADD 2. номер события (если необходимо) 3. Новое событие");
-                        scan(toDoList);
+                        scan();
                     }
                     break;
                 case "edit"://проверяем корректность и варианты ввода команды
-                    if (eventNumber != null && userText != null) {
-                        tdlManager.editArrayList(toDoList, eventNumber, userText);
-                    } else {
-                        System.out.println("Для редактирования события введите" +
-                                " 1. EDIT 2. номер события 3. Новое событие");
-                        scan(toDoList);
-                    }
+                    tdlManager.editArrayList(eventNumber, userText);
                     break;
                 case "delete":// вызываем метод удаления события
-                    tdlManager.delEvent(toDoList, eventNumber);
+                    tdlManager.delEvent(eventNumber);
                     break;
                 case "exit":// вызываем метод выхода из программы
-                    tdlManager.exitTodoList(toDoList);
+                    tdlManager.exitTodoList();
                     return;
             }
             System.out.println("Чтобы продолжить введите команду");
-            scan(toDoList);
+            scan();
 
         }
         scanner.close();
