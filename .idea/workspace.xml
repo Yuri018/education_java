@@ -20,23 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e868a428-28e9-4b28-90c0-7ac4bc506a6a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/05_ArraysAndCollections/src/Loader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01 Introductory module/MyProject/MyProject.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01 Introductory module/RoadCamera/RoadCamera.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02 Language Syntax/Booleans/Booleans.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02 Language Syntax/CoffeeMachine/CoffeeMachine.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02 Language Syntax/DistributeAge/DistributeAge.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02 Language Syntax/IncomeCalculator/IncomeCalculator.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02 Language Syntax/TicketWithFor/TicketWithFor.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02 Language Syntax/TicketWithWhile/TicketWithWhile.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02 Language Syntax/WhileCycle/WhileCycle.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/03 Objects and Classes/Cat/Cat.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/03 Objects and Classes/RoadController/RoadController.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/04_NumbersStringsAndDates/ContainerDelivery/ContainerDelivery.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/04_NumbersStringsAndDates/IntegerExperiments/IntegerExperiments.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/04_NumbersStringsAndDates/MinAndMaxValue/MinAndMaxValue.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/04_NumbersStringsAndDates/StringExperiments/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/04_NumbersStringsAndDates/StringExperiments/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04_NumbersStringsAndDates/StringExperiments/StringExperiments.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05_ArraysAndCollections/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/05_ArraysAndCollections/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05_ArraysAndCollections/src/Tests/TestHashSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/05_ArraysAndCollections/src/Tests/TestHashSet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,12 +71,14 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="527" y="126" key="FileChooserDialogImpl" timestamp="1589364052507">
+    <state x="527" y="126" key="FileChooserDialogImpl" timestamp="1595919281182">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="527" y="126" key="FileChooserDialogImpl/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1589364052507" />
+    <state x="527" y="126" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1595919281182" />
     <state x="67" y="0" key="new project wizard" timestamp="1589363998264">
       <screen x="0" y="0" width="1600" height="860" />
     </state>

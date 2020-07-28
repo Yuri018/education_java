@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.LinkedList;
 import java.util.ListIterator;
 
 public class Main {
@@ -22,7 +23,7 @@ public class Main {
 //            System.out.println(list.get(j));
 //        }
 //        Collections.reverse(list);
-//        System.out.println(list);
+        System.out.println(list.get(1));
 //        for (String x: list
 //             ) {
 //            System.out.println(x);
@@ -31,11 +32,12 @@ public class Main {
         while (iterator.hasNext()){
             System.out.println(iterator.next());
         }
-        iterator.set("acht");
-
-        while (iterator.hasPrevious()){
-            System.out.println(iterator.previous());
-        }
+//        System.out.println("----------------------------");
+//        iterator.add("acht");
+//
+//        while (iterator.hasPrevious()){
+//            System.out.println(iterator.previous());
+//        }
 
 //        System.out.println((list.get(1)) + ", " + (list.get(3)));
     }

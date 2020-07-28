@@ -2,10 +2,11 @@ package Tests;
 
 import java.util.HashSet;
 import java.util.Set;
+import java.util.TreeSet;
 
 public class TestHashSet {
     public static void main(String[] args) {
-        Set<String> list = new HashSet<>(){{
+        TreeSet<String> list = new TreeSet<>(){{
             add("eins");
            add("zwei");
            add("drei");
@@ -13,5 +14,12 @@ public class TestHashSet {
         }};
         list.add("1");
         System.out.println(list);
+        for (String set: list
+             ) {
+            System.out.println(set);
+        }
+    }
+    void test (){
+
     }
 }
