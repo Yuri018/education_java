@@ -39,6 +39,8 @@ public class Main {
 //            System.out.println(iterator.previous());
 //        }
 
-//        System.out.println((list.get(1)) + ", " + (list.get(3)));
+        System.out.println("1" + 1);
+        String s = "hello world";
+        System.out.print(s.charAt(1));
     }
 }

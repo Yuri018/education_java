@@ -1,38 +1,44 @@
 package Tests;
 
-import java.util.ArrayList;
-import java.util.Scanner;
+
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.TreeMap;
 
 public class Test2 {
         public static void main(String[] args) {
-            ArrayList<String> todoList = new ArrayList<>() {{
-                add(0, "Почистить зубы");
-                add(1, "Сделать зарядку");
-                add(2, "Выпить стакан воды");
-                add(3, "Приготовить завтрак");
-                add(4, "Отправится на работу");//Добавляем пункт по индексу 4
-            }};
-            Scanner sc = new Scanner(System.in);
-            var str = "LIST";
-            System.out.print("Чтобы посмотреть содержимое списка введите команду LIST : ");
-            if (sc.hasNext()) { // возвращает истину если с потока ввода можно считать слово
-                str = sc.next(); // считывает слово с потока ввода и сохраняем в переменную
-                System.out.println(str);
-            } else {
-                System.out.println("Вы ввели не правильную команду");
+            Map<Integer, String> HashMap = new HashMap<>();
+            Map<Integer, String> LinkedMashMap = new LinkedHashMap<>();
+            Map<Integer, String> TreeMap = new TreeMap<>();
+
+            testMap(TreeMap);
+
+//            HashMap.put( 1, "один");
+//            HashMap.put( 2, "два");
+//            HashMap.put( 3, "три");
+
+            //варианты вывода на печать ключей и значений
+            //первый вариант
+//            for (Integer key: map.keySet()){
+//                System.out.println(key + " => " + map.get(key));
+//            }
+//            //второй вариант
+//            for (Map.Entry<Integer, String> entry: map.entrySet()){
+//                System.out.println(entry.getKey() + "=> " + entry.getValue());
+//            }
+
+        }
+        public static void testMap(Map<Integer, String> map){
+            map.put(39, "Mike");
+            map.put(45, "Pol");
+            map.put(78, "Red");
+            map.put(84, "Sergey");
+            map.put(0, "Mike");
+
+            for (Integer key : map.keySet()){
+                System.out.println(key + " => " + map.get(key));
             }
-            for (String item : todoList) {
-                System.out.println(item);
-            }
-            var strAdd = "ADD";
-            System.out.print("Чтобы добавить новое дело в список введите команду ADD : ");
-            if (sc.hasNext()) { // возвращает истину если с потока ввода можно считать слово
-                strAdd = sc.next(); // считывает слово с потока ввода и сохраняем в переменную
-                System.out.println(strAdd + '\n' + "Введите дело которое хотите добавить в список : ");
-                todoList.add(sc.next());
-                System.out.println("Новое дело добавленно в список! \n");
-            } else {
-                System.out.println("Вы ввели не правильную команду");
-            }
+
         }
 }
