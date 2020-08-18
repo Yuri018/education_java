@@ -28,7 +28,10 @@ public class TestHashMap {
     private static void printMap (Map<String, Integer> map){
         for (String key : map.keySet()){
             System.out.println(key + " => " + map.get(key));
+
         }
+        
+
     }
 }
 

@@ -12,6 +12,11 @@ public class Test2 {
             Map<Integer, String> LinkedMashMap = new LinkedHashMap<>();
             Map<Integer, String> TreeMap = new TreeMap<>();
 
+
+            testMap(HashMap);
+            System.out.println("_____________");
+            testMap(LinkedMashMap);
+            System.out.println("_____________");
             testMap(TreeMap);
 
 //            HashMap.put( 1, "один");
