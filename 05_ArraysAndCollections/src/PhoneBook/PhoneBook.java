@@ -14,7 +14,6 @@ public class PhoneBook {
         phoneBookControl.addEntryPhoneBook("+79876543210", "Yuri");
         phoneBookControl.addEntryPhoneBook("+79876543211", "Maks");
 
-//        phoneBookControl.printPhoneBook();//вывод на печать
         scan();
 
     }
@@ -25,24 +24,25 @@ public class PhoneBook {
         Pattern pattern = Pattern.compile("\\.*");
         Matcher matcher = pattern.matcher(userInput);
 //        while (matcher.find()) {
-            if (userInput.equals("list")) {
-                phoneBookControl.printPhoneBook();
-            }
-            if (phoneBookControl.phoneMap.containsKey(userInput)) {
-                for (Map.Entry<String, String> key : phoneBookControl.phoneMap.entrySet()) {
-                    if (key.getKey().contains(userInput)) {
-                        System.out.println(key.getKey() + " " + key.getValue());
-                    }
-                }
-            } else if (phoneBookControl.phoneMap.containsValue(userInput)) {
-                for (Map.Entry<String, String> value : phoneBookControl.phoneMap.entrySet()) {
-                    if (value.getValue().contains(userInput)) {
-                        System.out.println(value.getKey() + " " + value.getValue());
-                    }
+        if (userInput.equals("list")) {
+            phoneBookControl.printPhoneBook();
+        } else if (phoneBookControl.phoneMap.containsKey(userInput)) {
+            System.out.println(userInput + " " + phoneBookControl.phoneMap.get(userInput));
+//                for (Map.Entry<String, String> key : phoneBookControl.phoneMap.entrySet()) {
+//                    if (key.getKey().contains(userInput)) {
+//                        System.out.println(key.getKey() + " " + key.getValue());
+//                    }
+//                }
+        } else if (phoneBookControl.phoneMap.containsValue(userInput)) {
+            for (Map.Entry<String, String> value : phoneBookControl.phoneMap.entrySet()) {
+                if (value.getValue().equals(userInput)) {
+                    System.out.println(value.getKey() + " " + value.getValue());
                 }
             }
         }
+    }
 //    }
 }
 
-//is Empty - пусто
+//регулярка правильная
+//
