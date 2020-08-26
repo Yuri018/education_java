@@ -18,30 +18,38 @@ public class PhoneBook {
 
     }
 
-    private static void scan() {
+    public static void scan() {
         Scanner scanner = new Scanner(System.in);
         String userInput = scanner.nextLine();
-        Pattern pattern = Pattern.compile("\\.*");
+        Pattern pattern = Pattern.compile("^(add|list|edit)?(?:[ \\t]*(\\+?\\d{11}))?(?:[ \\t]*(.+))?$");
         Matcher matcher = pattern.matcher(userInput);
-//        while (matcher.find()) {
-        if (userInput.equals("list")) {
-            phoneBookControl.printPhoneBook();
-        } else if (phoneBookControl.phoneMap.containsKey(userInput)) {
-            System.out.println(userInput + " " + phoneBookControl.phoneMap.get(userInput));
-//                for (Map.Entry<String, String> key : phoneBookControl.phoneMap.entrySet()) {
-//                    if (key.getKey().contains(userInput)) {
-//                        System.out.println(key.getKey() + " " + key.getValue());
-//                    }
-//                }
-        } else if (phoneBookControl.phoneMap.containsValue(userInput)) {
-            for (Map.Entry<String, String> value : phoneBookControl.phoneMap.entrySet()) {
-                if (value.getValue().equals(userInput)) {
-                    System.out.println(value.getKey() + " " + value.getValue());
+
+        while (true) {
+            String command = matcher.group(1);
+            String keyNumber = matcher.group(2);
+            String valueName = matcher.group(3);
+            if (userInput.equals(command)) {
+                phoneBookControl.printPhoneBook();
+                continue;
+            } else if (phoneBookControl.phoneMap.containsValue(valueName)) {
+                for (Map.Entry<String, String> value : phoneBookControl.phoneMap.entrySet()) {
+                    if (value.getValue().equals(valueName)) {
+                        System.out.println(value.getKey() + " " + value.getValue());
+                    }
                 }
+            } else {
+                System.out.println("Введите номер для этого контакта ");
+                String number = userInput;
+                phoneBookControl.phoneMap.put(number, valueName);
+                phoneBookControl.printPhoneBook();
             }
+
+            if (phoneBookControl.phoneMap.containsKey(keyNumber)) {
+                System.out.println(keyNumber + " " + phoneBookControl.phoneMap.get(keyNumber));//метод get по ключу выводит значение
+            }
+
         }
     }
-//    }
 }
 
 //регулярка правильная

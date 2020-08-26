@@ -21,6 +21,4 @@ public class PhoneBookControl {
     public void addEntryPhoneBook(String number, String name) {
         phoneMap.put(number, name);
     }
-
-
 }
