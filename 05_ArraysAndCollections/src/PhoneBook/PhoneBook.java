@@ -2,55 +2,62 @@ package PhoneBook;
 
 import java.util.Map;
 import java.util.Scanner;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import java.util.Set;
+import java.util.TreeMap;
 
 public class PhoneBook {
+    TreeMap<String, String> phoneBook = new TreeMap<>();
 
-    private static final PhoneBookControl phoneBookControl = new PhoneBookControl();
-
-    public static void main(String[] args) {
-
-        phoneBookControl.addEntryPhoneBook("+79876543210", "Yuri");
-        phoneBookControl.addEntryPhoneBook("+79876543211", "Maks");
-
-        scan();
-
+    Set<Map.Entry<String, String>> entrySet() {
+        return phoneBook.entrySet();
     }
 
-    public static void scan() {
+    boolean searchKey(String phone) {
+        return phoneBook.containsKey(formatNumber(phone));
+    }
+
+    public void printContactInfo(String phone) {
+        String formatNum = formatNumber(phone);
+        System.out.println("Name: " + phoneBook.get(formatNum) + " phone number: " + formatNum);
+    }
+
+    public boolean searchValue(String name) {
+        return phoneBook.containsValue(firstUpperCase(name));
+    }
+
+    public void addPhoneBook(String phone, String name) {
+        phone = formatNumber(phone);
+        name = firstUpperCase(name);
+        phoneBook.put(phone, name);
+        System.out.println("Name: " + name + " phone number: " + phone);
+    }
+
+    //method of printing with values sorted alphabetically
+    public void printPhoneBook() {
+        phoneBook.entrySet().stream().sorted(Map.Entry.comparingByValue())
+                .forEach(x -> System.out.println("Name: " + x.getValue() + " phone number: " + x.getKey()));
+        //standard printing method sorted by keys
+//        for (String book : map.keySet()) {
+//            System.out.println(book + " " + map.get(book));
+//        }
+    }
+
+    // method of converting a phone number to a single format
+    public static String formatNumber(String number) {
+        return number.replaceAll("(\\+\\d|\\d)?(\\d{3})(\\d{3})(\\d{2})(\\d{2})",
+                "+7 ($2) $3-$4-$5");
+    }
+
+    //method of converting first letter to uppercase
+    public static String firstUpperCase(String name) {
+        return name.substring(0, 1).toUpperCase() + name.substring(1);
+    }
+
+    //printing method
+    public static String scan() {
         Scanner scanner = new Scanner(System.in);
-        String userInput = scanner.nextLine();
-        Pattern pattern = Pattern.compile("^(add|list|edit)?(?:[ \\t]*(\\+?\\d{11}))?(?:[ \\t]*(.+))?$");
-        Matcher matcher = pattern.matcher(userInput);
-
-        while (true) {
-            String command = matcher.group(1);
-            String keyNumber = matcher.group(2);
-            String valueName = matcher.group(3);
-            if (userInput.equals(command)) {
-                phoneBookControl.printPhoneBook();
-                continue;
-            } else if (phoneBookControl.phoneMap.containsValue(valueName)) {
-                for (Map.Entry<String, String> value : phoneBookControl.phoneMap.entrySet()) {
-                    if (value.getValue().equals(valueName)) {
-                        System.out.println(value.getKey() + " " + value.getValue());
-                    }
-                }
-            } else {
-                System.out.println("Введите номер для этого контакта ");
-                String number = userInput;
-                phoneBookControl.phoneMap.put(number, valueName);
-                phoneBookControl.printPhoneBook();
-            }
-
-            if (phoneBookControl.phoneMap.containsKey(keyNumber)) {
-                System.out.println(keyNumber + " " + phoneBookControl.phoneMap.get(keyNumber));//метод get по ключу выводит значение
-            }
-
-        }
+        return scanner.nextLine();
     }
-}
 
-//регулярка правильная
-//
+
+}
