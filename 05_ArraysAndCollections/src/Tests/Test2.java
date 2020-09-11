@@ -29,9 +29,9 @@ public class Test2 {
 //                System.out.println(key + " => " + map.get(key));
 //            }
 //            //второй вариант
-//            for (Map.Entry<Integer, String> entry: map.entrySet()){
-//                System.out.println(entry.getKey() + "=> " + entry.getValue());
-//            }
+            for (Map.Entry<Integer, String> entry: HashMap.entrySet()){
+                System.out.println(entry.getKey() + "=> " + entry.getValue());
+            }
 
         }
         public static void testMap(Map<Integer, String> map){
