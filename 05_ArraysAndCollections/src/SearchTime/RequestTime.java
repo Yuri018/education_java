@@ -3,13 +3,24 @@ package SearchTime;
 import java.util.*;
 
 public class RequestTime {
-    String[] letters = {"A", "B", "C", "E", "H", "K", "M", "O", "P", "T", "Y", "X"};
+    private final String[] letters = {"A", "B", "C", "E", "H", "K", "M", "O", "P", "T", "Y", "X"};
+    private final List<String> arrayList = new ArrayList<>();
+    private final Set<String> hashSet = new HashSet<>();
+    private final Set<String> treeSet = new TreeSet<>();
 
-    List<String> arrayList = new ArrayList<>();
-    Set<String> hashSet = new HashSet<>();
-    Set<String> treeSet = new TreeSet<>();
+    public List<String> getArrayList() {
+        return arrayList;
+    }
 
-    public void numGenerator() {
+    public Set<String> getHashSet() {
+        return hashSet;
+    }
+
+    public Set<String> getTreeSet() {
+        return treeSet;
+    }
+
+    public void init() {
         for (int num = 111; num <= 999; num += 111) {
             for (String letter : letters) {
                 for (String letter2 : letters) {
