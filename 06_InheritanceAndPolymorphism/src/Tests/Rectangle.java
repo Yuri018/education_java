@@ -3,7 +3,7 @@ package Tests;
 public class Rectangle {
 // класс Прямоугольник
 
-    public int width;
+    private int width;
     public int height;
 
     //создаем конструктор

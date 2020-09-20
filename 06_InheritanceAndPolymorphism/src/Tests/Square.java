@@ -20,11 +20,11 @@ public class Square extends Rectangle {
     @Override
     //переписываем (переопределяем) методы из класса Rectangle
     public void setWidth(int width) {
-        this.width = width;
-        height = width;
+        setWidth(width);
+        setHeight(width);
     }
     public void setHeight(int height){
-        this.height = height;
-        width = height;
+        setHeight(height);
+        setWidth(height);
     }
 }
