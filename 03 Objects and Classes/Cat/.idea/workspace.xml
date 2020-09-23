@@ -26,8 +26,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d3566954-15db-468d-82d7-9b60a8957e26" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../../05_ArraysAndCollections/src/ToDoList/ScannerForTodoList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../05_ArraysAndCollections/src/ToDoList/ScannerForTodoList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../05_ArraysAndCollections/src/ToDoList/TodoListManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../05_ArraysAndCollections/src/ToDoList/TodoListManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../06_InheritanceAndPolymorphism/src/checkingAccount/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_InheritanceAndPolymorphism/src/Tests/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../06_InheritanceAndPolymorphism/src/Tests/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_InheritanceAndPolymorphism/src/checkingAccount/BankAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../06_InheritanceAndPolymorphism/src/checkingAccount/BankAccount.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,9 +61,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="FullScreen" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../RoadController" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Skillbox/java_basics/03_ObjectsAndClasses/Cat" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -167,6 +169,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -213,14 +216,11 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="572" y="174" key="FileChooserDialogImpl" timestamp="1595083291140">
-      <screen x="0" y="0" width="1600" height="860" />
+    <state x="-1234" y="210" key="FileChooserDialogImpl" timestamp="1600840670897">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
+    <state x="-1234" y="210" key="FileChooserDialogImpl/0.0.1366.728/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1600840670897" />
     <state x="572" y="174" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1595083291140" />
-    <state x="292" y="98" key="Vcs.Push.Dialog.v2" timestamp="1586846782636">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state x="292" y="98" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1586846782636" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

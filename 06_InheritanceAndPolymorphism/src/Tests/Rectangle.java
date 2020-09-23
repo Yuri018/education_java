@@ -27,6 +27,7 @@ public class Rectangle {
     public void setHeight(int height) {
         this.height = height;
     }
+
     //создаем метод расчета площади прямоугольника
     public int getSquare(){
         return width * height;
