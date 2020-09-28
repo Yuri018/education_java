@@ -28,15 +28,17 @@ public class BankAccount {
         if (balance - amount < 0) {
             System.out.println("Недостаточно средств на счете");
         } else setBalance(balance -= amount);
+        System.out.println("Снято спростого счета - " + amount);
     }
 
     //метод пополнение счета
     public void putMoney(double amount) {
         setBalance(balance += amount);
+
     }
 
     //метод вывода баланса на печать
-    void balance() {
+    public void balance() {
         System.out.println(balance);
     }
 }
