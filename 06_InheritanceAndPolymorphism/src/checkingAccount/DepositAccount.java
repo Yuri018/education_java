@@ -12,6 +12,16 @@ public class DepositAccount extends BankAccount {
         super(balance);
     }
 
+    @Override
+    public double getBalance() {
+        return super.getBalance();
+    }
+
+    @Override
+    public void setBalance(double balance) {
+        super.setBalance(balance);
+    }
+
     //метод, который задаст время действия со счетом
 //    private void setCreationTime() {
 //        creationTime = new Date();
@@ -22,9 +32,9 @@ public class DepositAccount extends BankAccount {
 //        return creationTime;
 //    }
 
-    //метод, который задаст время действия со счетом
-    private void setMonth() {
-        month = LocalDate.now();
+    //метод задает время действия со счетом
+    private LocalDate setMonth() {
+        return month = LocalDate.now();
     }
 
     //метод возвращает дату создания объекта в методе Main
@@ -36,17 +46,16 @@ public class DepositAccount extends BankAccount {
     //переопределяем метод пополнения счета - добавляем дату внесения средств
     @Override
     public void putMoney(double amount) {
-        super.putMoney(amount);
         setMonth();
+        super.putMoney(amount);
+        System.out.println("Дата пополнения депозитного счета: " + getMonth());;
     }
 
     //переопределяем метод снятия с депозитного счета по истечении месяца
-    @Override
-    public void getMoney(double amount) {
-        super.getMoney(amount);
-        LocalDate getDate = LocalDate.now();
-        if (getDate.isAfter(month)) {//пока не понятно
 
-        }
+
+    @Override
+    public void balance() {
+        System.out.println("Депозитный счет - Balance " + getBalance());
     }
 }
