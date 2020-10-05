@@ -1,11 +1,12 @@
 package checkingAccount;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 public class DepositAccount extends BankAccount {
 
     //переменная для запоминания даты и времени пополнения депозитного счета
-    private LocalDate month;
+    private LocalDate refillDate;
 
     //конструктор класса DepositAccount (создается средой разработки)
     public DepositAccount(double balance) {
@@ -22,40 +23,45 @@ public class DepositAccount extends BankAccount {
         super.setBalance(balance);
     }
 
-    //метод, который задаст время действия со счетом
-//    private void setCreationTime() {
-//        creationTime = new Date();
-//    }
-    //метод, который возвращает дату создания объекта в методе Main
-    // (при обращении к конструктору класса DepositAccount)
-//    public Date getCreationTime() {
-//        return creationTime;
-//    }
-
     //метод задает время действия со счетом
-    private LocalDate setMonth() {
-        return month = LocalDate.now();
+    public String refillDate() {
+        refillDate = LocalDate.now().minusMonths(1);
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy");
+        return refillDate.format(formatter);
     }
 
-    //метод возвращает дату создания объекта в методе Main
-    // (при обращении к конструктору класса DepositAccount)
-    public LocalDate getMonth() {
-        return month;
+    //метод расчета снятия с депозитного счета минимум через месяц
+    public boolean withdrawalDate() {
+        if (refillDate != null) {
+            return refillDate.plusMonths(1).compareTo(LocalDate.now()) <= 0;
+        } else {
+            return true;
+        }
     }
 
     //переопределяем метод пополнения счета - добавляем дату внесения средств
     @Override
     public void putMoney(double amount) {
-        setMonth();
+        refillDate();
         super.putMoney(amount);
-        System.out.println("Дата пополнения депозитного счета: " + getMonth());;
+        System.out.println("Дата пополнения депозитного счета: " + refillDate());
     }
 
-    //переопределяем метод снятия с депозитного счета по истечении месяца
-
+    //переопределяем метод снятия со счета - добавляем метод, разрешающий снятие через месяц
+    @Override
+    public double getMoney() {
+        if (withdrawalDate()) {
+            super.getMoney();
+        } else {
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy");
+            System.out.println("Снятие с депозитного счета возможно не ранее " +
+                    refillDate.plusMonths(1).format(formatter));
+        }
+        return 0;
+    }
 
     @Override
     public void balance() {
-        System.out.println("Депозитный счет - Balance " + getBalance());
+        System.out.println("Баланс депозитного счета - " + getBalance());
     }
 }
