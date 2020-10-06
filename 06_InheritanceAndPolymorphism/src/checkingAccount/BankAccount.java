@@ -32,20 +32,18 @@ public class BankAccount {
         double amount = scanner.nextDouble();
         if (balance - amount < 0) {
             System.out.println("Недостаточно средств на счете");
-        } else {setBalance(balance -= amount);
-        System.out.println("Снятие со счета - " + amount);
+        } else {
+            setBalance(balance -= amount);
+            System.out.println("Снятие со счета - " + amount);
         }
         return amount;
     }
 
     //метод пополнения счета
-    public void putMoney(double amount) {
-
+    public void putMoney() {
         System.out.println("Введите сумму пополнения:");
-        amount = scanner.nextDouble();
+        double amount = scanner.nextDouble();
         setBalance(balance += amount);
-//        System.out.println("Пополнение счета - " + amount);
-
     }
 
     //метод вывода баланса на печать

@@ -41,9 +41,9 @@ public class DepositAccount extends BankAccount {
 
     //переопределяем метод пополнения счета - добавляем дату внесения средств
     @Override
-    public void putMoney(double amount) {
+    public void putMoney() {
         refillDate();
-        super.putMoney(amount);
+        super.putMoney();
         System.out.println("Дата пополнения депозитного счета: " + refillDate());
     }
 

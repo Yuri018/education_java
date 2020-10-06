@@ -31,41 +31,29 @@ public class CardAccount extends BankAccount {
 
     //переопределяем метод пополнения счета
     @Override
-    public void putMoney(double amount) {
-        super.putMoney(amount);
+    public void putMoney() {
+        super.putMoney();
     }
 
-    //метод расчета суммы при снятии с карточного счета с учетом процентов
-//    public void getMoneyMinusPercent() {
-//        System.out.println("Введите сумму для снятия: ");
-//        double amount = scanner.nextDouble();
-//        setPercent(1.0);
-//        double calculatePercentage = (percent * amount / 100);
-//        amount -= calculatePercentage;
-//
-//        if (getBalance() - amount < 0) {
-//            System.out.println("Недостаточно средств на счете");
-//        } else {setBalance(getBalance() - amount);
-//            System.out.println("Снятие со счета - " + amount);
-//        }
-//    }
-
+    //переопределяем метод снятия со счета - добавляем расчет процента от суммы снятия
     @Override
     public double getMoney() {
-        setPercent(2.0);
-        return super.getMoney() * percent / 100 ;
+        double sumPercent = super.getMoney() * percent() / 100;
+        System.out.println("Сумма процентов с карточного счета " + sumPercent);
+        setBalance(getBalance() + sumPercent);
+        System.out.println("Сумма снятия с комиссией: ");
 
+        return 0;
 
-//        double i = super.getMoney(amount);
-//
-//        double v = i * percent / 100;
-//        System.out.println("Снятие со счета - " + v);
-//        return i;
     }
-
+    public double percent() {
+        setPercent(1.0);
+        return percent;
+    }
 
     @Override //переопределяем метод вывода баланса
     public void balance() {
+
         System.out.println("Баланс карточного счета - " + getBalance());
     }
 }
