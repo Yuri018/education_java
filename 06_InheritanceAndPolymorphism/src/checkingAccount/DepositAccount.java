@@ -9,9 +9,9 @@ public class DepositAccount extends BankAccount {
     private LocalDate refillDate;
 
     //конструктор класса DepositAccount (создается средой разработки)
-    public DepositAccount(double balance) {
-        super(balance);
-    }
+//    public DepositAccount(double balance) {
+//        super(balance);
+//    }
 
     @Override
     public double getBalance() {
@@ -21,6 +21,14 @@ public class DepositAccount extends BankAccount {
     @Override
     public void setBalance(double balance) {
         super.setBalance(balance);
+    }
+
+    //переопределяем метод пополнения счета - добавляем дату внесения средств
+    @Override
+    public void putMoney() {
+        refillDate();
+        super.putMoney();
+        System.out.println("Дата пополнения депозитного счета: " + refillDate());
     }
 
     //метод задает время действия со счетом
@@ -39,19 +47,11 @@ public class DepositAccount extends BankAccount {
         }
     }
 
-    //переопределяем метод пополнения счета - добавляем дату внесения средств
-    @Override
-    public void putMoney() {
-        refillDate();
-        super.putMoney();
-        System.out.println("Дата пополнения депозитного счета: " + refillDate());
-    }
-
     //переопределяем метод снятия со счета - добавляем метод, разрешающий снятие через месяц
     @Override
-    public double getMoney() {
+    public double getMoney(double amount) {
         if (withdrawalDate()) {
-            super.getMoney();
+            super.getMoney(amount);
         } else {
             DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy");
             System.out.println("Снятие с депозитного счета возможно не ранее " +
