@@ -15,17 +15,35 @@ public class Account {
     // create a method to replenish the balance
     public void putMoney(double amount) {
         this.balance += amount;
+        System.out.printf("%s %.2f%n", "Put money - ", amount);
+    }
+
+    public void transfer(double amount) {
+        this.balance += amount;
+        System.out.printf("%s %.2f%n", "Transfer money - ", amount);
     }
 
     // create a method for withdrawing funds from the account
     public void getMoney(double amount) {
-        System.out.println("Get money - " + amount);
+        System.out.format("%s %.2f%n", "Get money - ", amount);
 
         if (balance - amount < 0) {
             System.out.println("Insufficient funds on the account");
         } else {
             balance -= amount;
         }
-
     }
+
+    //create a method of transfer to another account
+    boolean send(Account receiver, double amount) {
+        if (balance - amount <= 0) {
+            System.out.printf("%s %.2f%n", "Insufficient funds to transfer - ", amount);
+            return false;
+        }else {
+            receiver.transfer(amount);
+            balance -= amount;
+            return true;
+        }
+    }
+
 }
