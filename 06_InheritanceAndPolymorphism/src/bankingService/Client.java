@@ -22,5 +22,7 @@ public abstract class Client {
     //создаем абстрактный метод снятия с баланса (должен быть у всех классов наследников
     public abstract void getMoney(double amount);
 
+    public abstract void clientInfo();
+
 
 }

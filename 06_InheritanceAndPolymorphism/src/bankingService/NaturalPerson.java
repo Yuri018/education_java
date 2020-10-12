@@ -19,4 +19,9 @@ public class NaturalPerson extends Client {
         }
 
     }
+
+    @Override
+    public void clientInfo() {
+        System.out.println("получите распишитесь");
+    }
 }
