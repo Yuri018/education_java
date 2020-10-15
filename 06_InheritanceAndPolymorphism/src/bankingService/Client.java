@@ -1,7 +1,9 @@
 package bankingService;
 
-//создаем абстрактный класс с переменной класса Balance и методами пополнения баланса,
-// снятия со счета и просмотра остатка на балансе
+/*
+ создаем абстрактный класс с переменной класса Balance и методами пополнения баланса,
+ снятия со счета и просмотра остатка на балансе
+ */
 
 public abstract class Client {
 
@@ -17,11 +19,27 @@ public abstract class Client {
         this.balance = balance;
     }
 
-    //создаем абстрактный метод пополнения баланса (должен быть у всех классов наследников)
-    public abstract void putMoney(double amount);
+    //абстрактный метод возвращает рачсет процентов при пополнении баланса
+    protected abstract double getReplenishCommission(double amount);
 
-    //создаем абстрактный метод снятия с баланса (должен быть у всех классов наследников)
-    public abstract void getMoney(double amount);
+    //абстрактный метод возвращает рачсет процентов при снятии с баланса
+    protected abstract double getWithdrawCommission(double amount);
+
+    //создаем метод пополнения баланса (должен быть у всех классов наследников)
+    public void putMoney(double amount) {
+        balance += getReplenishCommission(amount);
+        System.out.printf("%s %.2f %s %n", "Balance replenishment - ", amount, "\u20bd");
+    }
+
+    //создаем метод снятия с баланса (должен быть у всех классов наследников)
+    public void getMoney(double amount) {
+        if (balance - getWithdrawCommission(amount) < 0) {
+            System.out.println("Insufficient funds on the account to withdraw " + amount + "\u20bd");
+        } else {
+            setBalance(balance - getWithdrawCommission(amount));
+            System.out.format("%s %.2f %s %n", "Withdrawal from balance - ", amount, "\u20bd");
+        }
+    }
 
     //создаем абстрактный метод информирования клиентов об условиях (должен быть у всех классов наследников)
     public abstract void clientInfo();
