@@ -1,6 +1,11 @@
 package CompanyWork;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Company {
+
+    List<Employee> employees = new ArrayList<>();
 
     //переменная класса Company, содержит количество сотрудников
     int count;
@@ -17,5 +22,6 @@ public class Company {
     int fire() {
         return count--;
     }
+
 
 }
