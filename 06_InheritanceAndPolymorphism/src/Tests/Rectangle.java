@@ -1,13 +1,13 @@
 package Tests;
 
-import java.util.Date;
+import java.time.LocalDate;
 
-public class Rectangle {
+public abstract class Rectangle {
 // класс Прямоугольник
 
     private int width;
     public int height;
-    private Date creationTime;
+    private LocalDate creationTime;
 
     //создаем конструктор
     public Rectangle(int width, int height){
@@ -37,9 +37,9 @@ public class Rectangle {
         return width * height;
     }
     private void setCreationTime() {
-        creationTime = new Date();
+        creationTime = LocalDate.now();
     }
-    public Date getCreationTime() {
+    public LocalDate getCreationTime() {
         return creationTime;
     }
 }

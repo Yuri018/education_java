@@ -3,7 +3,11 @@ package CompanyWork;
 public interface Employee {
 
     //метод возвращает зарплату сотрудников
+    double getMonthSalary();
 
-    double gerMonthSalary();
+    void setCompany(Company company);
+
+    void removeCompany();
 }
+
 

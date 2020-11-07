@@ -11,7 +11,7 @@ public class Main {
         System.out.println(square1.getSquare());
         System.out.println(square1.getCreationTime());
 
-        Rectangle rectangle = new Rectangle(50, 60);
+        Square rectangle = new Square(50, 60);
         System.out.println(rectangle.getSquare());
         System.out.println(rectangle.getCreationTime());
 
