@@ -4,15 +4,16 @@ public class TopManager implements Employee {
 
     private Company company;
 
+    private final double salary = 30000 + (int) (Math.random() * 10000);
+
 
     @Override
     public double getMonthSalary() {
-        double fixedSalary = 50000 + (int) (Math.random() * 10000);
-        double bonus = fixedSalary * 1.5;
+        double bonus = salary * 1.5;
         if (company.getIncome() >= 10000000) {
-            return fixedSalary + bonus;
+            return salary + bonus;
         }
-        return fixedSalary;
+        return salary;
     }
 
     @Override

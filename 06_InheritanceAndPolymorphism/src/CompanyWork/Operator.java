@@ -1,10 +1,12 @@
 package CompanyWork;
 
-public class Operator implements Employee{
+public class Operator implements Employee {
+
+    private final double salary = 40000 + (int) (Math.random() * 10000);
 
     @Override
     public double getMonthSalary() {
-        return 50000 + (int) (Math.random() * 10000);
+        return salary;
     }
 
     @Override
