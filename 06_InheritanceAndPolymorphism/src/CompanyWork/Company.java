@@ -9,11 +9,12 @@ public class Company {
     public Company(double income) {
         this.income = income;
     }
+
     public double getIncome() {
         return income;
     }
 
-    List<Employee> employees = new ArrayList<>();
+    private final List<Employee> employees = new ArrayList<>();
 
     public List<Employee> getEmployees() {
         return employees;
@@ -26,7 +27,7 @@ public class Company {
     }
 
     //метод найма списка сотрудников
-    void  hireAll(List<Employee> employeesToHire) {
+    void hireAll(List<Employee> employeesToHire) {
         for (Employee x : employeesToHire) {
             x.setCompany(this);
         }
@@ -35,24 +36,23 @@ public class Company {
 
     //метод увольнения сотрудника
     void fire(Employee employeeToFire) {
-        //желательна проверка наличия сотрудника в списке сотрудников
         employeeToFire.removeCompany();
         employees.remove(employeeToFire);
 
     }
 
-
+    //список сотрудников с высокими зарплатами
     List<Employee> getTopSalaryStaff(int count) {
         employees.sort(new EmployeeComparator());
         if (count <= 0) {
             return new ArrayList<>();
-        }
-        else if (count > employees.size()) {
+        } else if (count > employees.size()) {
             return employees;
         }
         return employees.subList(0, count);
     }
 
+    //список сотрудников с низкими зарплатами
     List<Employee> getLowestSalaryStaff(int count) {
         employees.sort(new EmployeeComparator());
         Collections.reverse(employees);
@@ -64,31 +64,25 @@ public class Company {
         return employees.subList(0, count);
     }
 
+    //метод расчета дохода компании
     public void increaseIncome(int newIncome) {
         income += newIncome;
     }
 
+    //метод расчета дохода компании после увольнения
     public void decreaseIncome(int newIncome) {
         income -= newIncome;
     }
 
-//    public List<Employee> getEmployeesByType(Class<? extends Employee> clazz){
-//        List<Employee> result = new ArrayList<>();
-//        for (Employee x: employees){
-//            if (x.getClass().equals(clazz)){
-//                result.add(x);
-//            }
-//        }
-//        return result;
-//    }
-public List<Employee> getEmployeesByType(Class<? extends Employee> clazz){
-    List<Employee> result = new ArrayList<>();
-    for (Employee x: employees){
-        if (x.getClass().equals(clazz)){
-            result.add(x);
+    //метод подсчета принятых сотрудников по классам
+    public List<Employee> getEmployeesByType(Class<? extends Employee> clazz) {
+        List<Employee> result = new ArrayList<>();
+        for (Employee x : employees) {
+            if (x.getClass().equals(clazz)) {
+                result.add(x);
+            }
         }
+        return result;
     }
-    return result;
-}
 
 }

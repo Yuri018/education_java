@@ -4,7 +4,7 @@ public class TopManager implements Employee {
 
     private Company company;
 
-    private final double salary = 30000 + (int) (Math.random() * 10000);
+    private final double salary = 70000 + (int) (Math.random() * 10000);
 
 
     @Override

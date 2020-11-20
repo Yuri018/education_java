@@ -9,7 +9,7 @@ public class Manager implements Employee{
 
     @Override
     public double getMonthSalary(){
-        return salary + (0.05 * company.getIncome());
+        return salary + (0.05 * generatedIncome);
     }
 
     @Override
