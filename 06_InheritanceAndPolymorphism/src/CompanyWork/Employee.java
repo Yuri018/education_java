@@ -2,7 +2,7 @@ package CompanyWork;
 
 public interface Employee {
 
-    //метод возвращает зарплату сотрудников
+    //this method returns the employee's salary
     double getMonthSalary();
 
     void setCompany(Company company);

@@ -23,8 +23,6 @@ public class Manager implements Employee{
         this.company.decreaseIncome((int) generatedIncome);
         this.company = null;
     }
-
-
 }
 
 

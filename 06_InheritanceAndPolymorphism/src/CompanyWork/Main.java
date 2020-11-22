@@ -8,33 +8,33 @@ public class Main {
 
         Company one = new Company(0);
 
-        List<Employee> operatorToHire = new ArrayList<>();//список принятых сотрудников операторов
+        List<Employee> operatorToHire = new ArrayList<>();//list of accepted employees of operators
 
-        one.hire(new Operator());// прием операторов по одному
+        one.hire(new Operator());// receiving operators one at a time
 
         for (int i = 0; i < 179; i++) {
-            operatorToHire.add(new Operator());// прием операторов списком
+            operatorToHire.add(new Operator());// accepting list operators
         }
         one.hireAll(operatorToHire);
         System.out.println("Принято всего - " + one.getEmployeesByType(Operator.class).size() + " операторов");
 
-        List<Employee> managerToHire = new ArrayList<>();//список принятых сотрудников менеджеров
+        List<Employee> managerToHire = new ArrayList<>();//list of accepted employees managers
 
-        one.hire(new Manager());//прием менеджеров по одному
+        one.hire(new Manager());//receiving managers one at a time
 
-        for (int i = 0; i < 79; i++) {//прием менеджеров списком
+        for (int i = 0; i < 79; i++) {//receiving managers with a list
             managerToHire.add(new Manager());
         }
         one.hireAll(managerToHire);
         System.out.println("Принято всего - " + one.getEmployeesByType(Manager.class).size() + " менеджеров");
 
 
-        one.hire(new TopManager());//прием топменеджеров по одному
-        List<Employee> topManagerToHire = new ArrayList<>();//список принятых сотрудников топменеджеров
+        one.hire(new TopManager());//accepting top managers one at a time
+        List<Employee> topManagerToHire = new ArrayList<>();//list of accepted top managers
         for (int i = 0; i < 9; i++) {
             topManagerToHire.add(new TopManager());
         }
-        one.hireAll(topManagerToHire);//прием топменеджеров списком
+        one.hireAll(topManagerToHire);//accepting top managers with a list
         System.out.println("Принято всего - " + one.getEmployeesByType(TopManager.class).size() + " топменеджеров");
 
         System.out.println("Принято всего - " + one.getEmployees().size() + " сотрудников");
@@ -53,7 +53,7 @@ public class Main {
             System.out.printf("%.0f %s %n", employee.getMonthSalary(), "\u20bd");
         }
 
-        //список сотрудников для увольнения по классам
+        //list of employees to be dismissed by class
         List<Employee> employeeToFire = new ArrayList<>();
         employeeToFire.addAll(operatorToHire.subList(0, 90));
         employeeToFire.addAll(managerToHire.subList(0, 40));
