@@ -20,8 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e868a428-28e9-4b28-90c0-7ac4bc506a6a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/05_ArraysAndCollections/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/05_ArraysAndCollections/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/05_ArraysAndCollections/src/Tests/TestHashSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/05_ArraysAndCollections/src/Tests/TestHashSet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/07_LambdaExpressions/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/07_LambdaExpressions/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/07_LambdaExpressions/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/07_LambdaExpressions/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/07_LambdaExpressions/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/07_LambdaExpressions/07_AdvancedOOPFeatures.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/07_LambdaExpressions/data/staff.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/07_LambdaExpressions/src/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/07_LambdaExpressions/src/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,8 +53,9 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/05_ArraysAndCollections" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/07_AdvancedOOPFeatures" />
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -74,14 +82,9 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="527" y="126" key="FileChooserDialogImpl" timestamp="1595919281182">
-      <screen x="0" y="0" width="1600" height="860" />
+    <state x="-1180" y="274" key="FileChooserDialogImpl" timestamp="1606728880668">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="527" y="126" key="FileChooserDialogImpl/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1589364052507" />
-    <state x="527" y="126" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1595919281182" />
-    <state x="67" y="0" key="new project wizard" timestamp="1589363998264">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state x="67" y="0" key="new project wizard/0.0.1600.860/-1920.0.1920.1040@0.0.1600.860" timestamp="1589363998264" />
+    <state x="-1180" y="274" key="FileChooserDialogImpl/0.0.1366.728/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1606728880668" />
   </component>
 </project>
