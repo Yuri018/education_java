@@ -5,8 +5,8 @@ import java.time.LocalDate;
 public abstract class Rectangle {
 // класс Прямоугольник
 
-    private int width;
-    public int height;
+    private final int width;
+    private final int height;
     private LocalDate creationTime;
 
     //создаем конструктор
@@ -20,17 +20,13 @@ public abstract class Rectangle {
         return width;
     }
 
-    public void setWidth(int width) {
-        this.width = width;
-    }
+    public abstract void setWidth(int width);
 
     public int getHeight() {
         return height;
     }
 
-    public void setHeight(int height) {
-        this.height = height;
-    }
+    public abstract void setHeight(int height);
 
     //создаем метод расчета площади прямоугольника
     public int getSquare(){
