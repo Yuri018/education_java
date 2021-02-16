@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8acf63f2-7d20-47ea-9557-9293526b3c9b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/../../01 Introductory module/MyProject/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../01 Introductory module/RoadCamera/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../03 Objects and Classes/.idea/03 Objects and Classes.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01 Introductory module/MyProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../01 Introductory module/MyProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01 Introductory module/MyProject/MyProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../01 Introductory module/MyProject/MyProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01 Introductory module/MyProject/out/production/MyProject/META-INF/MyProject.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01 Introductory module/MyProject/src/main/java/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../01 Introductory module/MyProject/src/main/java/Loader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01 Introductory module/RoadCamera/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../01 Introductory module/RoadCamera/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01 Introductory module/RoadCamera/RoadCamera.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../01 Introductory module/RoadCamera/RoadCamera.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01 Introductory module/RoadCamera/out/production/RoadCamera/META-INF/RoadCamera.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01 Introductory module/RoadCamera/src/main/java/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../01 Introductory module/RoadCamera/src/main/java/Loader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../07_AdvancedOOPFeatures/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_AdvancedOOPFeatures/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../07_AdvancedOOPFeatures/LambdaExpressions/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_AdvancedOOPFeatures/LambdaExpressions/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,12 +30,13 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549972555500" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CoffeeMachine" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Java materials/Skillbox_test/02_Синтаксис_языка/2/Booleans" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -144,6 +134,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -156,39 +147,5 @@
       <updated>1440599682411</updated>
     </task>
     <servers />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="618" y="302" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1582098697883">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="618" y="302" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.824@0.0.1536.824" timestamp="1582098697883" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1586331976889">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1586331976889" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1586331978212">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586331978212" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1586331978212">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586331978212" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1586331978212">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586331978212" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1586331978212">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586331978212" />
-    <state x="249" y="0" key="SettingsEditor" timestamp="1586331942215">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1586331942215" />
-    <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1582184170101">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1582184170101" />
   </component>
 </project>

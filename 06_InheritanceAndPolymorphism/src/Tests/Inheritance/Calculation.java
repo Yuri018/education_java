@@ -1,4 +1,4 @@
-package Tests.Calculation;
+package Tests.Inheritance;
 
 public class Calculation {
     int z;

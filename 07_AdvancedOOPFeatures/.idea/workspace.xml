@@ -20,16 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ef96f74-67a6-4a3b-8c3f-85f2a941ce06" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../07_LambdaExpressions/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../07_LambdaExpressions/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../07_LambdaExpressions/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../07_LambdaExpressions/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../07_LambdaExpressions/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../07_LambdaExpressions/07_AdvancedOOPFeatures.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../07_LambdaExpressions/data/staff.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../07_LambdaExpressions/src/Employee.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../07_LambdaExpressions/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LambdaExpressions/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/LambdaExpressions/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +46,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/LambdaExpressions" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -96,40 +89,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="-1180" y="274" key="FileChooserDialogImpl" timestamp="1606728900431">
-      <screen x="-1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="-1180" y="274" key="FileChooserDialogImpl/0.0.1366.728/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1606728900431" />
-    <state width="1323" height="178" key="GridCell.Tab.0.bottom" timestamp="1606728431459">
-      <screen x="-1920" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.bottom/0.0.1366.728/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1606728431459" />
-    <state width="1323" height="178" key="GridCell.Tab.0.bottom/0.0.1366.728/-1920.0.1920.1040@0.0.1366.728" timestamp="1606727876007" />
-    <state width="1323" height="178" key="GridCell.Tab.0.center" timestamp="1606728431459">
-      <screen x="-1920" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.center/0.0.1366.728/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1606728431459" />
-    <state width="1323" height="178" key="GridCell.Tab.0.center/0.0.1366.728/-1920.0.1920.1040@0.0.1366.728" timestamp="1606727876007" />
-    <state width="1323" height="178" key="GridCell.Tab.0.left" timestamp="1606728431459">
-      <screen x="-1920" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.left/0.0.1366.728/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1606728431459" />
-    <state width="1323" height="178" key="GridCell.Tab.0.left/0.0.1366.728/-1920.0.1920.1040@0.0.1366.728" timestamp="1606727876007" />
-    <state width="1323" height="178" key="GridCell.Tab.0.right" timestamp="1606728431459">
-      <screen x="-1920" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.right/0.0.1366.728/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1606728431459" />
-    <state width="1323" height="178" key="GridCell.Tab.0.right/0.0.1366.728/-1920.0.1920.1040@0.0.1366.728" timestamp="1606727876007" />
-    <state x="184" y="0" key="SettingsEditor" timestamp="1606727537376">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="184" y="0" key="SettingsEditor/0.0.1366.728/-1920.0.1920.1040@0.0.1366.728" timestamp="1606727537376" />
-    <state x="-1476" y="0" key="new project wizard" timestamp="1606728373591">
-      <screen x="-1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="-1476" y="0" key="new project wizard/0.0.1366.728/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1606728373591" />
-    <state x="316" y="0" key="new project wizard/0.0.1366.728/-1920.0.1920.1040@0.0.1366.728" timestamp="1606726940615" />
   </component>
 </project>

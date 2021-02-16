@@ -18,13 +18,10 @@ public class RainbowColors {
 //        for (int i = 0; i < rainbowColors.length; i++) {
 //            System.out.println(rainbowColors[i]);
 //        }
+         //второй вариант перебора массива, если не нужен индекс элемента
         for (String x: rainbowColors) {
             System.out.println(x);
         }
-//        //второй вариант перебора массива, если не нужен индекс элемента
-//        for (String x: rainbowColors) {
-//            System.out.println(x);
-//        }
 //        System.out.println("--------------------------");
 //        // цикл для перебора элементов массива в обратном порядке
 //        for (int i = rainbowColors.length - 1; i >= 0 ; i--) {

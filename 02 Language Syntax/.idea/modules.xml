@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/02 Language Syntax.iml" filepath="$PROJECT_DIR$/.idea/02 Language Syntax.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Booleans/Booleans.iml" filepath="$PROJECT_DIR$/Booleans/Booleans.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CoffeeMachine/CoffeeMachine.iml" filepath="$PROJECT_DIR$/CoffeeMachine/CoffeeMachine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DistributeAge/DistributeAge.iml" filepath="$PROJECT_DIR$/DistributeAge/DistributeAge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IncomeCalculator/IncomeCalculator.iml" filepath="$PROJECT_DIR$/IncomeCalculator/IncomeCalculator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RoadController/RoadController.iml" filepath="$PROJECT_DIR$/RoadController/RoadController.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TicketWithFor/TicketWithFor.iml" filepath="$PROJECT_DIR$/TicketWithFor/TicketWithFor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TicketWithWhile/TicketWithWhile.iml" filepath="$PROJECT_DIR$/TicketWithWhile/TicketWithWhile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WhileCycle/WhileCycle.iml" filepath="$PROJECT_DIR$/WhileCycle/WhileCycle.iml" />
+    </modules>
+  </component>
+</project>
