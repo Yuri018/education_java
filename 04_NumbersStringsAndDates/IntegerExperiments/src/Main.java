@@ -8,8 +8,7 @@ public class Main {
     }
 
     public static int sumDigits(Integer number) {
-        Integer integer = number;
-        String intToStr = integer.toString(); // переводим Integer в String
+        String intToStr = number.toString(); // переводим Integer в String
         int numberOfCharacter = intToStr.length();//считаем количество символов
         // строки методом length() и возвращаем в виде int
         System.out.println("Количество символов = " + numberOfCharacter);
@@ -23,3 +22,4 @@ public class Main {
         return sum;
     }
 }
+
