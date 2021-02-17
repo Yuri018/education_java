@@ -12,7 +12,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Game game = new Game(generateQuestions(QUESTIONS_AMOUNT, MIN_EXPRESSION_UNIT, MAX_EXPRESSION_UNIT));
+        Game game = new Game(generateQuestions());
 
         while (game.hasNextQuestion()) {
             Question question = game.getNextQuestion();
@@ -24,24 +24,24 @@ public class Main {
 
     }
 
-    private static List<Question> generateQuestions(int questionsAmount, int min, int max) {
+    private static List<Question> generateQuestions() {
         List<Question> questions = new ArrayList<>();
-        for (int i = 0; i < questionsAmount; i++) {
+        for (int i = 0; i < Main.QUESTIONS_AMOUNT; i++) {
             ActionType actionType = ActionType.values()[(int) (Math.random() * ActionType.values().length)];
-            questions.add(generateQuestion(actionType, min, max));
+            questions.add(generateQuestion(actionType));
 
         }
         return questions;
     }
 
-    private static Question generateQuestion(ActionType actionType, int min, int max) {
-        int first = min + (int) (Math.random() * (max - min));
-        int second = min + (int) (Math.random() * (max - min));
+    private static Question generateQuestion(ActionType actionType) {
+        int first = Main.MIN_EXPRESSION_UNIT + (int) (Math.random() * (Main.MAX_EXPRESSION_UNIT - Main.MIN_EXPRESSION_UNIT));
+        int second = Main.MIN_EXPRESSION_UNIT + (int) (Math.random() * (Main.MAX_EXPRESSION_UNIT - Main.MIN_EXPRESSION_UNIT));
 
         if (actionType == ActionType.DIVISION) {
             Set<Integer> dividers = getSimpleDividers(first)
                     .stream()
-                    .filter(d -> d > min)
+                    .filter(d -> d > Main.MIN_EXPRESSION_UNIT)
                     .collect(Collectors.toSet());
             second = new ArrayList<>(dividers).get((int) (Math.random() * dividers.size()));
         }
