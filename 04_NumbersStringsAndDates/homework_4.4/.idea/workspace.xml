@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c8f05cb8-3e42-4b95-a191-779ce9c7be92" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../homework_4.1/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework_4.1/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework_4.1/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework_4.1/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_3_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework_4.1/.idea/libraries/Maven__com_google_guava_failureaccess_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework_4.1/.idea/libraries/Maven__com_google_guava_guava_29_0_jre.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework_4.1/.idea/libraries/Maven__com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework_4.1/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework_4.1/.idea/libraries/Maven__com_puppycrawl_tools_checkstyle_8_34.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework_4.1/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework_4.1/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework_4.1/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework_4.1/.idea/libraries/Maven__info_picocli_picocli_4_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework_4.1/.idea/libraries/Maven__net_sf_saxon_Saxon_HE_9_9_1_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework_4.1/.idea/libraries/Maven__org_antlr_antlr4_runtime_4_8_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework_4.1/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework_4.1/.idea/libraries/Maven__org_checkerframework_checker_qual_2_11_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework_4.1/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_6_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework_4.1/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_6_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework_4.1/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_6_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework_4.1/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_6_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework_4.1/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework_4.1/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework_4.1/IntegerExperiments/01_sumdigits.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework_4.1/IntegerExperiments/checkstyle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework_4.1/IntegerExperiments/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework_4.1/IntegerExperiments/src/main/java/Container.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework_4.1/IntegerExperiments/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework_4.1/IntegerExperiments/src/test/java/TestSumDigits.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1obBxuAJh6UNGac92L8BxAFOwXA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../homework_4.5" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c8f05cb8-3e42-4b95-a191-779ce9c7be92" name="Default Changelist" comment="" />
+      <created>1613545659880</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1613545659880</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

@@ -1,3 +1,4 @@
+package Tests;
 
 public class Cat {
     public static final double MIN_WEIGHT = 1000.0;
@@ -19,17 +20,17 @@ public class Cat {
         return count;
     }
 
-//    public void pee() {
-//        if (weight > MIN_WEIGHT) {
-//            weight = weight - (weight * 0.05);
-//            System.out.println("Cat went to the toilet");
-//            if (weight < MIN_WEIGHT) {
-//                count--;
-//            }
-//        } else {
-//            System.out.println("Кошка мертва");
-//        }
-//    }
+    public void pee() {
+        if (weight > MIN_WEIGHT) {
+            weight = weight - (weight * 0.05);
+            System.out.println("Cats went to the toilet");
+            if (weight < MIN_WEIGHT) {
+                count--;
+            }
+        } else {
+            System.out.println("Кошка мертва");
+        }
+    }
 
     public void meow() {
         if (weight > MIN_WEIGHT) {
@@ -55,17 +56,17 @@ public class Cat {
         }
     }
 
-//    public void drink(Double amount) {
-//        if (weight < MAX_WEIGHT) {
-//            weight = weight + amount;
-//            feedAmount = feedAmount + amount;
-//            if (weight > MAX_WEIGHT) {
-//                count--;
-//            }
-//        } else {
-//            System.out.println("Кошка мертва");
-//        }
-//    }
+    public void drink(Double amount) {
+        if (weight < MAX_WEIGHT) {
+            weight = weight + amount;
+            feedAmount = feedAmount + amount;
+            if (weight > MAX_WEIGHT) {
+                count--;
+            }
+        } else {
+            System.out.println("Кошка мертва");
+        }
+    }
 
 
     public Double getWeight() {
