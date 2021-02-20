@@ -1,5 +1,5 @@
 public class GeometryCalculator {
-    // метод должен использовать абсолютное значение radius
+    // the method must use the absolute value of radius
     public static double getCircleSquare(double radius) {
         return Math.PI * radius * radius;
     }
@@ -13,16 +13,16 @@ public class GeometryCalculator {
         return a < b + c && b < a + c && c < a + b;
     }
 
-    // перед расчетом площади рекомендуется проверить возможен ли такой треугольник
-    // методом isTrianglePossible, если невозможен вернуть -1.0
+    // before calculating the area, it is recommended to check whether such a triangle is possible
+    // using the isTrianglePossible method, if it is impossible to return -1.0
     public static double getTriangleSquare(double a, double b, double c)
     {
         if (isTrianglePossible(a,  b,  c))
         {
             double p = (a + b + c) / 2;
-            double triangleSquare = Math.sqrt(p * (p - a) * (p - b) * (p - c));
-            return triangleSquare;
+            return Math.sqrt(p * (p - a) * (p - b) * (p - c));
         }
         return -1;
     }
 }
+
