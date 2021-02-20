@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9ee9b47d-6bc4-479e-963d-e7c37363f28d" name="Default Changelist" comment="" />
+    <list default="true" id="9ee9b47d-6bc4-479e-963d-e7c37363f28d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../03 Objects and Classes/Cat/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../03 Objects and Classes/Cat/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_ArraysAndCollections/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../05_ArraysAndCollections/src/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,10 +30,18 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../homework_4.3" />
   </component>
-  <component name="RunManager" selected="JUnit.TestSumDigits">
+  <component name="RunManager" selected="JUnit.All in 01_sumdigits">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="01_sumdigits" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in 01_sumdigits" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="01_sumdigits" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -45,6 +57,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in 01_sumdigits" />
         <item itemvalue="JUnit.TestSumDigits" />
         <item itemvalue="Application.Main" />
       </list>
