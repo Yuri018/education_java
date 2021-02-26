@@ -28,8 +28,12 @@
     <list default="true" id="74551ef3-e027-45c0-ba92-5e70ee5f73c4" name="Default" comment="added solution NumberPhoneRegex">
       <change beforePath="$PROJECT_DIR$/../ContainerDelivery/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ContainerDelivery/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../05_ArraysAndCollections/src/PhoneBook2/PhoneBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../05_ArraysAndCollections/src/PhoneBook2/PhoneBook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../05_ArraysAndCollections/src/Tests/RegexTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../05_ArraysAndCollections/src/Tests/RegexTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Loader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NumberOfYears.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NumberOfYears.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework_4.4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../homework_4.4/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework_4.5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../homework_4.5/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework_4.5/TotalEarningsCalculatorReqExp/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../homework_4.5/TotalEarningsCalculatorReqExp/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_ArraysAndCollections/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../05_ArraysAndCollections/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,14 +65,14 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="dynamic.classpath" value="false" />
     <property name="last.edited.regexp" value="ыыы-пппп  ппп    пппп ррр папп " />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../05_ArraysAndCollections" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../homework_4.4" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
     <property name="settings.editor.selected.configurable" value="com.github.izhangzhihao.rainbow.brackets.settings.RainbowConfigurable" />
   </component>
-  <component name="RunManager" selected="Application.NumberPhoneRegex">
+  <component name="RunManager" selected="Application.Loader">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="ACTIVITY_CLASS" value="" />
@@ -116,8 +120,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FullNameRegex2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="FullNameRegex2" />
+    <configuration name="CountProfit" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CountProfit" />
+      <module name="StringExperiments" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CountProfitRegex" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CountProfitRegex" />
       <module name="StringExperiments" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -142,14 +154,6 @@
     </configuration>
     <configuration name="NumberOfYears2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="NumberOfYears2" />
-      <module name="StringExperiments" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NumberPhoneRegex" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="NumberPhoneRegex" />
       <module name="StringExperiments" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -189,11 +193,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.NumberPhoneRegex" />
+        <item itemvalue="Application.Loader" />
         <item itemvalue="Application.NumberOfYears" />
         <item itemvalue="Application.NumberOfYears2" />
-        <item itemvalue="Application.Loader" />
-        <item itemvalue="Application.FullNameRegex2" />
+        <item itemvalue="Application.CountProfit" />
+        <item itemvalue="Application.CountProfitRegex" />
       </list>
     </recent_temporary>
   </component>
@@ -335,45 +339,9 @@
     <MESSAGE value="alternated solution NumberOfYears" />
     <option name="LAST_COMMIT_MESSAGE" value="alternated solution NumberOfYears" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="488" y="147" key="FileChooserDialogImpl" timestamp="1599024636842">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="488" y="147" key="FileChooserDialogImpl/0.0.1366.728/-1920.0.1920.1040@0.0.1366.728" timestamp="1599024636842" />
-    <state x="572" y="174" key="FileChooserDialogImpl/0.0.1600.860/1600.0.1920.1040@0.0.1600.860" timestamp="1594182321182" />
-    <state width="1323" height="281" key="GridCell.Tab.0.bottom" timestamp="1599022863184">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1366.728/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599019340944" />
-    <state width="1323" height="281" key="GridCell.Tab.0.bottom/0.0.1366.728/-1920.0.1920.1040@0.0.1366.728" timestamp="1599022863184" />
-    <state width="1545" height="198" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.0.1920.1040@0.0.1600.860" timestamp="1594141214988" />
-    <state width="1323" height="281" key="GridCell.Tab.0.center" timestamp="1599022863183">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1366.728/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599019340944" />
-    <state width="1323" height="281" key="GridCell.Tab.0.center/0.0.1366.728/-1920.0.1920.1040@0.0.1366.728" timestamp="1599022863183" />
-    <state width="1545" height="198" key="GridCell.Tab.0.center/0.0.1600.860/1600.0.1920.1040@0.0.1600.860" timestamp="1594141214988" />
-    <state width="1323" height="281" key="GridCell.Tab.0.left" timestamp="1599022863183">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1366.728/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599019340944" />
-    <state width="1323" height="281" key="GridCell.Tab.0.left/0.0.1366.728/-1920.0.1920.1040@0.0.1366.728" timestamp="1599022863183" />
-    <state width="1545" height="198" key="GridCell.Tab.0.left/0.0.1600.860/1600.0.1920.1040@0.0.1600.860" timestamp="1594141214988" />
-    <state width="1323" height="281" key="GridCell.Tab.0.right" timestamp="1599022863183">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1366.728/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599019340944" />
-    <state width="1323" height="281" key="GridCell.Tab.0.right/0.0.1366.728/-1920.0.1920.1040@0.0.1366.728" timestamp="1599022863183" />
-    <state width="1545" height="198" key="GridCell.Tab.0.right/0.0.1600.860/1600.0.1920.1040@0.0.1600.860" timestamp="1594141214988" />
-  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/CountProfitRegex.java</url>
-          <line>11</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/NumberOfYears2.java</url>
           <line>8</line>
