@@ -26,13 +26,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74551ef3-e027-45c0-ba92-5e70ee5f73c4" name="Default" comment="added solution NumberPhoneRegex">
-      <change beforePath="$PROJECT_DIR$/../ContainerDelivery/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ContainerDelivery/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Loader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NumberOfYears.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NumberOfYears.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../homework_4.4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../homework_4.4/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../homework_4.5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../homework_4.5/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework_4.5/TotalEarningsCalculatorReqExp/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../homework_4.5/TotalEarningsCalculatorReqExp/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework_4.5/SplitText/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../homework_4.5/SplitText/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../05_ArraysAndCollections/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../05_ArraysAndCollections/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +69,7 @@
     <property name="recentsLimit" value="5" />
     <property name="settings.editor.selected.configurable" value="com.github.izhangzhihao.rainbow.brackets.settings.RainbowConfigurable" />
   </component>
-  <component name="RunManager" selected="Application.Loader">
+  <component name="RunManager" selected="Application.WordsRegexOut">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="ACTIVITY_CLASS" value="" />
@@ -120,22 +117,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CountProfit" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CountProfit" />
-      <module name="StringExperiments" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CountProfitRegex" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CountProfitRegex" />
-      <module name="StringExperiments" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Loader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Loader" />
       <module name="StringExperiments" />
@@ -154,6 +135,22 @@
     </configuration>
     <configuration name="NumberOfYears2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="NumberOfYears2" />
+      <module name="StringExperiments" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringToNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="StringToNumber" />
+      <module name="StringExperiments" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WordsRegexOut" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="WordsRegexOut" />
       <module name="StringExperiments" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -193,11 +190,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.WordsRegexOut" />
+        <item itemvalue="Application.StringToNumber" />
         <item itemvalue="Application.Loader" />
         <item itemvalue="Application.NumberOfYears" />
         <item itemvalue="Application.NumberOfYears2" />
-        <item itemvalue="Application.CountProfit" />
-        <item itemvalue="Application.CountProfitRegex" />
       </list>
     </recent_temporary>
   </component>

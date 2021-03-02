@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c924aa82-0498-4acc-a70b-335c7420d17b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../ContainerDelivery/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ContainerDelivery/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../StringExperiments/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../StringExperiments/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StringExperiments/src/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../StringExperiments/src/Loader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StringExperiments/src/NumberOfYears.java" beforeDir="false" afterPath="$PROJECT_DIR$/../StringExperiments/src/NumberOfYears.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../homework_4.4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../homework_4.4/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TotalEarningsCalculatorReqExp/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/TotalEarningsCalculatorReqExp/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SplitText/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/SplitText/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../05_ArraysAndCollections/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../05_ArraysAndCollections/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,9 +28,16 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../07_AdvancedOOPFeatures/LambdaExpressions" />
   </component>
-  <component name="RunManager" selected="JUnit.All in TotalEarningsCalculatorReqExp">
+  <component name="RunManager" selected="JUnit.TestSplitText">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="SplitText" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="TotalEarningsCalculatorReqExp" />
@@ -58,11 +62,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestSplitText" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SplitText" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestSplitText" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestSplitText" />
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="JUnit.All in TotalEarningsCalculatorReqExp" />
-        <item itemvalue="JUnit.TestEarningsCalculator" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.TestEarningsCalculator" />
       </list>
     </recent_temporary>
   </component>
@@ -75,6 +90,14 @@
       <option name="presentableId" value="Default" />
       <updated>1613545724155</updated>
     </task>
+    <task id="LOCAL-00001" summary="Lösung der TotalEarningsCalculatorReqExp-Aufgabe mit Tests">
+      <created>1614323660529</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1614323660529</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -89,15 +112,8 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/TotalEarningsCalculatorReqExp/src/main/java/Main.java</url>
-          <line>8</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Lösung der TotalEarningsCalculatorReqExp-Aufgabe mit Tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lösung der TotalEarningsCalculatorReqExp-Aufgabe mit Tests" />
   </component>
 </project>
