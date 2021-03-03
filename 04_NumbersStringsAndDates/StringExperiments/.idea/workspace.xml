@@ -27,9 +27,8 @@
   <component name="ChangeListManager">
     <list default="true" id="74551ef3-e027-45c0-ba92-5e70ee5f73c4" name="Default" comment="added solution NumberPhoneRegex">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework_4.4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../homework_4.4/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../homework_4.5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../homework_4.5/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework_4.5/SplitText/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../homework_4.5/SplitText/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework_4.5/FullNameFormatterRegExp/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../homework_4.5/FullNameFormatterRegExp/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../05_ArraysAndCollections/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../05_ArraysAndCollections/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +61,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="dynamic.classpath" value="false" />
     <property name="last.edited.regexp" value="ыыы-пппп  ппп    пппп ррр папп " />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../homework_4.4" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />

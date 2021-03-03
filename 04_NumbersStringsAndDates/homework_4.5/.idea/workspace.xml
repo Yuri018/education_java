@@ -6,9 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c924aa82-0498-4acc-a70b-335c7420d17b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../StringExperiments/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../StringExperiments/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework_4.4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../homework_4.4/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SplitText/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/SplitText/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FullNameFormatterRegExp/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/FullNameFormatterRegExp/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../05_ArraysAndCollections/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../05_ArraysAndCollections/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,9 +27,10 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../07_AdvancedOOPFeatures/LambdaExpressions" />
+    <property name="last.edited.regexp" value="ффф ффф ффф ффф ффф  ффф ффффф ффф ффф ффф ффф ффф" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="RunManager" selected="JUnit.TestSplitText">
+  <component name="RunManager" selected="JUnit.All in FullNameFormatterRegExp">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="SplitText" />
@@ -38,25 +38,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="TotalEarningsCalculatorReqExp" />
+      <module name="FullNameFormatterRegExp" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All in TotalEarningsCalculatorReqExp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TotalEarningsCalculatorReqExp" />
+    <configuration name="All in FullNameFormatterRegExp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FullNameFormatterRegExp" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestEarningsCalculator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TotalEarningsCalculatorReqExp" />
+    <configuration name="TestNameFormatter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FullNameFormatterRegExp" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestEarningsCalculator" />
+      <option name="MAIN_CLASS_NAME" value="TestNameFormatter" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -73,11 +73,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in FullNameFormatterRegExp" />
+        <item itemvalue="Application.Main (2)" />
+        <item itemvalue="JUnit.TestNameFormatter" />
         <item itemvalue="JUnit.TestSplitText" />
         <item itemvalue="Application.Main (1)" />
-        <item itemvalue="JUnit.All in TotalEarningsCalculatorReqExp" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.TestEarningsCalculator" />
       </list>
     </recent_temporary>
   </component>
@@ -97,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614323660529</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Lösung der SplitText-Aufgabe mit Tests">
+      <created>1614674817523</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1614674817523</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -114,6 +121,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Lösung der TotalEarningsCalculatorReqExp-Aufgabe mit Tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lösung der TotalEarningsCalculatorReqExp-Aufgabe mit Tests" />
+    <MESSAGE value="Lösung der SplitText-Aufgabe mit Tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lösung der SplitText-Aufgabe mit Tests" />
   </component>
 </project>
