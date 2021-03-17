@@ -7,20 +7,17 @@ public class Main {
         vasyaBasket.add("Колбаса", 76);
         vasyaBasket.add("Масло", 55);
 
-        Basket petyaBasket = new Basket();
+        Basket petyaBasket = new Basket(250);
         petyaBasket.add("Молоко", 128);
         petyaBasket.add("Сыр", 180);
+
+        Basket machaBasket = new Basket("Стол", 5000);
 
         vasyaBasket.print("Содержимое корзины Васи");
         System.out.println();
         petyaBasket.print("Содержимое корзины Пети");
-//        add("Колбаса", 76);
-//        add("Масло", 55);
-//        add("Молоко", 128);
-//        print("Содержимое корзины");
-//        System.out.println("Общаяя стоимость товаров " + getTotalPrice());
-//        clear();
-//        print("Содержимое корзины");
-//        System.out.println(getTotalPrice());
+        System.out.println();
+        machaBasket.print("Содержимое корзины Маши");
+
     }
 }
