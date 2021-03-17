@@ -1,25 +1,37 @@
 package InternetShop;
 
 public class Basket {
-    private static String items = "";
-    public static void main(String[] args) {
+    private String items = "";
+    private int totalPrice = 0;
 
-        add("Колбаса", 76);
-        add("Масло", 55);
-        add("Молоко", 128);
-        print("Содержимое корзины");
-        clear();
-        print("Содержимое корзины");
-    }
-    public static void add(String name, int price){
+    public void add(String name, int price) {
+        if (contains(name)) {
+            return;
+        }
         items = items + "\n" + name + " - " + price;
+        totalPrice += price;
     }
-    public static void clear(){
+
+    public void clear() {
         items = "";
+        totalPrice = 0;
     }
-    public static void print(String title){
+
+    public int getTotalPrice() {
+        return totalPrice;
+    }
+
+    public boolean contains(String name) {
+        if (items.contains(name)) {
+            return true;
+            //если используется ключевое слово return, то else писать не нужно
+        }
+        return false;
+    }
+
+    public void print(String title) {
         System.out.println(title);
-        if (items.isEmpty()){
+        if (items.isEmpty()) {
             System.out.println("Корзина пуста");
         } else {
             System.out.println(items);
