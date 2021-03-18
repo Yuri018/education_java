@@ -27,14 +27,25 @@ public class Basket {
 
 
     public void add(String name, int price) {
+        add(name, price, 1);//вызываем метод add с тремя параметрами, чтобы этот метод тоже работал
+    }
+
+    //такой перегруженный метод написать нельзя
+//    public void add(String name, int count){
+//    }
+    //а вот такой можно, потому что параметры метода имеют другой порядок написания
+    public void add(int price, String name){
+    }
+
+    public void add(String name, int price, int count){
         if (contains(name)) {
             return;
         }
-        if ((totalPrice += price) >= limit) {
+        if ((totalPrice += count * price) >= limit) {
             return;
         }
-        items = items + "\n" + name + " - " + price;
-        totalPrice += price;
+        items = items + "\n" + name + " - " + count + "шт. - " + price;
+        totalPrice += count * price;
     }
 
     public void clear() {

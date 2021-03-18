@@ -7,9 +7,9 @@ public class Main {
         vasyaBasket.add("Колбаса", 76);
         vasyaBasket.add("Масло", 55);
 
-        Basket petyaBasket = new Basket(250);
+        Basket petyaBasket = new Basket(5000);
         petyaBasket.add("Молоко", 128);
-        petyaBasket.add("Сыр", 180);
+        petyaBasket.add("Сыр", 180, 4);
 
         Basket machaBasket = new Basket("Стол", 5000);
 
