@@ -5,11 +5,11 @@ public class Main {
 
         Basket vasyaBasket = new Basket();
         vasyaBasket.add("Колбаса", 76);
-        vasyaBasket.add("Масло", 55);
+        vasyaBasket.add("Масло", 55, 2);
 
         Basket petyaBasket = new Basket(5000);
-        petyaBasket.add("Молоко", 128);
-        petyaBasket.add("Сыр", 180, 4);
+        petyaBasket.add("Молоко", 128, 3, 200);
+        petyaBasket.add("Сыр", 180, 4, 350);
 
         Basket machaBasket = new Basket("Стол", 5000);
 

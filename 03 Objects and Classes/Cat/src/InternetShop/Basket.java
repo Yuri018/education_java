@@ -4,6 +4,7 @@ public class Basket {
     private String items;
     private int totalPrice = 0;
     public int limit;
+    public int totalBasketWeight = 0;
 
     public Basket(){
         items = "список товаров";
@@ -25,27 +26,39 @@ public class Basket {
         this.totalPrice = totalPrice;
     }
 
-
     public void add(String name, int price) {
-        add(name, price, 1);//вызываем метод add с тремя параметрами, чтобы этот метод тоже работал
+        add(name, price, 1, 0);//вызываем метод add с тремя параметрами, чтобы
+        // этот метод с двумя параметрами тоже работал
     }
 
     //такой перегруженный метод написать нельзя
 //    public void add(String name, int count){
 //    }
     //а вот такой можно, потому что параметры метода имеют другой порядок написания
-    public void add(int price, String name){
-    }
+//    public void add(int price, String name){
+//    }
 
     public void add(String name, int price, int count){
+        add(name, price, 1, 0);
+    }
+
+    public void add(String name, int price, int count, int weight){
+        int totalWeight;
         if (contains(name)) {
             return;
         }
         if ((totalPrice += count * price) >= limit) {
             return;
         }
-        items = items + "\n" + name + " - " + count + "шт. - " + price;
         totalPrice += count * price;
+        totalWeight =  count * weight;
+        items = items + "\n" + name + " - " + count + "шт. - " + price + " руб." + " - "
+        + "Вес " + totalWeight + " гр.";
+        this.totalBasketWeight += totalWeight;
+    }
+
+    public int basketWeight(){
+        return totalBasketWeight;
     }
 
     public void clear() {
@@ -71,6 +84,7 @@ public class Basket {
             System.out.println("Корзина пуста");
         } else {
             System.out.println(items);
+            System.out.println(basketWeight());
         }
     }
 }
