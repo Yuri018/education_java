@@ -6,7 +6,7 @@ public class Basket {
     public int limit;
     public int totalBasketWeight = 0;
 
-    public Basket(){
+    public Basket() {
         items = "список товаров";
         limit = 10000;
     }
@@ -20,7 +20,7 @@ public class Basket {
     }
 
     //создаем конструктор класса Basket с двумя параметрами
-    public Basket(String items, int totalPrice){
+    public Basket(String items, int totalPrice) {
         this();
         this.items = this.items + items;
         this.totalPrice = totalPrice;
@@ -38,11 +38,11 @@ public class Basket {
 //    public void add(int price, String name){
 //    }
 
-    public void add(String name, int price, int count){
+    public void add(String name, int price, int count) {
         add(name, price, 1, 0);
     }
 
-    public void add(String name, int price, int count, int weight){
+    public void add(String name, int price, int count, int weight) {
         int totalWeight;
         if (contains(name)) {
             return;
@@ -51,13 +51,14 @@ public class Basket {
             return;
         }
         totalPrice += count * price;
-        totalWeight =  count * weight;
+        totalWeight = count * weight;
         items = items + "\n" + name + " - " + count + "шт. - " + price + " руб." + " - "
-        + "Вес " + totalWeight + " гр.";
+                + "Вес " + totalWeight + " гр.";
         this.totalBasketWeight += totalWeight;
     }
 
-    public int basketWeight(){
+    //Метод, который будет возвращать значение веса всех товаров в корзине
+    public int basketWeight() {
         return totalBasketWeight;
     }
 
@@ -84,7 +85,7 @@ public class Basket {
             System.out.println("Корзина пуста");
         } else {
             System.out.println(items);
-            System.out.println(basketWeight());
+            System.out.println("Общий вес корзины: " + basketWeight() + " гр.");
         }
     }
 }

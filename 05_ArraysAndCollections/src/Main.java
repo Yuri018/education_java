@@ -1,46 +1,18 @@
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.LinkedList;
-import java.util.ListIterator;
+import java.util.Iterator;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-      ArrayList<String> list = new ArrayList<>(){{
-          add ("Funf");
-          add("Sechs");
-      }};
+      List<String> list = new ArrayList<>();
       list.add("Ein");
       list.add("Zwei");
       list.add("Drei");
       list.add("Vier");
-////заменим элемент "Funf" т.е. метод set удаляет элемент под индексом 0
-//      list.set(0, "Zehn");
-
-//       для вывода списка в обратном порядке
-//        for (int i = 0; i < list.size(); i++) {
-//            int j = list.size() - i - 1;
-//            //размер списка size вместо length и круглые скобки вместо квадратных
-//            System.out.println(list.get(j));
-//        }
-//        Collections.reverse(list);
-        System.out.println(list.get(1));
-//        for (String x: list
-//             ) {
-//            System.out.println(x);
-//        }
-        ListIterator<String> iterator = list.listIterator();
+        System.out.println(list.size());
+        Iterator<String> iterator = list.iterator();
         while (iterator.hasNext()){
             System.out.println(iterator.next());
         }
-//        System.out.println("----------------------------");
-//        iterator.add("acht");
-//
-//        while (iterator.hasPrevious()){
-//            System.out.println(iterator.previous());
-//        }
-
-        System.out.println("1" + 1);
-        String s = "hello world";
-        System.out.print(s.charAt(1));
     }
 }
