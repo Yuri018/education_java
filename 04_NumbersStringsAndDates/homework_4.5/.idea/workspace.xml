@@ -5,9 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c924aa82-0498-4acc-a70b-335c7420d17b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../StringExperiments/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../StringExperiments/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FullNameFormatterRegExp/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/FullNameFormatterRegExp/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../05_ArraysAndCollections/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../05_ArraysAndCollections/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -104,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614674817523</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Lösung der FullNameFormatterRegExp-Aufgabe mit Tests">
+      <created>1614761839860</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1614761839860</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -122,6 +126,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Lösung der TotalEarningsCalculatorReqExp-Aufgabe mit Tests" />
     <MESSAGE value="Lösung der SplitText-Aufgabe mit Tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lösung der SplitText-Aufgabe mit Tests" />
+    <MESSAGE value="Lösung der FullNameFormatterRegExp-Aufgabe mit Tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lösung der FullNameFormatterRegExp-Aufgabe mit Tests" />
   </component>
 </project>
