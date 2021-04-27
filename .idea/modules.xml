@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/04_Encapsulation/01_Elevator.iml" filepath="$PROJECT_DIR$/04_Encapsulation/01_Elevator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/04_Encapsulation/04_Encapsulation.iml" filepath="$PROJECT_DIR$/04_Encapsulation/04_Encapsulation.iml" />
       <module fileurl="file://$PROJECT_DIR$/05_ArraysAndCollections/05_ArraysAndCollections.iml" filepath="$PROJECT_DIR$/05_ArraysAndCollections/05_ArraysAndCollections.iml" />
       <module fileurl="file://$PROJECT_DIR$/02 Language Syntax/Booleans/Booleans.iml" filepath="$PROJECT_DIR$/02 Language Syntax/Booleans/Booleans.iml" />
       <module fileurl="file://$PROJECT_DIR$/03 Objects and Classes/Cat/Cat.iml" filepath="$PROJECT_DIR$/03 Objects and Classes/Cat/Cat.iml" />

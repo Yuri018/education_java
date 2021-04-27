@@ -3,9 +3,10 @@ package InternetShop2;
 public class Basket {
 
     private static int count = 0;
-    private String items = "";
+    private String items;
     private int totalPrice = 0;
     private int limit;
+    private double totalWeight = 0.0;
 
     public Basket() {
         increaseCount(1);
@@ -24,45 +25,54 @@ public class Basket {
         this.totalPrice = totalPrice;
     }
 
-    public static int getCount() {
+    public int getCount() {
         return count;
     }
 
-    public static void increaseCount(int count) {
+    public int getTotalPrice() {
+        return totalPrice;
+    }
+
+    public double getTotalWeight() {
+        return totalWeight;
+    }
+
+    public void increaseCount(int count) {
         Basket.count = Basket.count + count;
     }
 
     public void add(String name, int price) {
         add(name, price, 1);
     }
+    public void add(String name, int price, double weight) {
+        add(name, price, 1, weight);
+        totalWeight = weight * getCount();
+    }
+    public void add(String name, int price, int count, double weight) {
+        add(name, price, count);
+        totalWeight = weight * count;
+    }
 
-    public void add(String name, int price, int count) {
-        boolean error = false;
-        if (contains(name)) {
-            error = true;
-        }
-
+        public void add(String name, int price, int count) {
+        boolean error = contains(name);
         if (totalPrice + count * price >= limit) {
             error = true;
         }
-
         if (error) {
             System.out.println("Error occured :(");
             return;
         }
-
         items = items + "\n" + name + " - " +
-                count + " шт. - " + price;
-        totalPrice = totalPrice + count * price;
+                count + " шт. - " + price + " руб.";
+    }
+
+    public void basketTotalWeight() {
+        System.out.println("Общий вес корзины: " + totalWeight * getCount());
     }
 
     public void clear() {
         items = "";
         totalPrice = 0;
-    }
-
-    public int getTotalPrice() {
-        return totalPrice;
     }
 
     public boolean contains(String name) {

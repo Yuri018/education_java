@@ -19,8 +19,10 @@ public class Arithmetic {
     public int averageValue(){
         return (a * b) / 2;
     }
-    public int minAndMaxValue(){
+    public int minValue(){
+        return Math.min(a, b);
+    }
+    public int maxValue(){
         return Math.max(a, b);
     }
-
 }

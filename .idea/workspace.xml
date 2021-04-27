@@ -20,15 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e868a428-28e9-4b28-90c0-7ac4bc506a6a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/07_LambdaExpressions/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/07_LambdaExpressions/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/07_LambdaExpressions/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/07_LambdaExpressions/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/07_LambdaExpressions/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/07_LambdaExpressions/07_AdvancedOOPFeatures.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/07_LambdaExpressions/data/staff.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/07_LambdaExpressions/src/Employee.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/07_LambdaExpressions/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03 Objects and Classes/Cat/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/03 Objects and Classes/Cat/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +47,20 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/07_AdvancedOOPFeatures" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="openjdk-15" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Skillbox/java_basics/04_NumbersStringsAndDates" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Githab\education_java\04_Encapsulation\01_Elevator" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Githab\education_java\04_New_Encapsulation\01_Elevator" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -80,11 +87,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="-1180" y="274" key="FileChooserDialogImpl" timestamp="1606728880668">
-      <screen x="-1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="-1180" y="274" key="FileChooserDialogImpl/0.0.1366.728/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1606728880668" />
   </component>
 </project>
