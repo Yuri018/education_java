@@ -23,10 +23,11 @@ public class Elevator {
         currentFloor = currentFloor + 1;
     }
      public  void move(int floor){
-        if (floor > (currentFloor + 1) && floor < (currentFloor - 1)) {
-            System.out.println("Das ist falsch");
+        if (floor != (currentFloor + 1) || floor > maxFloor) {
+            System.out.println("Задан неверный этаж. Вы на " + currentFloor + " этаже.");
         } else {
-
+            moveUp();
+            System.out.println("Вы на " + currentFloor + " этаже.");
         }
      }
 }
