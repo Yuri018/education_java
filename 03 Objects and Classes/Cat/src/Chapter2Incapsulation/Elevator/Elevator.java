@@ -3,8 +3,8 @@ package Chapter2Incapsulation.Elevator;
 public class Elevator {
 
     private int currentFloor = 1;
-    private int minFloor;
-    private int maxFloor;
+    private final int minFloor;
+    private final int maxFloor;
 
     public Elevator(int minFloor, int maxFloor) {
         this.minFloor = minFloor;
@@ -15,19 +15,30 @@ public class Elevator {
         return currentFloor;
     }
 
-    public void moveDown(){
+    public void moveDown() {
         currentFloor = currentFloor - 1;
+        System.out.println("Вы на " + getCurrentFloor() + " этаже.");
     }
 
     public void moveUp() {
         currentFloor = currentFloor + 1;
+        System.out.println("Вы на " + getCurrentFloor() + " этаже.");
     }
-     public  void move(int floor){
+
+    public void move(int floor) {
+
         if (floor != (currentFloor + 1) || floor > maxFloor) {
-            System.out.println("Задан неверный этаж. Вы на " + currentFloor + " этаже.");
+            if (floor != (currentFloor - 1) || floor < minFloor) {
+                printError();
+            } else {
+                moveDown();
+            }
         } else {
             moveUp();
-            System.out.println("Вы на " + currentFloor + " этаже.");
         }
-     }
+    }
+
+    public void printError() {
+        System.out.println("Задан неверный этаж. Вы на " + currentFloor + " этаже.");
+    }
 }
