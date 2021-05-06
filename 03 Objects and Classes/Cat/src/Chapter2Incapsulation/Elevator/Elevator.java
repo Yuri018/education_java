@@ -26,16 +26,37 @@ public class Elevator {
     }
 
     public void move(int floor) {
-
-        if (floor != (currentFloor + 1) || floor > maxFloor) {
-            if (floor != (currentFloor - 1) || floor < minFloor) {
-                printError();
-            } else {
-                moveDown();
+        if (floor <= maxFloor && floor >= minFloor){
+    //вариант решения через цикл while
+            while (getCurrentFloor() != floor){
+                if (floor < getCurrentFloor()){
+                    moveDown();
+                }else if (floor >getCurrentFloor()){
+                    moveUp();
+                }
             }
+    //вариант решения через цикл for
+//            for (int i = getCurrentFloor(); i != floor; ){
+//                if (floor < getCurrentFloor()){
+//                    moveDown();
+//                    i--;
+//                } else if (floor > getCurrentFloor()){
+//                    moveUp();
+//                    i++;
+//                }
+//            }
         } else {
-            moveUp();
+            printError();
         }
+//        if (floor != (currentFloor + 1) || floor > maxFloor) {
+//            if (floor != (currentFloor - 1) || floor < minFloor) {
+//                printError();
+//            } else {
+//                moveDown();
+//            }
+//        } else {
+//            moveUp();
+//        }
     }
 
     public void printError() {
