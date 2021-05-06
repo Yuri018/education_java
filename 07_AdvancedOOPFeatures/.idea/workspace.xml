@@ -19,9 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ef96f74-67a6-4a3b-8c3f-85f2a941ce06" name="Default Changelist" comment="">
+    <list default="true" id="1ef96f74-67a6-4a3b-8c3f-85f2a941ce06" name="Default Changelist" comment="Andern des Modulnames">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LambdaExpressions/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/LambdaExpressions/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +75,14 @@
       <option name="presentableId" value="Default" />
       <updated>1606726767402</updated>
     </task>
+    <task id="LOCAL-00001" summary="Andern des Modulnames">
+      <created>1620285367461</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1620285367461</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -89,5 +96,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Andern des Modulnames" />
+    <option name="LAST_COMMIT_MESSAGE" value="Andern des Modulnames" />
   </component>
 </project>
