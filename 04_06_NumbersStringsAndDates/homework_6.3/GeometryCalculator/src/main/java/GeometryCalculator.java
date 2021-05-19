@@ -1,12 +1,13 @@
 public class GeometryCalculator {
     // метод должен использовать абсолютное значение radius
     public static double getCircleSquare(double radius) {
-        return 0;
+
+        return Math.PI * Math.pow(radius, 2);
     }
 
     // метод должен использовать абсолютное значение radius
     public static double getSphereVolume(double radius) {
-        return 0;
+        return Math.abs(1.33333333 * (Math.PI * Math.pow(radius, 3)));
     }
 
     public static boolean isTrianglePossible(double a, double b, double c) {

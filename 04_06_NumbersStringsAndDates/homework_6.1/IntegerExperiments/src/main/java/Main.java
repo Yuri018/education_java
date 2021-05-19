@@ -4,7 +4,7 @@ public class Main {
         Container container = new Container();
         container.count += 7843;
 
-        int sum = sumDigits(7843);
+        int sum = sumDigits(7843216);
 
         System.out.println(sum);
     }
@@ -22,7 +22,8 @@ public class Main {
             String integerToString = Integer.toString(number);// переводим Integer в String
             int sum = 0;
             for (int i = 0; i < integerToString.length(); i++) { //считаем количество символов
-                sum += Character.getNumericValue(integerToString.charAt(i)); //и возвращаем в виде int
+                sum += Integer.parseInt(String.valueOf(integerToString.charAt(i)));
+//                sum += Character.getNumericValue(integerToString.charAt(i)); //и суммируем
             }
             return sum;
         }
