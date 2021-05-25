@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/homework_6.1/IntegerExperiments/01_sumdigits.iml" filepath="$PROJECT_DIR$/homework_6.1/IntegerExperiments/01_sumdigits.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/04_06_NumbersStringsAndDates.iml" filepath="$PROJECT_DIR$/.idea/04_06_NumbersStringsAndDates.iml" />
+      <module fileurl="file://$PROJECT_DIR$/homework_6.4/Alfabet.iml" filepath="$PROJECT_DIR$/homework_6.4/Alfabet.iml" />
       <module fileurl="file://$PROJECT_DIR$/homework_6.6/BirthdayCalendar/BirthdayCalendar.iml" filepath="$PROJECT_DIR$/homework_6.6/BirthdayCalendar/BirthdayCalendar.iml" />
       <module fileurl="file://$PROJECT_DIR$/homework_6.4/FullNameFormatter/FullNameFormatter.iml" filepath="$PROJECT_DIR$/homework_6.4/FullNameFormatter/FullNameFormatter.iml" />
       <module fileurl="file://$PROJECT_DIR$/homework_6.5/FullNameFormatterRegExp/FullNameFormatterRegExp.iml" filepath="$PROJECT_DIR$/homework_6.5/FullNameFormatterRegExp/FullNameFormatterRegExp.iml" />
@@ -15,6 +16,7 @@
       <module fileurl="file://$PROJECT_DIR$/homework_6.4/TotalEarningsCalculator/TotalEarningsCalculator.iml" filepath="$PROJECT_DIR$/homework_6.4/TotalEarningsCalculator/TotalEarningsCalculator.iml" />
       <module fileurl="file://$PROJECT_DIR$/homework_6.5/TotalEarningsCalculatorReqExp/TotalEarningsCalculatorReqExp.iml" filepath="$PROJECT_DIR$/homework_6.5/TotalEarningsCalculatorReqExp/TotalEarningsCalculatorReqExp.iml" />
       <module fileurl="file://$PROJECT_DIR$/homework_6.3/TrucksContainersAndBoxes/TrucksContainersAndBoxes.iml" filepath="$PROJECT_DIR$/homework_6.3/TrucksContainersAndBoxes/TrucksContainersAndBoxes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/homework_6.4/homework_6.4.iml" filepath="$PROJECT_DIR$/homework_6.4/homework_6.4.iml" />
     </modules>
   </component>
 </project>
