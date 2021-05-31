@@ -20,41 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="96274723-4474-4e38-b3fb-c5bc1ea5d1e1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../homework_4.1/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../homework_4.1/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../homework_4.1/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../homework_4.1/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../homework_4.1/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../homework_4.1/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_3_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../homework_4.1/.idea/libraries/Maven__com_google_guava_failureaccess_1_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../homework_4.1/.idea/libraries/Maven__com_google_guava_guava_29_0_jre.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../homework_4.1/.idea/libraries/Maven__com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../homework_4.1/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../homework_4.1/.idea/libraries/Maven__com_puppycrawl_tools_checkstyle_8_34.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../homework_4.1/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../homework_4.1/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../homework_4.1/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../homework_4.1/.idea/libraries/Maven__info_picocli_picocli_4_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../homework_4.1/.idea/libraries/Maven__net_sf_saxon_Saxon_HE_9_9_1_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../homework_4.1/.idea/libraries/Maven__org_antlr_antlr4_runtime_4_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../homework_4.1/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../homework_4.1/.idea/libraries/Maven__org_checkerframework_checker_qual_2_11_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../homework_4.1/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_6_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../homework_4.1/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_6_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../homework_4.1/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_6_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../homework_4.1/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_6_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../homework_4.1/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../homework_4.1/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../homework_4.1/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../homework_4.1/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../homework_4.1/IntegerExperiments/checkstyle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../homework_4.1/IntegerExperiments/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../homework_4.1/IntegerExperiments/src/main/java/Container.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../homework_4.1/IntegerExperiments/src/main/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../homework_4.1/IntegerExperiments/src/test/java/TestSumDigits.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework_4.5/PhoneCleaner/PhoneCleaner.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../homework_4.1/IntegerExperiments/01_sumdigits.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StringExperiments/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../StringExperiments/.idea/workspace.xml" afterDir="false" />
     </list>
     <list id="effb531f-5b3a-45bc-a3c0-358ac0d2d14a" name="deleted  Updates were rejected because the remote contains work that you do" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +43,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551865119735" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../homework_4.1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Skillbox/java_basics/04_NumbersStringsAndDates/StringExperiments" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
