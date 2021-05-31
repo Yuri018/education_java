@@ -26,8 +26,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74551ef3-e027-45c0-ba92-5e70ee5f73c4" name="Default" comment="added solution NumberPhoneRegex">
-      <change beforePath="$PROJECT_DIR$/../../04_06_NumbersStringsAndDates/homework_6.4/TotalEarningsCalculator/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../04_06_NumbersStringsAndDates/homework_6.4/TotalEarningsCalculator/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../IntegerExperiments/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../IntegerExperiments/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04_06_NumbersStringsAndDates/homework_6.4/FullNameFormatter/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../04_06_NumbersStringsAndDates/homework_6.4/FullNameFormatter/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,14 +59,14 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="dynamic.classpath" value="false" />
     <property name="last.edited.regexp" value="ыыы-пппп  ппп    пппп ррр папп " />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../04_06_NumbersStringsAndDates" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
     <property name="settings.editor.selected.configurable" value="com.github.izhangzhihao.rainbow.brackets.settings.RainbowConfigurable" />
   </component>
-  <component name="RunManager" selected="Application.FullNameRegex2">
+  <component name="RunManager" selected="Application.FullName">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="ACTIVITY_CLASS" value="" />
@@ -115,6 +114,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FullName" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FullName" />
+      <module name="StringExperiments" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FullNameRegex2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="FullNameRegex2" />
       <module name="StringExperiments" />
@@ -125,14 +132,6 @@
     </configuration>
     <configuration name="Loader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Loader" />
-      <module name="StringExperiments" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NumberOfYears" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="NumberOfYears" />
       <module name="StringExperiments" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -188,11 +187,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FullName" />
         <item itemvalue="Application.FullNameRegex2" />
         <item itemvalue="Application.WordsRegexOut" />
         <item itemvalue="Application.StringToNumber" />
         <item itemvalue="Application.Loader" />
-        <item itemvalue="Application.NumberOfYears" />
       </list>
     </recent_temporary>
   </component>
