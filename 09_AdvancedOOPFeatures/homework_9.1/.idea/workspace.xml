@@ -5,40 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4420f86d-083f-4e26-807d-9d497681c241" name="Default Changelist" comment="Arbeiten mit einer Aufgabe 9.1">
-      <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09_AdvancedOOPFeatures.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LambdaExpressions7.1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/checkstyle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sortedStaff.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/staff.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Employee.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestSortBySalaryAndAlphabet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework_9.2/Airport/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework_9.2/Airport/checkstyle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework_9.2/Airport/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework_9.2/Airport/src/main/java/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework_9.2/Airport/src/test/java/TestFindPlanesLeavingInTheNextTwoHours.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework_9.2/Employees/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework_9.2/Employees/LambdaExpressions7.2-Employee.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework_9.2/Employees/checkstyle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework_9.2/Employees/data/staff.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework_9.2/Employees/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework_9.2/Employees/src/main/java/Employee.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework_9.2/Employees/src/main/java/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework_9.2/Employees/src/test/java/TestFindEmployeeByHighestSalary.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../04_NumbersStringsAndDates/homework_4.5/TotalEarningsCalculatorReqExp/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../04_NumbersStringsAndDates/homework_4.5/TotalEarningsCalculatorReqExp/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../04_NumbersStringsAndDates/homework_4.5/TotalEarningsCalculatorReqExp/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../04_NumbersStringsAndDates/homework_4.5/TotalEarningsCalculatorReqExp/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../04_NumbersStringsAndDates/homework_4.5/TotalEarningsCalculatorReqExp/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../04_NumbersStringsAndDates/homework_4.5/TotalEarningsCalculatorReqExp/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../04_NumbersStringsAndDates/homework_4.5/TotalEarningsCalculatorReqExp/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04_06_NumbersStringsAndDates/homework_6.5/SplitText/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../04_06_NumbersStringsAndDates/homework_6.5/SplitText/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04_06_NumbersStringsAndDates/homework_6.5/TotalEarningsCalculatorReqExp/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../04_06_NumbersStringsAndDates/homework_6.5/TotalEarningsCalculatorReqExp/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04_NumbersStringsAndDates/StringExperiments/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../04_NumbersStringsAndDates/StringExperiments/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,12 +34,15 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../04_06_NumbersStringsAndDates" />
+    <property name="jdk.selected.JAVA_MODULE" value="openjdk-15" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-15" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="LambdaExpressions7.1" />
+      <module name="homework_9.1" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
