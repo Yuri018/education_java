@@ -16,41 +16,20 @@ public class CustomerStorage {
         final int INDEX_EMAIL = 2;
         final int INDEX_PHONE = 3;
 
-        try {
             String[] components = data.split("\\s+");
             if (components.length != 4) {
-                throw new IllegalArgumentException("Wrong components");
-//        }
-//        if (!components[INDEX_PHONE].equals(validatePhone())) {
-//            throw new IllegalArgumentException("Wrong phone");
-//        }
-//        if (!components[INDEX_EMAIL].equals(validateEmail())) {
-//            throw new IllegalArgumentException("Wrong Email");
-            } else {
-                String name = components[INDEX_NAME] + " " + components[INDEX_SURNAME];
-                storage.put(name, new Customer(name, components[INDEX_PHONE], components[INDEX_EMAIL]));
+                throw new ArrayIndexOutOfBoundsException("Wrong format. Correct format: " +
+                        "\nВасилий Петров vasily.petrov@gmail.com +79215637722");
             }
-        } catch (Exception exception){
-            exception.printStackTrace();
-        }
+            if (!components[2].matches(".+@.+\\..+")) {
+                throw new IllegalArgumentException("Wrong E-Mail.");
+            }
+            if (!components[3].matches("^\\+7\\d{10}$")) {
+                throw new IllegalArgumentException("Wrong Phone number.");
+            }
+            String name = components[0] + " " + components[1];
+            storage.put(name, new Customer(name, components[3], components[2]));
 
-    }
-
-    public String validatePhone() {
-        String phone = "";
-        String regex = ("^\\\\d{10}$");
-        Pattern pattern = Pattern.compile(regex);
-        Matcher matcher = pattern.matcher(phone);
-        return phone;
-    }
-
-    public String validateEmail() {
-        String email = "";
-        String regex = ("^([_a-zA-Z0-9-]+(\\\\.[_a-zA-Z0-9-]+)*@[a-zA-Z0-9-]" +
-                "+(\\\\.[a-zA-Z0-9-]+)*(\\\\.[a-zA-Z]{1,6}))?$");
-        Pattern pattern = Pattern.compile(regex);
-        Matcher matcher = pattern.matcher(email);
-        return email;
     }
 
     public void listCustomers() {
