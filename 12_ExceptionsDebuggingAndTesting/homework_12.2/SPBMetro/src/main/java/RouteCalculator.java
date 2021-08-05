@@ -22,7 +22,8 @@ public class RouteCalculator {
         }
 
         route = getRouteWithOneConnection(from, to);
-        if (route != null) {
+        //здесь была ошибка
+        if (!route.isEmpty()) {
             return route;
         }
 

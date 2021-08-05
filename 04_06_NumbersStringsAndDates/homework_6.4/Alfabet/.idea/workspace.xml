@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20cf574c-c3cd-425e-b66d-a9af046d9c83" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../04_NumbersStringsAndDates/StringExperiments/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../04_NumbersStringsAndDates/StringExperiments/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../12_ExceptionsDebuggingAndTesting/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../12_ExceptionsDebuggingAndTesting/.idea/12_ExceptionsDebuggingAndTesting.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../12_ExceptionsDebuggingAndTesting/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../12_ExceptionsDebuggingAndTesting/homework_12.1/ConsoleCustomerList/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../12_ExceptionsDebuggingAndTesting/homework_12.2/SPBMetro/spb-metro.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
