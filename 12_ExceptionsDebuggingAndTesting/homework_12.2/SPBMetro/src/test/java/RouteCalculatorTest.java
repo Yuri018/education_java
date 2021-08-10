@@ -7,7 +7,7 @@ import java.util.List;
 
 public class RouteCalculatorTest extends TestCase {
 
-    StationIndex stationIndex = new StationIndex();
+    StationIndex stationIndex;
     RouteCalculator routeCalculator;
 
     @Override
