@@ -44,6 +44,8 @@ public class RouteCalculatorTest extends TestCase {
         connection2.add(station6);
         connection2.add(station9);
 
+        stationIndex = new StationIndex();
+
         stationIndex.addStation(station1);
         stationIndex.addStation(station2);
         stationIndex.addStation(station3);

@@ -3,14 +3,12 @@ import core.Station;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class RouteCalculatorTest2 {
 
     private final double delta = 1e-9;
-
     StationIndex stationIndex;
     RouteCalculator routeCalculator;
 
@@ -73,21 +71,21 @@ public class RouteCalculatorTest2 {
     public void testRouteCalculatorWithOneLine() {
         List<Station> actual = routeCalculator.getShortestRoute(stationIndex.
                 getStation("Девяткино"), stationIndex.getStation("Балтийская"));
-        Assert.assertEquals(5, actual.size());
+        Assert.assertEquals(3, actual.size(), delta);
     }
 
     @Test
     public void testRouteCalculatorWithTwoLine(){
         List<Station> actual = routeCalculator.getShortestRoute(stationIndex.
                 getStation("Чернышевская"), stationIndex.getStation("Автово"));
-        Assert.assertEquals(4, actual.size());
+        Assert.assertEquals(4, actual.size(), delta);
     }
 
     @Test
     public void testRouteCalculatorWithThreeLine(){
         List<Station> actual = routeCalculator.getShortestRoute(stationIndex.
                 getStation("Чернышевская"), stationIndex.getStation("Чкаловская"));
-        Assert.assertEquals(7, actual.size());
+        Assert.assertEquals(7, actual.size(), delta);
     }
 
     @Test
