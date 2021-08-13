@@ -26,15 +26,24 @@ public class Main {
         System.out.println("Программа расчёта маршрутов метрополитена Санкт-Петербурга\n");
         scanner = new Scanner(System.in);
         for (; ; ) {
-            Station from = takeStation("Введите станцию отправления:");
-            Station to = takeStation("Введите станцию назначения:");
+            try {
+                Station from = takeStation("Введите станцию отправления:");
+                logger.info("Введена станция отправления:" + from);
+                Station to = takeStation("Введите станцию назначения:");
+                logger.info("Введена станция назначения:" + to);
 
-            List<Station> route = calculator.getShortestRoute(from, to);
-            System.out.println("Маршрут:");
-            printRoute(route);
+                List<Station> route = calculator.getShortestRoute(from, to);
+                System.out.println("Маршрут:");
+                printRoute(route);
 
-            System.out.println("Длительность: " +
-                    RouteCalculator.calculateDuration(route) + " минут");
+                System.out.println("Длительность: " +
+                        RouteCalculator.calculateDuration(route) + " минут");
+
+            } catch (Exception exception){
+                logger.warn("Сработал блок отлова Exceptions");
+                exception.printStackTrace();
+            }
+
         }
     }
 
@@ -67,7 +76,7 @@ public class Main {
             if (station != null) {
                 return station;
             }
-            logger.info("Station " + line +" not found");
+            logger.error("Station " + line +" not found");
             System.out.println("Станция не найдена :(");
         }
     }
