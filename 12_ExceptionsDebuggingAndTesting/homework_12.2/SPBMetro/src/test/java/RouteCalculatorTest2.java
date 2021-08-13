@@ -2,6 +2,7 @@ import core.Line;
 import core.Station;
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.Test;
 import java.util.ArrayList;
 import java.util.List;
@@ -9,8 +10,14 @@ import java.util.List;
 public class RouteCalculatorTest2 {
 
     private final double delta = 1e-9;
-    StationIndex stationIndex;
-    RouteCalculator routeCalculator;
+    private static StationIndex stationIndex;
+    private static RouteCalculator routeCalculator;
+
+    @BeforeClass
+    public static void createObjectForTest(){
+        stationIndex = new StationIndex();
+        routeCalculator = new RouteCalculator(stationIndex);
+    }
 
     @Before
     public void createSchemeForTest() {
@@ -46,7 +53,7 @@ public class RouteCalculatorTest2 {
         connection2.add(station6);
         connection2.add(station9);
 
-        stationIndex = new StationIndex();
+//        stationIndex = new StationIndex();
 
         stationIndex.addStation(station1);
         stationIndex.addStation(station2);
@@ -64,7 +71,7 @@ public class RouteCalculatorTest2 {
         stationIndex.addConnection(connection1);
         stationIndex.addConnection(connection2);
 
-        routeCalculator = new RouteCalculator(stationIndex);
+//        routeCalculator = new RouteCalculator(stationIndex);
     }
 
     @Test
