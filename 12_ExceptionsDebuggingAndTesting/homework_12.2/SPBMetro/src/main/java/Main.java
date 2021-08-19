@@ -28,9 +28,9 @@ public class Main {
         for (; ; ) {
             try {
                 Station from = takeStation("Введите станцию отправления:");
-                logger.info("Введена станция отправления:" + from);
+                logger.info("Введена станция отправления: " + from);
                 Station to = takeStation("Введите станцию назначения:");
-                logger.info("Введена станция назначения:" + to);
+                logger.info("Введена станция назначения: " + to);
 
                 List<Station> route = calculator.getShortestRoute(from, to);
                 System.out.println("Маршрут:");
@@ -40,7 +40,7 @@ public class Main {
                         RouteCalculator.calculateDuration(route) + " минут");
 
             } catch (Exception exception){
-                logger.warn("Сработал блок отлова Exceptions");
+                logger.trace("Сработал блок отлова Exceptions");
                 exception.printStackTrace();
             }
 
@@ -76,7 +76,7 @@ public class Main {
             if (station != null) {
                 return station;
             }
-            logger.error("Station " + line +" not found");
+            logger.error("Станция " + line +" не найдена");
             System.out.println("Станция не найдена :(");
         }
     }
