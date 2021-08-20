@@ -4,22 +4,22 @@
 
         <File name="MyFileForSearch" fileName="logs/search.log" immediateFlush="true">
             <PatternLayout pattern="%d{dd-MM-yyyy HH:mm:ss} [%t] %-5level %logger{36} - %msg%n"/>
-            <ThresholdFilter level="ERROR" onMatch="DENY" onMismatch="NEUTRAL"/>
+            <ThresholdFilter level="WARN" onMatch="DENY" onMismatch="NEUTRAL"/>
         </File>
         <File name="MyFileForInputErrors" fileName="logs/input_errors.log" immediateFlush="true">
             <PatternLayout pattern="%d{dd-MM-yyyy HH:mm:ss} [%t] %-5level %logger{36} - %msg%n"/>
+            <ThresholdFilter level="ERROR" onMatch="DENY" onMismatch="NEUTRAL"/>
         </File>
         <File name="MyFileForExceptions" fileName="logs/exceptions.log" immediateFlush="true">
             <PatternLayout pattern="%d{dd-MM-yyyy HH:mm:ss} [%t] %-5level %logger{36} - %msg%n"/>
-            <ThresholdFilter level="DEBUG" onMatch="DENY" onMismatch="NEUTRAL"/>
         </File>
 
     </appenders>
     <loggers>
         <root level="all">
             <appender-ref ref="MyFileForSearch" level ="info"/>
-            <appender-ref ref="MyFileForInputErrors" level ="error"/>
-            <appender-ref ref="MyFileForExceptions" level="trace"/>
+            <appender-ref ref="MyFileForInputErrors" level ="warn"/>
+            <appender-ref ref="MyFileForExceptions" level="error"/>
         </root>
     </loggers>
 </configuration>

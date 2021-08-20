@@ -40,7 +40,7 @@ public class Main {
                         RouteCalculator.calculateDuration(route) + " минут");
 
             } catch (Exception exception){
-                logger.trace("Сработал блок отлова Exceptions");
+                logger.error("Сработал блок отлова Exceptions", exception);
                 exception.printStackTrace();
             }
 
@@ -76,7 +76,7 @@ public class Main {
             if (station != null) {
                 return station;
             }
-            logger.error("Станция " + line +" не найдена");
+            logger.warn("Станция " + line +" не найдена");
             System.out.println("Станция не найдена :(");
         }
     }
