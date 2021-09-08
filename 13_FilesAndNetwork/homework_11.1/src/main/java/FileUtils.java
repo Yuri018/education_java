@@ -1,18 +1,19 @@
 import java.io.IOException;
 import java.nio.file.Files;
-import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Scanner;
 
 public class FileUtils {
 
     private static final Scanner scr = new Scanner(System.in);
 
-    public static long calculateFolderSize() {
+    public static long calculateFolderSize(String path) {
         System.out.println("Введите путь до папки:");
-        String path = scr.nextLine();
+        path = scr.nextLine();
         long size = 0;
         try {
-            size = Files.walk(Path.of("path")).mapToLong(x -> x.toFile().length()).sum();
+            size = Files.walk(Paths.get(path))
+                    .mapToLong(x -> x.toFile().length()).sum();
         }  catch (IOException ex) {
             System.out.println("Такого файла или папки не существует");
         }

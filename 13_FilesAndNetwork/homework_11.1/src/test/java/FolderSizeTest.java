@@ -37,7 +37,7 @@ public class FolderSizeTest {
         writeContent(files);
 
         assertEquals((long) files.size() * bytesInFiles.length,
-                FileUtils.calculateFolderSize());
+                FileUtils.calculateFolderSize(tempDirectory.toFile().getAbsolutePath()));
     }
 
     @Test
@@ -48,7 +48,7 @@ public class FolderSizeTest {
         writeContent(files);
 
         assertEquals((long) files.size() * bytesInFiles.length,
-                FileUtils.calculateFolderSize());
+                FileUtils.calculateFolderSize(tempDirectory.toFile().getAbsolutePath()));
     }
 
     private void writeContent(List<Path> files) {
