@@ -13,7 +13,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <checkstyle-maven-plugin.version>3.1.1</checkstyle-maven-plugin.version>
-        <junit.platform.version>5.7.2</junit.platform.version>
+        <junit.platform.version>5.8.0</junit.platform.version>
         <junit.version>4.12</junit.version>
         <puppycrawl.version>8.45.1</puppycrawl.version>
         <checkstyle.config.remote>
@@ -56,10 +56,17 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.22.2</version>
             </plugin>
+
+
         </plugins>
     </build>
 
     <dependencies>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.11.0</version>
+        </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
