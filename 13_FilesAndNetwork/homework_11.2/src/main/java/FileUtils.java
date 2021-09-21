@@ -1,9 +1,5 @@
 import java.io.File;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.nio.file.StandardCopyOption;
 
 
 public class FileUtils {
@@ -19,17 +15,17 @@ public class FileUtils {
         }
 
         //zweite variante
-        File folder = new File(sourceDirectory);
-        File[] listOfFiles = folder.listFiles();
-
-        Path newDir = Paths.get(destinationDirectory);
-        if (listOfFiles != null)
-            for (File file : listOfFiles)
-                try {
-                    Files.copy(file.toPath(), newDir.resolve(file.getName())
-                            , StandardCopyOption.REPLACE_EXISTING);
-                } catch (IOException ex) {
-                    ex.printStackTrace();
-                }
+//        File folder = new File(sourceDirectory);
+//        File[] listOfFiles = folder.listFiles();
+//
+//        Path newDir = Paths.get(destinationDirectory);
+//        if (listOfFiles != null)
+//            for (File file : listOfFiles)
+//                try {
+//                    Files.copy(file.toPath(), newDir.resolve(file.getName())
+//                            , StandardCopyOption.REPLACE_EXISTING);
+//                } catch (IOException ex) {
+//                    ex.printStackTrace();
+//                }
     }
 }
