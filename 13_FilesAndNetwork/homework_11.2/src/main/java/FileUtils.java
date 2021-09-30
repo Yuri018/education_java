@@ -4,29 +4,35 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
+import java.util.stream.Stream;
 
 
 public class FileUtils {
     public static void copyFolder(String sourceDirectory, String destinationDirectory) {
-        //Kopieren von Verzeichnissen und Dateien mit commons.io
-        File srcDir = new File(sourceDirectory);
-//        File[] listOfFiles = srcDir.listFiles();
-        File destDir = new File(destinationDirectory);
-        if(srcDir.isDirectory()){
-            if(!destDir.exists()){
-                destDir.mkdir();
-            }
 
-            String files[] = srcDir.list();
+        //Kopieren von Verzeichnissen und Dateien mit Stream API
+        Path srcDir = Paths.get(sourceDirectory);
+        Path destDir = Paths.get(destinationDirectory);
 
-            for (String file : files) {
-                File srcFile = new File(srcDir, file);
-                File destFile = new File(destDir, file);
+        if (!destDir.toFile().exists())
+            destDir.toFile().mkdirs();
 
-                copyFolder(srcFile.toString(), destFile.toString());
-            }
+        try (Stream<Path> stream = Files.walk(srcDir)) {
+            stream.forEach(source -> copy(source, destDir.resolve(srcDir.relativize(source))));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private static void copy(Path source, Path dest) {
+        try {
+            Files.copy(source, dest);
+        } catch (IOException ex) {
+            ex.printStackTrace();
         }
 
+
+        //Kopieren von Verzeichnissen und Dateien mit org.apache.commons.io
 //        File srcDir = new File(sourceDirectory);
 //        File destDir = new File(destinationDirectory);
 //        try {
@@ -51,7 +57,6 @@ public class FileUtils {
 //        } catch (IOException ex) {
 //            ex.printStackTrace();
 //        }
-        //Kopieren von Verzeichnissen und Dateien mit java.io API
     }
-    }
+}
 
