@@ -3,10 +3,11 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class Movements {
 
-    private String operation;
+//    private String operation;
     private Double expense;
     private Double income;
 
@@ -15,17 +16,20 @@ public class Movements {
             List<String> lines = Files.readAllLines(Paths.get(pathMovementsCsv));
             for (String line : lines) {
                 String[] fragments = line.split(",");
+                if (Objects.equals(fragments[0], "Тип счёта")){
+                    continue;
+                }
                 if (fragments.length != 8) {
                     System.out.println("Wrong line: " + line);
                 }
-                expense = Double.parseDouble(fragments[7]);
-                income = Double.parseDouble(fragments[8]);
+                expense = Double.parseDouble(fragments[6]);
+                income = Double.parseDouble(fragments[7]);
             }
         } catch (IOException ex) {
             ex.printStackTrace();
         }
         System.out.println(getExpenseSum());
-        System.out.println(income);
+        System.out.println(getIncome());
 
     }
 
@@ -45,9 +49,9 @@ public class Movements {
                 .sum();
     }
 
-    public String getOperation() {
-        return operation;
-    }
+//    public String getOperation() {
+//        return operation;
+//    }
 
     public Double getExpense() {
         return expense;
