@@ -8,13 +8,16 @@ import java.util.Objects;
 public class Movements {
 
 //    private String operation;
-    private Double expense;
-    private Double income;
+    private Double expense = 0.0;
+    private Double income = 0.0;
 
     public Movements(String pathMovementsCsv) {
         try {
             List<String> lines = Files.readAllLines(Paths.get(pathMovementsCsv));
             for (String line : lines) {
+                line = line.replaceAll("\"", "");
+//                String s = removeLastComma(line);
+
                 String[] fragments = line.split(",");
                 if (Objects.equals(fragments[0], "Тип счёта")){
                     continue;
@@ -22,14 +25,18 @@ public class Movements {
                 if (fragments.length != 8) {
                     System.out.println("Wrong line: " + line);
                 }
-                expense = Double.parseDouble(fragments[6]);
-                income = Double.parseDouble(fragments[7]);
+
+
+                expense += Double.parseDouble(fragments[6]);
+                System.out.println(expense);
+                income += Double.parseDouble(fragments[7]);
+//                System.out.println(income);
             }
         } catch (IOException ex) {
             ex.printStackTrace();
         }
         System.out.println(getExpenseSum());
-        System.out.println(getIncome());
+//        System.out.println(getIncome());
 
     }
 
@@ -60,4 +67,10 @@ public class Movements {
     public Double getIncome() {
         return income;
     }
+    public String removeLastComma(String s){
+        int i = s.lastIndexOf(',');
+        char point = '.';
+        return s.substring(0, i) + point + s.substring(i + 1);
+    }
 }
+
