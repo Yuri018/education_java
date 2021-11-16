@@ -4,7 +4,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-        new Movements(PATH_TO_FILE);
+        Movements movements = new Movements(PATH_TO_FILE);
+        System.out.println("Сумма расходов: " + movements.getExpenseSum() + " руб.");
+        System.out.println("Сумма доходов: " + movements.getIncomeSum() + " руб.");
+        movements.groupExpense();
 
     }
 }

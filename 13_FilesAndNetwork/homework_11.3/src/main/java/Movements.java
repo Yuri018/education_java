@@ -3,74 +3,89 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
+import java.util.stream.Collectors;
 
 public class Movements {
 
-//    private String operation;
-    private Double expense = 0.0;
-    private Double income = 0.0;
+    public List<Double> income = new ArrayList<>();
+    public List<Double> expense = new ArrayList<>();
+    public List<String> groupName = new ArrayList<>();
 
     public Movements(String pathMovementsCsv) {
         try {
             List<String> lines = Files.readAllLines(Paths.get(pathMovementsCsv));
             for (String line : lines) {
-                line = line.replaceAll("\"", "");
-//                String s = removeLastComma(line);
+                String[] fragments = line.split("\t");
+                int indexOf = line.indexOf("MCC");
+                if (fragments.length == 1 && indexOf > 0) {
+                    String fragmentSearch = line.substring(indexOf);
+                    fragmentSearch = fragmentSearch.substring(fragmentSearch.indexOf(",") + 1);
 
-                String[] fragments = line.split(",");
-                if (Objects.equals(fragments[0], "Тип счёта")){
-                    continue;
+                    //Получаем Приход
+                    String incomeString;
+                    if (fragmentSearch.charAt(0) != '"') {
+                        incomeString = fragmentSearch.substring(0, fragmentSearch.indexOf(","));
+                    } else {
+                        incomeString = fragmentSearch.substring(1, fragmentSearch.indexOf("\","));
+                        incomeString = incomeString.replaceAll(",", ".");
+                    }
+                    income.add(Double.parseDouble(incomeString));
+
+                    //Получаем Расход
+                    String expenseString;
+                    if (fragmentSearch.charAt(fragmentSearch.length() - 1) != '"') {
+                        expenseString = fragmentSearch.substring(fragmentSearch.lastIndexOf(",") + 1);
+                    } else {
+                        expenseString = fragmentSearch.substring(fragmentSearch.indexOf(",\"") + 2, fragmentSearch.length() - 1);
+                        expenseString = expenseString.replaceAll(",", ".");
+                    }
+                    expense.add(Double.parseDouble(expenseString));
+
+                    //Получаем название организации
+                    String lineUnfit = line.replace("/", "\\");
+                    int indexBeginName = lineUnfit.lastIndexOf("\\");
+                    if (indexBeginName > 0) {
+                        lineUnfit = lineUnfit.substring(indexBeginName);
+                        int indexEndName = lineUnfit.indexOf("   ");
+                        String name = lineUnfit.substring(1, indexEndName);
+                        groupName.add(name);
+                    }
                 }
-                if (fragments.length != 8) {
-                    System.out.println("Wrong line: " + line);
-                }
-
-
-                expense += Double.parseDouble(fragments[6]);
-                System.out.println(expense);
-                income += Double.parseDouble(fragments[7]);
-//                System.out.println(income);
             }
-        } catch (IOException ex) {
-            ex.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
-        System.out.println(getExpenseSum());
-//        System.out.println(getIncome());
-
     }
 
     public double getExpenseSum() {
-        List<Double> expenseList = new ArrayList<>();
-        expenseList.add(getExpense());
-        return expenseList.stream()
-                .mapToDouble(value -> value)
+        return expense.stream()
+                .mapToDouble(Double::doubleValue)
                 .sum();
     }
 
     public double getIncomeSum() {
-        List<Double> incomeSum = new ArrayList<>();
-        incomeSum.add(getIncome());
-        return incomeSum.stream()
-                .mapToDouble(value -> value)
+        return income.stream()
+                .mapToDouble(Double::doubleValue)
                 .sum();
     }
 
-//    public String getOperation() {
-//        return operation;
-//    }
+    public void groupExpense() {
+        double sum = 0;
+        System.out.println("Суммы расходов по организациям: ");
 
-    public Double getExpense() {
-        return expense;
-    }
+        //Формируем уникальный список организаций
+        ArrayList<String> organizations = (ArrayList<String>) groupName.stream()
+                .distinct()
+                .collect(Collectors.toList());
 
-    public Double getIncome() {
-        return income;
-    }
-    public String removeLastComma(String s){
-        int i = s.lastIndexOf(',');
-        char point = '.';
-        return s.substring(0, i) + point + s.substring(i + 1);
+        for (String organization : organizations) {
+            for (int k = 0; k < groupName.size(); k++) {
+                if (organization.equals(groupName.get(k))) {
+                    sum = sum + expense.get(k);
+                }
+            }
+            System.out.println(organization + "   " + sum + " руб.");
+            sum = 0;
+        }
     }
 }
-
