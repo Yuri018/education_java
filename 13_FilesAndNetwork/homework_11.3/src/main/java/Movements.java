@@ -79,9 +79,9 @@ public class Movements {
                 .collect(Collectors.toList());
 
         for (String organization : organizations) {
-            for (int k = 0; k < groupName.size(); k++) {
-                if (organization.equals(groupName.get(k))) {
-                    sum = sum + expense.get(k);
+            for (int i = 0; i < groupName.size(); i++) {
+                if (organization.equals(groupName.get(i))) {
+                    sum = sum + expense.get(i);
                 }
             }
             System.out.println(organization + "   " + sum + " руб.");
