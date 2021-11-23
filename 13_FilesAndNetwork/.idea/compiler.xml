@@ -15,7 +15,7 @@
     <bytecodeTargetLevel>
       <module name="folder-copy" target="11" />
       <module name="folder-size" target="11" />
-      <module name="homework_11.4" target="17" />
+      <module name="homework_11.4" target="15" />
       <module name="read-movements-csv" target="11" />
     </bytecodeTargetLevel>
   </component>
