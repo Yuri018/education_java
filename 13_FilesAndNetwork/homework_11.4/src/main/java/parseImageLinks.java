@@ -28,7 +28,6 @@ public class parseImageLinks {
     public void downloadImageLinks (String str) {
 
         String imageName = str.substring(str.lastIndexOf("/") + 1);
-
         try {
             URL url = new URL(str);
             InputStream inputStream = url.openStream();
@@ -40,6 +39,7 @@ public class parseImageLinks {
             while ((n = inputStream.read(buffer)) != -1){
                 outputStream.write(buffer, 0, n);
             }
+            inputStream.close();
             outputStream.close();
             System.out.println(imageName);
 
