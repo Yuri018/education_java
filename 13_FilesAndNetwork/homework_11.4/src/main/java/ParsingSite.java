@@ -20,7 +20,7 @@ public class ParsingSite {
 //                        headline.attr("src"), headline.absUrl("href"));
                 umgUrl.add(headline.attr("abs:src"));
 
-                Files.write(Paths.get("homework_11.4/images/links.html"), umgUrl);
+                Files.write(Paths.get("homework_11.4/images"), umgUrl);
                 System.out.println(umgUrl);
             }
 
