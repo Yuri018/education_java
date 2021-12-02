@@ -27,7 +27,7 @@ public class parseImageLinks {
     }
     public void downloadImageLinks (String str) {
 
-        String imageName = str.substring(str.lastIndexOf("/") + 1);
+        String imageName = str.substring(str.lastIndexOf("_") + 1);
         try {
             URL url = new URL(str);
             InputStream inputStream = url.openStream();

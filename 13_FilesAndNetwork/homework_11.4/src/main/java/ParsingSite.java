@@ -8,6 +8,8 @@ import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
+import static java.nio.file.StandardCopyOption.REPLACE_EXISTING;
+
 public class ParsingSite {
 
     ParsingSite(String path) {
@@ -23,10 +25,10 @@ public class ParsingSite {
         }
     }
     public void downloadImage (String str) {
-        String imageName = str.substring(str.lastIndexOf("/" + 1));
+        String imageName = str.substring(str.lastIndexOf("_"));
         try {
             InputStream in = new URL(str).openStream();
-            Files.copy(in, Paths.get("homework_11.4/images" + "/" + imageName));
+            Files.copy(in, Paths.get("homework_11.4/images" + "/" + imageName), REPLACE_EXISTING);
             in.close();
             System.out.println(imageName);
         } catch (Exception ex){
