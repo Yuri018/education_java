@@ -10,21 +10,21 @@ import java.nio.file.Paths;
 
 import static java.nio.file.StandardCopyOption.REPLACE_EXISTING;
 
-public class ParsingSite {
+public class ParsingImageSite {
 
-    ParsingSite(String path) {
+    ParsingImageSite(String path) {
         try {
             Document doc = Jsoup.connect(path).get();
-            Elements newsHeadlines = doc.select("img");
-            for (Element headline : newsHeadlines) {
-                String umgUrl = headline.attr("abs:src");
+            Elements selectLinks = doc.select("img");
+            for (Element link : selectLinks) {
+                String umgUrl = link.attr("abs:src");
                 downloadImage(umgUrl);
             }
         } catch (Exception ex) {
             ex.printStackTrace();
         }
     }
-    public void downloadImage (String str) {
+    public void downloadImage(String str) {
         String imageName = str.substring(str.lastIndexOf("_"));
         try {
             InputStream in = new URL(str).openStream();
@@ -36,3 +36,4 @@ public class ParsingSite {
         }
     }
 }
+
