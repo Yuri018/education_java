@@ -25,7 +25,6 @@ public class ParseImageLinks {
     }
 
     public void downloadImageLinks(String str) {
-
         String imageName = str.substring(str.lastIndexOf("_") + 1);
         try {
             URL url = new URL(str);
