@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="folder-size" />
         <module name="read-movements-csv" />
+        <module name="homework_11.5" />
         <module name="folder-copy" />
         <module name="homework_11.4" />
       </profile>
@@ -16,6 +17,7 @@
       <module name="folder-copy" target="11" />
       <module name="folder-size" target="11" />
       <module name="homework_11.4" target="15" />
+      <module name="homework_11.5" target="17" />
       <module name="read-movements-csv" target="11" />
     </bytecodeTargetLevel>
   </component>
