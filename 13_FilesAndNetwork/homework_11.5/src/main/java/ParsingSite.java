@@ -7,29 +7,33 @@ import java.io.IOException;
 
 public class ParsingSite {
 
-    ParsingSite(String path) {
+    private final String path;
 
+    ParsingSite(String path) {
+        this.path = path;
         try {
             parseLines(path);
             parseStations(path);
-        } catch (Exception ex){
+        } catch (Exception ex) {
             ex.printStackTrace();
         }
     }
-    //парсим номер и назавание линии
-    public static void parseLines (String path) throws IOException {
+
+    //парсим номер и название линии
+    public static void parseLines(String path) throws IOException {
         Document doc = Jsoup.connect(path).maxBodySize(0).get();
-            Elements selectLines = doc.select("span.js-metro-line");
-            for (Element link: selectLines){
-                String linesNum = link.attr("data-line");
-                System.out.println(linesNum + ". " + link.text());
-            }
+        Elements selectLines = doc.select("span.js-metro-line");
+        for (Element link : selectLines) {
+            String linesNum = link.attr("data-line");
+            System.out.println(linesNum + ". " + link.text());
+        }
     }
+
     //парсим номер линии и название станций этой линии
-    public static void parseStations (String path) throws IOException {
+    public static void parseStations(String path) throws IOException {
         Document doc = Jsoup.connect(path).maxBodySize(0).get();
         Elements selectStation = doc.select("div.js-metro-stations");
-        for (Element link: selectStation){
+        for (Element link : selectStation) {
             String linesNum = link.attr("data-line");
             Elements stationName = link.select("span.name");
             System.out.println(linesNum + ". " + stationName.text());
