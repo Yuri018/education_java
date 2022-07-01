@@ -1,35 +1,20 @@
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.Statement;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.boot.Metadata;
+import org.hibernate.boot.MetadataSources;
+import org.hibernate.boot.registry.StandardServiceRegistry;
+import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 
 public class Main {
     public static void main(String[] args) {
+        StandardServiceRegistry registry = new StandardServiceRegistryBuilder()
+                .configure("hibernate.cfg.xml").build();
+        Metadata metadata = new MetadataSources(registry).getMetadataBuilder().build();
+        SessionFactory sessionFactory = metadata.getSessionFactoryBuilder().build();
+        Session session = sessionFactory.openSession();
+        Students students = session.get(Students.class, 2);
+        System.out.println(students.getName() + " - " +students.getRegistrationDate());
 
-        String url = "jdbc:mysql://localhost:3306/skillbox";
-        String user = "root";
-        String password = "testMysql";
-
-        try {
-            Connection connection = DriverManager.getConnection(url, user, password);
-            Statement statement = connection.createStatement();
-            ResultSet resultSet = statement.executeQuery("SELECT course_name, COUNT(subscription_date)" +
-                    "/MAX(MONTH(subscription_date)) AS AVG_purchases FROM purchaselist GROUP BY course_name" +
-                    " ORDER BY AVG_purchases DESC;");
-            while (resultSet.next()) {
-                String avgPurchases = resultSet.getString("Avg_purchases");
-                String courseName = resultSet.getString("course_name");
-                System.out.println(courseName + " | " +  avgPurchases);
-
-//                resultSet.close();
-//                statement.close();
-//                connection.close();
-
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-
+        sessionFactory.close();
     }
 }
