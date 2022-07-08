@@ -6,6 +6,8 @@ import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
         StandardServiceRegistry registry = new StandardServiceRegistryBuilder()
@@ -14,20 +16,20 @@ public class Main {
         SessionFactory sessionFactory = metadata.getSessionFactoryBuilder().build();
 
         Session session = sessionFactory.openSession();
-        
         Transaction transaction = session.beginTransaction();
 
-
-        Course course = session.get(Course.class, 50);
-
-        session.delete(course);
-
+        Course course = session.get(Course.class, 1);
+        List<Student> students = course.getStudents();
+        students.forEach(student -> System.out.println(student.getName()));
 
         // create new course object
 //        course.setName("New new course");
 //        course.setType(CourseType.MANAGEMENT);
 //        course.setTeacherId(2);
 //        session.save(course);
+
+        // delete new course object
+//        session.delete(course);
 
 
         transaction.commit();

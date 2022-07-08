@@ -2,7 +2,8 @@ import jakarta.persistence.*;
 import java.util.Date;
 
 @Entity
-public class Students {
+@Table(name = "Students")
+public class Student {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
