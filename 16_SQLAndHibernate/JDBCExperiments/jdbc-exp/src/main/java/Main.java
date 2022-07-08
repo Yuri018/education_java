@@ -1,5 +1,6 @@
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
 import org.hibernate.boot.Metadata;
 import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistry;
@@ -11,9 +12,25 @@ public class Main {
                 .configure("hibernate.cfg.xml").build();
         Metadata metadata = new MetadataSources(registry).getMetadataBuilder().build();
         SessionFactory sessionFactory = metadata.getSessionFactoryBuilder().build();
+
         Session session = sessionFactory.openSession();
-        Students students = session.get(Students.class, 2);
-        System.out.println(students.getName() + " - " +students.getRegistrationDate());
+        
+        Transaction transaction = session.beginTransaction();
+
+
+        Course course = session.get(Course.class, 50);
+
+        session.delete(course);
+
+
+        // create new course object
+//        course.setName("New new course");
+//        course.setType(CourseType.MANAGEMENT);
+//        course.setTeacherId(2);
+//        session.save(course);
+
+
+        transaction.commit();
 
         sessionFactory.close();
     }
