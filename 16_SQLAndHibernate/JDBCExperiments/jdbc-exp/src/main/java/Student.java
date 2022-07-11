@@ -1,5 +1,6 @@
 import jakarta.persistence.*;
 import java.util.Date;
+import java.util.Set;
 
 @Entity
 @Table(name = "Students")
@@ -12,6 +13,12 @@ public class Student {
     private int age;
     @Column(name = "registration_date")
     private Date registrationDate;
+
+    @OneToMany(mappedBy = "student", fetch = FetchType.LAZY)
+    private Set<Subscription> subscriptionList;
+
+    public Student() {
+    }
 
     public int getId() {
         return id;
@@ -43,5 +50,22 @@ public class Student {
 
     public void setRegistrationDate(Date registrationDate) {
         this.registrationDate = registrationDate;
+    }
+
+    public Set<Subscription> getSubscriptionList() {
+        return subscriptionList;
+    }
+
+    public void setSubscriptionList(Set<Subscription> subscriptionList) {
+        this.subscriptionList = subscriptionList;
+    }
+    @Override
+    public String toString() {
+        return "Student{" +
+                "id= " + id +
+                ", name= " + name + '\'' +
+                ", age= " + age +
+                ", registrationDate= " + registrationDate +
+                "}\n";
     }
 }

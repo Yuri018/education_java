@@ -1,5 +1,7 @@
 import jakarta.persistence.*;
 
+import java.util.List;
+
 @Entity
 @Table(name = "Teachers")
 public class Teacher {
@@ -10,6 +12,22 @@ public class Teacher {
     private String name;
     private int salary;
     private int age;
+
+    @OneToMany(mappedBy = "teacher", fetch = FetchType.LAZY)
+    private List<Course> courseList;
+
+    @Override
+    public String toString() {
+        return "Teacher{" +
+                "id= " + id +
+                ", name= " + name +
+                ", salary= " + salary +
+                ", age= " + age +
+                "}\n";
+    }
+
+    public Teacher() {
+    }
 
 
     public int getId() {

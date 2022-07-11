@@ -18,19 +18,25 @@ public class Main {
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
 
-        Course course = session.get(Course.class, 1);
-        List<Student> students = course.getStudents();
-        students.forEach(student -> System.out.println(student.getName()));
+        List<Subscription> subscriptions = session.createQuery("" +
+                " from Subscription sub" +
+                " join fetch sub.course c" +
+                " join fetch sub.student s" +
+                "", Subscription.class).getResultList();
 
-        // create new course object
-//        course.setName("New new course");
-//        course.setType(CourseType.MANAGEMENT);
-//        course.setTeacherId(2);
-//        session.save(course);
+        List<PurchaseList> LinkedPurchaseLists = session.createQuery(" from PurchaseList",
+                PurchaseList.class).getResultList();
 
-        // delete new course object
-//        session.delete(course);
+        subscriptions.forEach(s -> LinkedPurchaseLists.forEach(p -> {
+            if (p.getStudentId() == null && s.getStudent().getName().equals(p.getId().getStudentName())) {
+                p.setStudentId(s.getStudent().getId());
+            }
+            if (p.getCourseId() == null && s.getCourse().getName().equals(p.getId().getCourseName())) {
+                p.setCourseId(s.getCourse().getId());
+            }
+        }));
 
+        LinkedPurchaseLists.forEach(System.out::println);
 
         transaction.commit();
 

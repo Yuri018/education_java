@@ -1,6 +1,7 @@
 import jakarta.persistence.*;
 
 import java.util.List;
+import java.util.Set;
 
 @Entity
 @Table(name = "Courses")
@@ -14,7 +15,8 @@ public class Course {
     @Column(columnDefinition = "enum")
     private CourseType type;
     private String description;
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinColumn(name = "teacher_id", insertable = false, updatable = true)
     private Teacher teacher;
     @Column(name = "students_count")
     private int studentsCount;
@@ -22,12 +24,18 @@ public class Course {
     @Column(name = "price_per_hour")
     private float pricePerHour;
 
+    @OneToMany(mappedBy = "course", fetch = FetchType.LAZY)
+    private Set<Subscription> subscriptionList;
 
-    @ManyToMany(cascade = CascadeType.ALL)
-    @JoinTable(name = "Subscriptions",
-        joinColumns = {@JoinColumn(name = "course_id")},
-            inverseJoinColumns = {@JoinColumn(name = "student_id")})
-    private List<Student> students;
+
+//    @ManyToMany(cascade = CascadeType.ALL)
+//    @JoinTable(name = "Subscriptions",
+//        joinColumns = {@JoinColumn(name = "course_id")},
+//            inverseJoinColumns = {@JoinColumn(name = "student_id")})
+//    private List<Student> students;
+
+    public Course() {
+    }
 
     public int getId() {
         return id;
@@ -101,13 +109,34 @@ public class Course {
         this.pricePerHour = pricePerHour;
     }
 
-    public List<Student> getStudents() {
-        return students;
+//    public List<Student> getStudents() {
+//        return students;
+//    }
+//
+//    public void setStudents(List<Student> students) {
+//        this.students = students;
+//    }
+public Set<Subscription> getSubscriptionList() {
+    return subscriptionList;
+}
+
+    public void setSubscriptionList(Set<Subscription> subscriptionList) {
+        this.subscriptionList = subscriptionList;
     }
 
-    public void setStudents(List<Student> students) {
-        this.students = students;
+    @Override
+    public String toString() {
+        return "Course{" +
+                "id=" + id +
+                ", name=" + name +
+                ", duration=" + duration +
+                ", type=" + type +
+                ", description=" + description +
+                ", teacher=" + teacher.getId() +
+                ", students_count=" + studentsCount +
+                ", price=" + price +
+                ", price_per_hour=" + pricePerHour +
+                "}\n";
     }
-
 
 }
