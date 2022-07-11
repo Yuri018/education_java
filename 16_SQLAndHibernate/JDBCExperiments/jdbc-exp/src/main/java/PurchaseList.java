@@ -64,12 +64,13 @@ public class PurchaseList {
 
     @Override
     public String toString() {
-        return "PurchaseList{" +
-                "student_id= " + studentId +
-                ", student_name= " + id.getStudentName() +
-                ", course_id= " + courseId +
-                ", course_name= " + id.getCourseName() +
-                ", subscription_date= " + subscriptionDate +
+        return "PurchaseList {" +
+                "student_id - " + studentId +
+                ", student_name - " + id.getStudentName() +
+                ", course_id - " + courseId +
+                ", course_name - " + id.getCourseName() +
+                ", price - " + getPrice() + " руб." +
+                ", subscription_date - " + subscriptionDate +
                 "}\n";
     }
 }
@@ -99,5 +100,18 @@ class PurchaseListId implements Serializable {
 
     public void setCourseName(String courseName) {
         this.courseName = courseName;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        PurchaseListId that = (PurchaseListId) obj;
+        if (studentName.equals(that.studentName)) return false;
+        return courseName.equals(that.courseName);
+    }
+    public int hashCode() {
+        int result = studentName.hashCode();
+        return 31 * result + courseName.hashCode();
     }
 }

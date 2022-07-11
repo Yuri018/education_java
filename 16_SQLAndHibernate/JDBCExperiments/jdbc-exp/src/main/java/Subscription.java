@@ -1,5 +1,4 @@
 import jakarta.persistence.*;
-
 import java.io.Serializable;
 import java.util.Date;
 
@@ -69,9 +68,9 @@ public class Subscription {
 class SubscriptionId implements Serializable {
 
     @Column(name = "student_id")
-    private int studentId;
+    private Integer studentId;
     @Column(name = "course_id")
-    private int courseId;
+    private Integer courseId;
 
     public SubscriptionId() {
     }
@@ -90,5 +89,21 @@ class SubscriptionId implements Serializable {
 
     public void setCourseId(int courseId) {
         this.courseId = courseId;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+
+        SubscriptionId that = (SubscriptionId) obj;
+        if (!studentId.equals(that.studentId)) return false;
+        return courseId.equals(that.courseId);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = studentId.hashCode();
+        return 31 * result + courseId.hashCode();
     }
 }
