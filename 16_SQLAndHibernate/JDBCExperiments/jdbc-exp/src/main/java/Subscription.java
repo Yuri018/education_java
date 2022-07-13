@@ -1,6 +1,7 @@
 import jakarta.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
+import java.util.Objects;
 
 @Entity
 @Table(name = "Subscriptions")
@@ -72,7 +73,12 @@ class SubscriptionId implements Serializable {
     @Column(name = "course_id")
     private Integer courseId;
 
-    public SubscriptionId() {
+    private SubscriptionId() {
+    }
+
+    public SubscriptionId(Integer studentId, Integer courseId) {
+        this.studentId = studentId;
+        this.courseId = courseId;
     }
 
     public int getStudentId() {
@@ -103,7 +109,6 @@ class SubscriptionId implements Serializable {
 
     @Override
     public int hashCode() {
-        int result = studentId.hashCode();
-        return 31 * result + courseId.hashCode();
+        return Objects.hash(studentId, courseId);
     }
 }

@@ -18,26 +18,20 @@ public class Main {
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
 
-        List<Subscription> subscriptions = session.createQuery("" +
-                " from Subscription sub" +
-                " join fetch sub.course c" +
-                " join fetch sub.student s" +
-                "", Subscription.class).getResultList();
+        String hql = "select new " + StudentCourseIds.class.getSimpleName() + "(s.id, c.id)"
+                + " from " + PurchaseList.class.getSimpleName() + " p "
+                + "inner join " + Student.class.getSimpleName() + " s on s.name = p.id.studentName "
+                + "inner join " + Course.class.getSimpleName() + " c on c.name = p.id.courseName "
+                + "order by s.name ";
 
-        List<PurchaseList> LinkedPurchaseLists = session.createQuery(" from PurchaseList",
-                PurchaseList.class).getResultList();
+        List<StudentCourseIds> studentCourseIds = session.createQuery(hql).getResultList();
 
-        subscriptions.forEach(s -> LinkedPurchaseLists.forEach(p -> {
-            if (p.getStudentId() == null && s.getStudent().getName().equals(p.getId().getStudentName())) {
-                p.setStudentId(s.getStudent().getId());
-            }
-            if (p.getCourseId() == null && s.getCourse().getName().equals(p.getId().getCourseName())) {
-                p.setCourseId(s.getCourse().getId());
-            }
-        }));
 
-        LinkedPurchaseLists.forEach(System.out::println);
-
+        studentCourseIds.forEach(id -> {
+            LinkedPurchaseList linkedPurchaseList =
+                    new LinkedPurchaseList(new LinkedPurchaseList.LinkedPurchaseListId(id.getStudentId(), id.getCourseId()));
+            session.save(linkedPurchaseList);
+        });
         transaction.commit();
 
         sessionFactory.close();

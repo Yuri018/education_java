@@ -1,6 +1,7 @@
 import jakarta.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
+import java.util.Objects;
 
 @Entity
 public class PurchaseList {
@@ -83,7 +84,11 @@ class PurchaseListId implements Serializable {
     @Column(name = "course_name")
     private String courseName;
 
-    public PurchaseListId() {
+    private PurchaseListId() {
+    }
+    public PurchaseListId(String studentName, String courseName){
+        this.studentName = studentName;
+        this.courseName = courseName;
     }
 
     public String getStudentName() {
@@ -111,7 +116,6 @@ class PurchaseListId implements Serializable {
         return courseName.equals(that.courseName);
     }
     public int hashCode() {
-        int result = studentName.hashCode();
-        return 31 * result + courseName.hashCode();
+        return Objects.hash(studentName, courseName);
     }
 }
