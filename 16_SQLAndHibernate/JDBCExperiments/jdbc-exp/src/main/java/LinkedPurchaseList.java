@@ -1,5 +1,4 @@
 import jakarta.persistence.*;
-
 import java.io.Serializable;
 import java.util.Objects;
 
@@ -17,6 +16,9 @@ public class LinkedPurchaseList {
     @JoinColumn(name = "student_id", insertable = false, updatable = false)
     @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private Student studentId;
+    @JoinColumn(name = "student_name", insertable = false, updatable = false)
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    private Student studentName;
     @JoinColumn(name = "course_id", insertable = false, updatable = false)
     @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private Course courseId;
@@ -37,6 +39,13 @@ public class LinkedPurchaseList {
         this.studentId = studentId;
     }
 
+    public Student getStudentName() {
+        return studentName;
+    }
+    public void setStudentName(Student studentName) {
+        this.studentName = studentName;
+    }
+
     public Course getCourseId() {
         return courseId;
     }
@@ -50,19 +59,31 @@ public class LinkedPurchaseList {
 
         @Column(name = "student_id")
         private Integer studentId;
+        @Column(name = "student_name")
+        private String studentName;
         @Column(name = "course_id")
         private Integer courseId;
 
         public LinkedPurchaseListId() {
-
         }
-
+        public LinkedPurchaseListId(Integer studentId, String studentName, Integer courseId) {
+            this.studentId = studentId;
+            this.studentName = studentName;
+            this.courseId = courseId;
+        }
         public int getStudentId() {
             return studentId;
         }
 
         public void setStudentId(int studentId) {
             this.studentId = studentId;
+        }
+
+        public String getStudentName() {
+            return studentName;
+        }
+        public void setStudentName(String studentName) {
+            this.studentName = studentName;
         }
 
         public int getCourseId() {
@@ -73,10 +94,6 @@ public class LinkedPurchaseList {
             this.courseId = courseId;
         }
 
-        public LinkedPurchaseListId(Integer studentId, Integer courseId) {
-            this.studentId = studentId;
-            this.courseId = courseId;
-        }
 
         @Override
         public boolean equals(Object obj) {

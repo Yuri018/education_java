@@ -1,9 +1,11 @@
 public class StudentCourseIds {
     private Integer studentId;
+    private String studentName;
     private Integer courseId;
 
-    public StudentCourseIds(Integer studentId, Integer courseId) {
+    public StudentCourseIds(Integer studentId, String studentName, Integer courseId) {
         this.studentId = studentId;
+        this.studentName = studentName;
         this.courseId = courseId;
     }
 
@@ -13,6 +15,14 @@ public class StudentCourseIds {
 
     public void setStudentId(Integer studentId) {
         this.studentId = studentId;
+    }
+
+    public String getStudentName() {
+        return studentName;
+    }
+
+    public void setStudentName(String studentName) {
+        this.studentName = studentName;
     }
 
     public Integer getCourseId() {

@@ -18,8 +18,9 @@ public class Main {
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
 
-        String hql = "select new " + StudentCourseIds.class.getSimpleName() + "(s.id, c.id)"
+        String hql = "select new " + StudentCourseIds.class.getSimpleName() + "(s.id,sn.name,c.id)"
                 + " from " + PurchaseList.class.getSimpleName() + " p "
+                + "inner join " + Student.class.getSimpleName() + " sn on sn.name = p.id.studentName "
                 + "inner join " + Student.class.getSimpleName() + " s on s.name = p.id.studentName "
                 + "inner join " + Course.class.getSimpleName() + " c on c.name = p.id.courseName "
                 + "order by s.name ";
@@ -29,7 +30,8 @@ public class Main {
 
         studentCourseIds.forEach(id -> {
             LinkedPurchaseList linkedPurchaseList =
-                    new LinkedPurchaseList(new LinkedPurchaseList.LinkedPurchaseListId(id.getStudentId(), id.getCourseId()));
+                    new LinkedPurchaseList(new LinkedPurchaseList.LinkedPurchaseListId
+                            (id.getStudentId(), id.getStudentName(), id.getCourseId()));
             session.save(linkedPurchaseList);
         });
         transaction.commit();
