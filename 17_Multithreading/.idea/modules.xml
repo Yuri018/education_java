@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/Concurrency/Concurrency.iml" filepath="$PROJECT_DIR$/Concurrency/Concurrency.iml" />
       <module fileurl="file://$PROJECT_DIR$/Deadlock/Deadlock.iml" filepath="$PROJECT_DIR$/Deadlock/Deadlock.iml" />
       <module fileurl="file://$PROJECT_DIR$/ImageResizer/ImageResizer.iml" filepath="$PROJECT_DIR$/ImageResizer/ImageResizer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Synchronization/Synchronization.iml" filepath="$PROJECT_DIR$/Synchronization/Synchronization.iml" />
       <module fileurl="file://$PROJECT_DIR$/Transactions/Transactions.iml" filepath="$PROJECT_DIR$/Transactions/Transactions.iml" />
     </modules>
   </component>
