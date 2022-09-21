@@ -15,10 +15,13 @@ public class Main {
         threads.forEach(t -> t.start());
     }
 
-    //add keyword "synchronized"
-    private static synchronized void someHeavyMethod(){
+
+    private static void someHeavyMethod(){
         for (int i = 0; i < 1000000; i++) {
+            //add block "synchronized"
+            synchronized(numbers){
             numbers.add(Math.random() / Math.random());
+            }
         }
         System.out.println(numbers.size());
         numbers.clear();
