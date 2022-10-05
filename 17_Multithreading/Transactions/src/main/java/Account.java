@@ -1,41 +1,36 @@
-import java.util.Random;
-
 public class Account {
-    Random random = new Random();
-
     private long money;
     private String accNumber;
-    private boolean lock;
+    private volatile boolean blocked;
 
-
-
-    public Account() {
-        this.money = 0;
-        this.accNumber = String.valueOf(random.nextInt(999999999) + 1000000000);
-        this.lock = false;
-    }
-
-    public long getMoney() {
-        return money;
-    }
-
-    public void setMoney(long money) {
+    public Account(String accNumber, long money) {
+        this.accNumber = accNumber;
         this.money = money;
+        this.blocked = false;
     }
 
+    //============= Getters & setters =============
     public String getAccNumber() {
         return accNumber;
     }
 
-    public void setAccNumber(String accNumber) {
-        this.accNumber = accNumber;
+    public synchronized long getBalance() {
+        return money;
     }
 
-    public boolean isLock() {
-        return lock;
+    public synchronized void putMoney(long money) {
+        this.money = this.money + money;
     }
 
-    public void setLock() {
-        this.lock = true;
+    public synchronized void takeMoney(long money) {
+        this.money = this.money - money;
+    }
+
+    public boolean isBlocked() {
+        return blocked;
+    }
+
+    public void setBlocked(boolean blocked) {
+        this.blocked = blocked;
     }
 }
