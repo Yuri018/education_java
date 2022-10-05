@@ -1,18 +1,27 @@
-import java.util.Map;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Random;
-import java.util.TreeMap;
 
 public class Bank {
-    private volatile Map<String, Account> accounts;
+    private HashMap<String, Account> accounts;
+    private ArrayList<Integer> transferIds = new ArrayList<>();
     private final Random random = new Random();
 
-    public Bank() {
-        this.accounts = new TreeMap<>();
+    public HashMap<String, Account> getAccounts() {
+        return accounts;
+    }
+
+    public void setAccounts(HashMap<String, Account> accounts) {
+        this.accounts = accounts;
     }
 
     public synchronized boolean isFraud(String fromAccountNum, String toAccountNum, long amount)
-            throws InterruptedException {
-        Thread.sleep(0);
+    {   try {
+        Thread.sleep(1000);
+    }
+    catch (Exception ex){
+        ex.printStackTrace();
+    }
         return random.nextBoolean();
     }
 
@@ -26,72 +35,56 @@ public class Bank {
     public void transfer(String fromAccountNum, String toAccountNum, long amount) {
         Account fromAccount = accounts.get(fromAccountNum);
         Account toAccount = accounts.get(toAccountNum);
-        //
-        if (fromAccountNum.compareTo(toAccountNum) > 0) {
-            synchronized (fromAccount) {
-                synchronized (toAccount) {
-                    transferMoney(fromAccount, toAccount, amount);
-                }
-            }
-        } else {
-            synchronized (toAccount) {
-                synchronized (fromAccount) {
-                    transferMoney(fromAccount, toAccount, amount);
-                }
-            }
-        }
-        //Проверка службы безопасности
-        if (amount > 50_000) {
-            try {
-                if (isFraud(fromAccountNum, toAccountNum, amount)) {
-                    //Блокировка аккаунтов
-                    fromAccount.setBlocked(true);
-                    toAccount.setBlocked(true);
-                    System.out.println("\nПревышение лимита. Аккаунты: " + fromAccountNum
-                            + " и " + toAccountNum + " временно заблокированы");
-                    //Разблокировка аккаунта через 1 секунду в новом потоке
-                    new Thread(() -> {
-                        try {
-                            Thread.sleep(1000);
-                        } catch (InterruptedException e) {
-                            e.printStackTrace();
-                        }
-                        fromAccount.setBlocked(false);
-                        toAccount.setBlocked(false);
-                    });
-                }
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
-    }
 
-    private void transferMoney(Account fromAccount, Account toAccount, long amount) {
-        if (fromAccount.getBalance() < amount) {
-            System.out.println("\nНедостаточно средств!");
+        if (transferIds.size() > 0) {
+            transferIds.add(transferIds.get(transferIds.size() - 1) + 1);
+        } else {
+            transferIds.add(1);
+        }
+        int transferId = (transferIds.get(transferIds.size() - 1));
+
+        if (fromAccountNum.equals(toAccountNum)) {
+            System.out.println(transferId + " - " + "Нельзя переводить с одного и того же счета");
             return;
         }
-        fromAccount.takeMoney(amount);
-        toAccount.putMoney(amount);
-        System.out.println("\nс account номер " + fromAccount.getAccNumber());
-        System.out.println("на account номер " + toAccount.getAccNumber());
-        System.out.println("трансфер " + amount);
+
+        System.out.println(transferId + " - " + "Попытка перевода со счета " + fromAccount.getAccNumber() + " (" + fromAccount.getMoney() + ")"
+                + " на счет " + toAccount.getAccNumber() + " (" + toAccount.getMoney() + ")"
+                + " в размере " + Long.toString(amount));
+
+        synchronized (fromAccount) {
+            synchronized (toAccount) {
+                if (fromAccount.isBlock()) {
+                    System.out.println(transferId + " - " + "Счет " + fromAccountNum + " заблокирован");
+                    return;
+                }
+
+                if (toAccount.isBlock()) {
+                    System.out.println(transferId + " - " + "Счет " + toAccountNum + " заблокирован");
+                    return;
+                }
+
+                if (amount > 50000) {
+                    if (isFraud(fromAccountNum, toAccountNum, amount)) {
+                        fromAccount.setBlock(true);
+                        toAccount.setBlock(true);
+                        System.out.println(transferId + " - " + "Счета " + fromAccountNum + ", " + toAccountNum + " заблокированы после проверки службой безопасности");
+                        return;
+                    }
+                }
+                toAccount.toDeposit(amount);
+                fromAccount.withdraw(amount);
+
+                System.out.println(transferId + " - " + "Перевод успешен! Счет " + fromAccount.getAccNumber() + " - " + fromAccount.getMoney() + " счет " + toAccount.getAccNumber() + " - " + toAccount.getMoney());
+            }
+        }
     }
 
     /**
      * TODO: реализовать метод. Возвращает остаток на счёте.
      */
-    public long getBalance(String accountNum) {
-        Account account = accounts.get(accountNum);
-        return account.getBalance();
-    }
-
-
-    public synchronized void createAccount(String accNumber, long money) {
-        accounts.put(accNumber, new Account(accNumber, money));
-    }
-
-    public Map<String, Account> getAccounts() {
-        return accounts;
+    public long getBalance(String accountNum)
+    {
+        return accounts.get(accountNum).getMoney();
     }
 }

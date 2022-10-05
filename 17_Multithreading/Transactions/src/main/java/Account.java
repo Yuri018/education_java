@@ -1,36 +1,45 @@
 public class Account {
     private long money;
     private String accNumber;
-    private volatile boolean blocked;
+    private volatile boolean block;
 
-    public Account(String accNumber, long money) {
-        this.accNumber = accNumber;
+    public Account(long money, String accNumber) {
         this.money = money;
-        this.blocked = false;
+        this.accNumber = accNumber;
     }
 
-    //============= Getters & setters =============
+    public long getMoney() {
+        return money;
+    }
+
+    public void setMoney(long money) {
+        this.money = money;
+    }
+
     public String getAccNumber() {
         return accNumber;
     }
 
-    public synchronized long getBalance() {
-        return money;
+    public void setAccNumber(String accNumber) {
+        this.accNumber = accNumber;
     }
 
-    public synchronized void putMoney(long money) {
-        this.money = this.money + money;
+    public boolean isBlock() {
+        return block;
     }
 
-    public synchronized void takeMoney(long money) {
-        this.money = this.money - money;
+    public void setBlock(boolean block) {
+        this.block = block;
+    }
+    public void toDeposit(long amount) {
+        if (!this.isBlock()) {
+            this.money += amount;
+        }
+    }
+    public void withdraw (long amount){
+        if (!this.isBlock()){
+            this.money -= amount;
+        }
     }
 
-    public boolean isBlocked() {
-        return blocked;
-    }
-
-    public void setBlocked(boolean blocked) {
-        this.blocked = blocked;
-    }
 }

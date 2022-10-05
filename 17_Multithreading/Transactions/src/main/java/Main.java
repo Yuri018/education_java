@@ -1,121 +1,30 @@
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashMap;
 
 public class Main {
     public static void main(String[] args) {
-        testTransfer();
-//        testCreateAccounts();
-//        testBalance();
-    }
-
-    public static void testTransfer() {
-        int accountsCount = 10;
-        int threadsCount = 10;
-        int operationsCount = 100;
 
         Bank bank = new Bank();
-        for (int i = 1; i <= accountsCount; i++) {
-            bank.createAccount(Integer.toString(i), i * 10_000L);
-        }
-        List<Thread> threadList = new ArrayList<>();
+        HashMap<String, Account> accounts = new HashMap<>();
 
-        for (int i = 0; i < threadsCount; i++) {
-            Thread thread = new Thread(() -> {
-                for (int j = 0; j < operationsCount; j++) {
-                    //Случайный аккаунт отправителя
-                    String fromAcc = Integer.toString(randomInRange(1, bank.getAccounts().size()));
-                    //Случайный аккаунт получателя
-                    String toAcc = Integer.toString(randomInRange(1, bank.getAccounts().size()));
-                    //Транзакция на случайную сумму
-                    bank.transfer(fromAcc, toAcc, randomInRange(1000, 55_000));
+        for (int i = 1; i <= 5; i++) {
+            accounts.put(Integer.toString(i), new Account((long) (Math.random() * 10000000), Integer.toString(i)));
+        }
+
+        bank.setAccounts(accounts);
+
+
+        for (int i = 1; i <= 5; i++) {
+            Thread t = new Thread(() -> {
+                String accountFrom = Integer.toString((int) (Math.random() * bank.getAccounts().size()) + 1);
+                String accountTo = Integer.toString((int) (Math.random() * bank.getAccounts().size()) + 1);
+                try {
+                    bank.transfer(accountFrom, accountTo, (long) (Math.random() * 100000));
+                } catch (Exception ex) {
+                    System.out.println("Ошибка при переводе со счета " + accountFrom + "на счет " + accountTo);
+                    ex.printStackTrace();
                 }
             });
-            threadList.add(thread);
+            t.start();
         }
-
-        //Запуск и ожидание выполнения всех потоков
-        threadList.forEach(Thread::start);
-        threadList.forEach(t -> {
-            try {
-                t.join();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        });
-
-        //Баланс на всех аккаунтах
-        bank.getAccounts().forEach((num, acc) -> System.out.println("Счет № " + acc.getAccNumber()
-                + " баланс " + acc.getBalance()));
-    }
-
-    public static void testBalance() {
-        int accountsCount = 10;
-        int threadsCount = 1000;
-        int operationsCount = 1000;
-
-        Bank bank = new Bank();
-        for (int i = 0; i < accountsCount; i++) {
-            bank.createAccount(String.format("%02d", i), 0);
-        }
-
-        List<Thread> threadList = new ArrayList<>();
-
-        for (int i = 0; i < threadsCount; i++) {
-            Thread thread = new Thread(() -> {
-                for (int j = 0; j < operationsCount; j++) {
-                    bank.getAccounts().forEach((a, s) -> {
-                        s.putMoney(1);
-                    });
-                }
-            });
-            threadList.add(thread);
-        }
-
-        threadList.forEach(Thread::start);
-        threadList.forEach(t -> {
-            try {
-                t.join();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        });
-
-        bank.getAccounts().forEach((a, s) -> System.out.println(bank.getBalance(a)));
-    }
-
-    public static void testCreateAccounts() {
-
-        Bank bank = new Bank();
-        List<Thread> threadList = new ArrayList<>();
-
-
-        for (int i = 0; i < 10; i++) {
-            Thread thread = new Thread(() -> {
-                for (int j = 1; j <= 100; j++) {
-                    bank.createAccount(String.format("%03d", j), 0);
-                }
-            });
-
-            threadList.add(thread);
-        }
-
-        threadList.forEach(Thread::start);
-        threadList.forEach(t -> {
-            try {
-                t.join();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        });
-
-        bank.getAccounts().forEach((num, acc) -> {
-            System.out.println(num);
-        });
-    }
-
-    private static int randomInRange(int min, int max) {
-        max -= min;
-        return (int) (Math.random() * ++max) + min;
     }
 }
-
