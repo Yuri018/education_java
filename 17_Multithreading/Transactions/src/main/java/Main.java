@@ -1,30 +1,56 @@
+import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Main {
-    public static void main(String[] args) {
 
-        Bank bank = new Bank();
+    private static final int THREAD_COUNT = 4;
+
+    public static void main(String[] args) throws InterruptedException {
+
         HashMap<String, Account> accounts = new HashMap<>();
-
-        for (int i = 1; i <= 5; i++) {
-            accounts.put(Integer.toString(i), new Account((long) (Math.random() * 10000000), Integer.toString(i)));
+        for (int i = 1; i <= 10; i++) {
+            String accNumber = String.valueOf(i);
+            long money = Math.round(100000 * Math.random());
+            Account acc = new Account();
+            acc.setAccNumber(accNumber);
+            acc.setMoney(money);
+            accounts.put(accNumber, acc);
         }
+        Bank bank = new Bank(accounts);
 
-        bank.setAccounts(accounts);
+        long beforeBalance = 0;
+        for (int j = 1; j <= accounts.size(); j++) {
+            beforeBalance += bank.getBalance(String.valueOf(j));
+        }
+        System.out.println("Баланс до переводов: " + beforeBalance);
 
-
-        for (int i = 1; i <= 5; i++) {
-            Thread t = new Thread(() -> {
-                String accountFrom = Integer.toString((int) (Math.random() * bank.getAccounts().size()) + 1);
-                String accountTo = Integer.toString((int) (Math.random() * bank.getAccounts().size()) + 1);
+        ArrayList<Thread> threads = new ArrayList<>();
+        for (int k = 0; k < THREAD_COUNT; k++) {
+            int threadNumber = k + 1;
+            threads.add(new Thread(() -> {
+                long start = System.currentTimeMillis();
+                long finish = System.currentTimeMillis() - start;
+                int anyNumber = (int) Math.round(99 * Math.random());
+                String fromAccount = String.valueOf(anyNumber);
+                String toAccount = String.valueOf(anyNumber + 1);
+                long amount = (long) (50000 * Math.random());
                 try {
-                    bank.transfer(accountFrom, accountTo, (long) (Math.random() * 100000));
-                } catch (Exception ex) {
-                    System.out.println("Ошибка при переводе со счета " + accountFrom + "на счет " + accountTo);
-                    ex.printStackTrace();
+                    bank.transfer(fromAccount, toAccount, amount);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
                 }
-            });
-            t.start();
+                System.out.println("Поток " + threadNumber + " окончен: " + finish + " ms");
+            }));
         }
+        threads.forEach(Thread::start);
+        for (Thread thread : threads) {
+            thread.join();
+        }
+
+        long afterBalance = 0;
+        for (int n = 1; n <= accounts.size(); n++) {
+            afterBalance += bank.getBalance(String.valueOf(n));
+        }
+        System.out.println("Баланс после переводов: " + afterBalance);
     }
 }
