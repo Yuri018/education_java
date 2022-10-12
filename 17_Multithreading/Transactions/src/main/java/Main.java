@@ -3,12 +3,12 @@ import java.util.HashMap;
 
 public class Main {
 
-    private static final int THREAD_COUNT = 4;
+    private static final int THREAD_COUNT = 5;
 
     public static void main(String[] args) throws InterruptedException {
 
         HashMap<String, Account> accounts = new HashMap<>();
-        for (int i = 1; i <= 10; i++) {
+        for (int i = 1; i <= 100; i++) {
             String accNumber = String.valueOf(i);
             long money = Math.round(100000 * Math.random());
             Account acc = new Account();
@@ -33,7 +33,7 @@ public class Main {
                 int anyNumber = (int) Math.round(99 * Math.random());
                 String fromAccount = String.valueOf(anyNumber);
                 String toAccount = String.valueOf(anyNumber + 1);
-                long amount = (long) (50000 * Math.random());
+                long amount = (long) (100000 * Math.random());
                 try {
                     bank.transfer(fromAccount, toAccount, amount);
                 } catch (InterruptedException e) {
