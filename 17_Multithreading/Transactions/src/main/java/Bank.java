@@ -47,6 +47,7 @@ public class Bank {
                         boolean status = isFraud(fromAccountNum, toAccountNum, amount);
                         fromAccount.setBlocked(status);
                         toAccount.setBlocked(status);
+                        System.out.println("Blocked account" + "summ " + amount);
                     }
                 }
             }

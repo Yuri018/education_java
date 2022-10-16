@@ -1,9 +1,16 @@
-package Variant;
-public class Account implements Comparable<Account>{
+package Variant3;
+
+public class Account {
 
     private long money;
     private String accNumber;
-    private boolean blocked = false;
+    private Boolean isBlocked;
+
+    public Account(String accNumber, long money) {
+        this.money = money;
+        this.accNumber = accNumber;
+        this.isBlocked = false;
+    }
 
     public long getMoney() {
         return money;
@@ -21,16 +28,11 @@ public class Account implements Comparable<Account>{
         this.accNumber = accNumber;
     }
 
-    public void block(){
-        blocked = true;
+    public Boolean getBlocked() {
+        return isBlocked;
     }
 
-    public boolean isBlocked(){
-        return blocked;
-    }
-
-    @Override
-    public int compareTo(Account o) {
-        return this.getAccNumber().compareTo(o.accNumber);
+    public void setBlocked(Boolean blocked) {
+        isBlocked = blocked;
     }
 }
