@@ -1,86 +1,33 @@
 package Variant2;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.concurrent.atomic.AtomicLong;
-
 public class Main {
     public static void main(String[] args) {
         Bank bank = new Bank();
-        HashMap<String, Account> accs = new HashMap<>();
-        Account oneAcc = new Account("oneAcc", 15000);
-        accs.put("oneAcc", oneAcc);
-        Account twoAcc = new Account("twoAcc", 25000);
-        accs.put("twoAcc", twoAcc);
-        Account threeAcc = new Account("threeAcc", 45000);
-        accs.put("threeAcc", threeAcc);
-        Account fourAcc = new Account("fourAcc", 48000);
-        accs.put("fourAcc", fourAcc);
-        Account fiveAcc = new Account("fiveAcc", 40000);
-        accs.put("fiveAcc", fiveAcc);
-        Account sixAcc = new Account("sixAcc", 35000);
-        accs.put("sixAcc", sixAcc);
 
+        Account account1 = new Account(10000, "173648");
+        bank.addAccount(account1.getAccNumber(), account1);
+        Account account2 = new Account(200000, "896524");
+        bank.addAccount(account2.getAccNumber(), account2);
+        Account account3 = new Account(300000, "125689");
+        bank.addAccount(account3.getAccNumber(), account3);
+        Account account4 = new Account(400000, "985432");
+        bank.addAccount(account4.getAccNumber(), account4);
 
-        bank.setAccounts(accs);
-        long sum1 = 0;
-        for (Map.Entry<String,Account> entry: accs.entrySet() ){
-            sum1 += entry.getValue().getMoney();
+        for (int i = 0 ; i < 4 ; i++){
+            new Thread(()->{
+                bank.transfer(account1.getAccNumber(), account2.getAccNumber(), 10000);
+                bank.transfer(account2.getAccNumber(), account3.getAccNumber(), 60000);
+                bank.transfer(account3.getAccNumber(), account4.getAccNumber(), 10000);
+                bank.transfer(account4.getAccNumber(), account1.getAccNumber(), 10000);
+            }).start();
         }
-        System.out.println("Сумма счетов до транзакций " + sum1);
-
-        new Thread(() -> {
-            try {
-                bank.transfer("oneAcc","twoAcc",10000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }).start();
-
-        new Thread(() -> {
-            try {
-                bank.transfer("twoAcc","oneAcc",50000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }).start();
-        new Thread(() -> {
-            try {
-                bank.transfer("oneAcc","threeAcc",10000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }).start();
-        new Thread(() -> {
-            try {
-                bank.transfer("threeAcc","fiveAcc",1000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }).start();
-        new Thread(() -> {
-            try {
-                bank.transfer("threeAcc","sixAcc",8000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }).start();
-
-        AtomicLong sum2 = new AtomicLong();
-
-        new Thread(() -> {
-            try {
-                Thread.sleep(10000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-            for (Map.Entry<String, Account> entry : accs.entrySet()) {
-                sum2.addAndGet(entry.getValue().getMoney());
-            }
-            System.out.println("Сумма счетов после транзакций *** " + sum2);
-        }).start();
-        System.out.println("Сумма счетов после транзакций " + sum1);
-
+//        for (int i = 0 ; i < 4 ; i++) {
+//            new Thread(() -> {
+//                bank.transfer(account2.getAccNumber(), account1.getAccNumber(), 10000);
+//                bank.transfer(account3.getAccNumber(), account2.getAccNumber(), 10000);
+//                bank.transfer(account4.getAccNumber(), account3.getAccNumber(), 10000);
+//                bank.transfer(account1.getAccNumber(), account4.getAccNumber(), 10000);
+//            }).start();
+//        }
     }
-
 }

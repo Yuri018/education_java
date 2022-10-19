@@ -20,8 +20,9 @@ public class MoneyTransfer  extends Thread{
     public void run () {
         if (action.contains("transfer")) {
             bank.transfer(fromAccountNum, toAccountNum, amount);
-        } else {
-            System.out.println("Баланс на счете " + fromAccountNum + ": " + bank.getBalance(fromAccountNum));
         }
+//        else {
+//            System.out.println("Баланс на счете " + fromAccountNum + ": " + bank.getBalance(fromAccountNum));
+//        }
     }
 }

@@ -39,7 +39,7 @@ public class Main {
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                System.out.println("Поток " + threadNumber + " окончен: " + finish + " ms");
+//                System.out.println("Поток " + threadNumber + " окончен: " + finish + " ms");
             }));
         }
         threads.forEach(Thread::start);

@@ -1,22 +1,29 @@
 package Variant2;
 
-public class Account implements Comparable<Account> {
-
-    public Account(String accNumber, long money) {
-        this.accNumber = accNumber;
-        this.money = money;
-    }
+public class Account {
 
     private long money;
     private String accNumber;
-    private boolean isFrauded = false;
+    private volatile boolean blockingAccounts;
 
-    public boolean getIsFraued() {
-        return isFrauded;
+    public Account() {
+        money = 0;
+        accNumber = "";
+        blockingAccounts = false;
     }
 
-    public void setIsFrauded() {
-        isFrauded = true;
+    public Account(long money, String accNumber) {
+        this.money = money;
+        this.accNumber = accNumber;
+        blockingAccounts = false;
+    }
+
+    public boolean isBlockingAccounts() {
+        return blockingAccounts;
+    }
+
+    public void setBlockingAccounts() {
+        blockingAccounts = true;
     }
 
     public long getMoney() {
@@ -35,16 +42,11 @@ public class Account implements Comparable<Account> {
         this.accNumber = accNumber;
     }
 
-    public void putMoney(long debit) {
-        money += debit;
+    public void addMoney(long amount) {
+        money += amount;
     }
 
-    public void takeMoney(long credit) {
-        money -= credit;
-    }
-
-    @Override
-    public int compareTo(Account a) {
-        return this.getAccNumber().compareTo(a.getAccNumber());
+    public void reduceMoney(long amount) {
+        money -= amount;
     }
 }

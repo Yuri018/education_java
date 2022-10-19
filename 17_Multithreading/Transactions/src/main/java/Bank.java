@@ -26,28 +26,31 @@ public class Bank {
         Account fromAccount = accounts.get(fromAccountNum);
         Account toAccount = accounts.get(toAccountNum);
 
+
         try {
 
-            if (fromAccount.isBlocked()) {
-                System.out.println("Account " + fromAccount.getAccNumber() + " is blocked! Transfer denied!");
-                return;
-            }
-            if (toAccount.isBlocked()) {
-                System.out.println("Account " + toAccount.getAccNumber() + " is blocked! Transfer denied!");
-                return;
-            }
+//            if (fromAccount.isBlocked()) {
+//                System.out.println("Account " + fromAccount.getAccNumber() + " is blocked! Transfer denied!");
+//                return;
+//            }
+//            if (toAccount.isBlocked()) {
+//                System.out.println("Account " + toAccount.getAccNumber() + " is blocked! Transfer denied!");
+//                return;
+//            }
             synchronized (Integer.parseInt(fromAccount.getAccNumber()) < Integer.parseInt(toAccount.getAccNumber()) ?
                     fromAccount : toAccount) {
                 synchronized (Integer.parseInt(fromAccount.getAccNumber()) > Integer.parseInt(toAccount.getAccNumber()) ?
                         fromAccount : toAccount) {
                     fromAccount.setMoney(fromAccount.getMoney() - amount);
                     toAccount.setMoney(toAccount.getMoney() + amount);
+                    System.out.println(amount);
 
                     if (amount > 50000) {
                         boolean status = isFraud(fromAccountNum, toAccountNum, amount);
                         fromAccount.setBlocked(status);
                         toAccount.setBlocked(status);
-                        System.out.println("Blocked account" + "summ " + amount);
+                        System.out.println("Blocked accounts " + fromAccountNum + " and "
+                                + toAccountNum + " transfer summa: " + amount);
                     }
                 }
             }
