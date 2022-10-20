@@ -1,14 +1,17 @@
 package Variant2;
 
-import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
 
 public class Bank {
 
-    private Map<String, Account> accounts = new HashMap<>();
+    private Map<String, Account> accounts;
     private final Random random = new Random();
     private int numberTransaction = 1;
+
+    public Bank(Map<String, Account> accounts) {
+        this.accounts = accounts;
+    }
 
     public synchronized boolean isFraud(String fromAccountNum, String toAccountNum, long amount)
             throws InterruptedException {
@@ -34,10 +37,6 @@ public class Bank {
                 }
             }
         }
-//        System.out.println("Транзакция №" + numberTransaction++ + " на сумму: " +
-//                 amount + " прошла успешно.\n" +
-//                "Баланс отправителя " + fromAccountNum + " - " + getBalance(fromAccountNum) + " руб.\n" +
-//                "Баланс получателя " + toAccountNum + " - " + getBalance(toAccountNum) + " руб.\n");
     }
 
     /**
@@ -67,8 +66,6 @@ public class Bank {
                 }
                 else {
                     standardTransfer(fromAccountNum, toAccountNum, amount);
-
-
                 }
             } catch (InterruptedException e) {
                 e.printStackTrace();
@@ -87,10 +84,8 @@ public class Bank {
      * Метод getBalance() возвращает остаток на счёте.
      */
     public long getBalance(String accountNum) {
-        return accounts.get(accountNum).getMoney();
+        Account account = accounts.get(accountNum);
+        return account.getMoney();
     }
 
-    public void addAccount(String num, Account account) {
-        accounts.put(num, account);
-    }
 }
