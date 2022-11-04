@@ -1,12 +1,19 @@
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ThreadPoolExecutor;
+
 public class Main {
     public static void main(String[] args) {
-        for (int i = 0; i < 4; i++) {
-            new Thread(() -> {
-                for (int j = 0; j < 100000; j++) {
-                    ValueStorage.incrementValue();
-                }
-                System.out.println(ValueStorage.getValue());
-            }).start();
-        }
+        ExecutorService executor = Executors.newSingleThreadExecutor();
+        executor.submit(() -> {
+            for (int i = 0; i < 10; i++) {
+                System.out.println(i);
+            }
+            executor.shutdownNow();
+        });
+
+        ThreadPoolExecutor executors =
+                (ThreadPoolExecutor) Executors.newFixedThreadPool(5);
+        executors.getPoolSize();
     }
 }

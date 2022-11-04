@@ -8,11 +8,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="ImageResizer" />
         <module name="Transactions" />
+        <module name="SitemapParser" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="ImageResizer" target="17" />
-      <module name="Transactions" target="17" />
-    </bytecodeTargetLevel>
   </component>
 </project>
