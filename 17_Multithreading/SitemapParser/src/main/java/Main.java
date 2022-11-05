@@ -3,13 +3,13 @@ import java.io.IOException;
 import java.util.concurrent.ForkJoinPool;
 
 public class Main {
-    private static final String URL = "https://skillbox.ru/";
+    private static final String URL = "https://lenta.ru/";
     private static final int COUNT_DEFAULT_SLASH = URL.length() - URL.replace("/", "").length();
 
     public static void main(String[] args) {
         ReferenceParser referenceParser = new ReferenceParser(URL);
 
-        System.out.println("Запись файла началась...");
+        System.out.println("Начало парсинга в файл siteMap.txt");
         long startTime = System.currentTimeMillis();
 
         ForkJoinPool pool = new ForkJoinPool();
@@ -19,7 +19,7 @@ public class Main {
                 .forEach(Main::writer);
 
         long endTime = System.currentTimeMillis();
-        System.out.println("Затраченное время: " + (endTime - startTime) / 1000 + " сек.\nЗапись файла завершена.");
+        System.out.println("Время парсинга: " + (endTime - startTime) / 1000 + " сек.\n");
     }
 
     private static String getStringWithTabs(String line) {
