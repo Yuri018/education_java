@@ -6,12 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="bookLibrary" />
+        <module name="ToDoList" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="BookLibrary" target="17" />
-      <module name="SpringBootWebDevelopment" target="17" />
-    </bytecodeTargetLevel>
   </component>
 </project>
