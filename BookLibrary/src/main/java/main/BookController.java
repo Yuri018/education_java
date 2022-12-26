@@ -17,7 +17,7 @@ public class BookController {
 
     private final BookRepository bookRepository;
 
-    // Рекомендуемый вариант внедрения зависимости:
+    // Вариант внедрения зависимости:
     // внедрение зависимости в класс через конструктор
     public BookController(BookRepository bookRepository) {
         this.bookRepository = bookRepository;
@@ -43,11 +43,9 @@ public class BookController {
     @GetMapping("/books/{id}")
     public ResponseEntity<?> get(@PathVariable int id) {
         Optional<Book> optionalBook = bookRepository.findById(id);
-
         if (!optionalBook.isPresent()) {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
         }
-
         return new ResponseEntity<>(optionalBook.get(), HttpStatus.OK);
     }
 }
