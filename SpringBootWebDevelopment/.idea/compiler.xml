@@ -6,12 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="ToDoList" />
         <module name="bookLibrary" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="BookLibrary" target="17" />
+      <module name="ToDoList" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
