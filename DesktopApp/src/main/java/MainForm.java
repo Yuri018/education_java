@@ -1,145 +1,128 @@
 import javax.swing.*;
-import java.awt.*;
-import java.awt.event.*;
-import java.beans.PropertyChangeListener;
 
 public class MainForm {
     private JPanel mainPanel;
-    private JTextArea textArea;
-    private JButton countButton;
+    private JPanel namePanel;
+    private JTextField lastNameField;
+    private JTextField firstNameField;
+    private JTextField patronymicField;
+    private JLabel lastNameLabel;
+    private JLabel firstNameLabel;
+    private JLabel patronymicLabel;
+    private JButton collapseButton;
+    private JButton expandButton;
+    private JTextField fullNameField;
+    private JLabel fullNameLabel;
     private JButton clearButton;
 
+
     public MainForm() {
-        clearButton.addActionListener(new Action() {
-            @Override
-            public Object getValue(String key) {
-                return null;
-            }
 
-            @Override
-            public void putValue(String key, Object value) {
-
-            }
-
-            @Override
-            public void setEnabled(boolean b) {
-
-            }
-
-            @Override
-            public boolean isEnabled() {
-                return false;
-            }
-
-            @Override
-            public void addPropertyChangeListener(PropertyChangeListener listener) {
-
-            }
-
-            @Override
-            public void removePropertyChangeListener(PropertyChangeListener listener) {
-
-            }
-
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                textArea.setText("");
+        collapseButton.addActionListener(e -> {
+            if (isEmpty(lastNameField.getText()) || isEmpty(firstNameField.getText())) {
+                JOptionPane.showMessageDialog(mainPanel, "Необходимо заполнить поля Фамилия и Имя");
+            } else if (!checkNameFormat()) {
+                JOptionPane.showMessageDialog(mainPanel, "Неверный формат имени");
+            } else {
+                disableSeparatedFields();
+                enableFullNameField();
+                fullNameField.setText(getFullName());
             }
         });
 
-        countButton.addActionListener(new Action() {
-            @Override
-            public Object getValue(String key) {
-                return null;
-            }
-
-            @Override
-            public void putValue(String key, Object value) {
-
-            }
-
-            @Override
-            public void setEnabled(boolean b) {
-
-            }
-
-            @Override
-            public boolean isEnabled() {
-                return false;
-            }
-
-            @Override
-            public void addPropertyChangeListener(PropertyChangeListener listener) {
-
-            }
-
-            @Override
-            public void removePropertyChangeListener(PropertyChangeListener listener) {
-
-            }
-
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                String text = textArea.getText();
-                int length = text.length();
-                JOptionPane.showMessageDialog(
-                        mainPanel,
-                        length + " символов",
-                        "Длина текста",
-                        JOptionPane.PLAIN_MESSAGE
-                );
-
+        expandButton.addActionListener(e -> {
+            if (getSeparatedName()) {
+                clearFullNameField();
+                disableFullNameField();
+                enableSeparatedFields();
+            } else {
+                JOptionPane.showMessageDialog(mainPanel, "Неверный формат имени. " +
+                        "Необходимо заполнить поля Фамилия и Имя");
             }
         });
 
-        textArea.addMouseListener(new MouseListener() {
-            @Override
-            public void mouseClicked(MouseEvent e) {
-                textArea.setBackground(Color.YELLOW);
-            }
-
-            @Override
-            public void mousePressed(MouseEvent e) {
-
-            }
-
-            @Override
-            public void mouseReleased(MouseEvent e) {
-
-            }
-
-            @Override
-            public void mouseEntered(MouseEvent e) {
-
-            }
-
-            @Override
-            public void mouseExited(MouseEvent e) {
-
-            }
-        });
-
-        textArea.addKeyListener(new KeyListener() {
-            @Override
-            public void keyTyped(KeyEvent e) {
-                if (e.getKeyChar() == '6'){
-                    textArea.setText("11111 > ");
-                }
-            }
-
-            @Override
-            public void keyPressed(KeyEvent e) {
-
-            }
-
-            @Override
-            public void keyReleased(KeyEvent e) {
-
-            }
+        clearButton.addActionListener(e -> {
+            clearFullNameField();
+            clearSeparatedFields();
         });
     }
 
     public JPanel getMainPanel() {
         return mainPanel;
+    }
+
+    public boolean checkNameFormat() {
+        return !lastNameField.getText().contains(" ") &&
+                !firstNameField.getText().contains(" ") &&
+                !patronymicField.getText().contains(" ");
+    }
+
+    public String getFullName() {
+        String fullName = lastNameField.getText() + " " +
+                firstNameField.getText() + " " + patronymicField.getText();
+        clearSeparatedFields();
+        return fullName.trim();
+    }
+
+    public void clearSeparatedFields() {
+        lastNameField.setText("");
+        firstNameField.setText("");
+        patronymicField.setText("");
+    }
+
+    public void disableSeparatedFields() {
+        lastNameField.setVisible(false);
+        lastNameLabel.setVisible(false);
+        firstNameField.setVisible(false);
+        firstNameLabel.setVisible(false);
+        patronymicField.setVisible(false);
+        patronymicLabel.setVisible(false);
+        collapseButton.setVisible(false);
+    }
+
+    public void enableSeparatedFields() {
+        lastNameField.setVisible(true);
+        lastNameLabel.setVisible(true);
+        firstNameField.setVisible(true);
+        firstNameLabel.setVisible(true);
+        patronymicField.setVisible(true);
+        patronymicLabel.setVisible(true);
+        collapseButton.setVisible(true);
+    }
+
+    public void clearFullNameField() {
+        fullNameField.setText("");
+    }
+
+    public boolean getSeparatedName() {
+        String[] fullName = fullNameField.getText().split(" ");
+        if (fullName.length == 2) {
+            lastNameField.setText(fullName[0]);
+            firstNameField.setText(fullName[1]);
+            return true;
+        }
+        if (fullName.length == 3) {
+            lastNameField.setText(fullName[0]);
+            firstNameField.setText(fullName[1]);
+            patronymicField.setText(fullName[2]);
+            return true;
+        }
+        return false;
+    }
+
+    public void disableFullNameField() {
+        fullNameField.setVisible(false);
+        fullNameLabel.setVisible(false);
+        expandButton.setVisible(false);
+    }
+
+    public void enableFullNameField() {
+        fullNameField.setVisible(true);
+        fullNameLabel.setVisible(true);
+        expandButton.setVisible(true);
+    }
+
+    public boolean isEmpty(String name) {
+        return name.isEmpty();
     }
 }
