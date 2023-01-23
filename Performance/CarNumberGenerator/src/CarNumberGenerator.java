@@ -1,15 +1,14 @@
 import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
+import java.io.PrintWriter;
 
 public class CarNumberGenerator implements Runnable {
 
-    FileOutputStream writer;
+    PrintWriter writer;
     public StringBuilder builder;
     public int regionCode;
 
     public CarNumberGenerator(int regionCode) throws FileNotFoundException {
-        writer = new FileOutputStream("CarNumberGenerator/res/number" + regionCode + ".txt");
+        writer = new PrintWriter("res/number" + regionCode + ".txt");
         builder = new StringBuilder();
         this.regionCode = regionCode;
     }
@@ -32,16 +31,9 @@ public class CarNumberGenerator implements Runnable {
                 }
             }
         }
-        try {
-            writer.write(builder.toString().getBytes());
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-        try {
-            writer.close();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
+        writer.write(builder.toString());
+        writer.flush();
+        writer.close();
     }
 
     private static String padNumber(int number, int numberLength) {
@@ -49,9 +41,8 @@ public class CarNumberGenerator implements Runnable {
         int padSize = numberLength - numberStr.length();
 
         for (int i = 0; i < padSize; i++) {
-            numberStr.insert(0, '0');
+            numberStr.append(0);
         }
-
         return numberStr.toString();
     }
 }

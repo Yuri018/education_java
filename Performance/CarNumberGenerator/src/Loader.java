@@ -1,4 +1,4 @@
-import java.io.FileOutputStream;
+import java.io.PrintWriter;
 
 public class Loader {
     public static char[] letters = {'У', 'К', 'Е', 'Н', 'Х', 'В', 'А', 'Р', 'О', 'С', 'М', 'Т'};
@@ -8,10 +8,9 @@ public class Loader {
 
 
         //for one thread
-        FileOutputStream writer = new FileOutputStream("CarNumberGenerator/res/numbers.txt");
+        PrintWriter writer = new PrintWriter("res/numbers.txt");
 
-        for (int regionCode = 1; regionCode < 200; regionCode++) {
-
+        for (int regionCode = 1; regionCode < 50; regionCode++) {
             StringBuilder builder = new StringBuilder();
             for (int number = 1; number < 1000; number++) {
 
@@ -20,7 +19,7 @@ public class Loader {
                         for (char thirdLetter : letters) {
 
                             builder.append(firstLetter)
-                                    .append(padNumber(number, 3))
+                                    .append(padNumber(number,3))
                                     .append(secondLetter)
                                     .append(thirdLetter)
                                     .append(padNumber(regionCode, 2))
@@ -29,32 +28,32 @@ public class Loader {
                     }
                 }
             }
-            writer.write(builder.toString().getBytes());
+            writer.write(builder.toString());
         }
+        writer.flush();
         writer.close();
 
-        System.out.println("Время выполнения программы одним потоком: "
+        System.out.println("Время записи одного файла из одиного потока: "
                 + (System.currentTimeMillis() - start) + " ms");
 
         //for multiple threads
         long startThreads = System.currentTimeMillis();
 
-        CarNumberLoader loader = new CarNumberLoader();
+        MultiLoader loader = new MultiLoader();
         loader.loadCarNumber();
 
-        System.out.println("Время выполнения программы несколькими потоками: "
+        System.out.println("Время записи в несколько файлов из нескольких потоков: "
                 + (System.currentTimeMillis() - startThreads) + " ms");
     }
 
-
     private static String padNumber(int number, int numberLength) {
-        StringBuilder numberStr = new StringBuilder(Integer.toString(number));
+        String numberStr = Integer.toString(number);
         int padSize = numberLength - numberStr.length();
 
         for (int i = 0; i < padSize; i++) {
-            numberStr.insert(0, '0');
+            numberStr = '0' + numberStr;
         }
-
-        return numberStr.toString();
+        return numberStr;
     }
+
 }
